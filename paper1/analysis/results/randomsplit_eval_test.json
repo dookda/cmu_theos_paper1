@@ -415,28 +415,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.767603345980919,
-   "mean_iou": 0.5781871195241315,
-   "kappa": 0.6926068251953814,
+   "overall_accuracy": 0.7676185952093367,
+   "mean_iou": 0.5790837552809917,
+   "kappa": 0.6926586308287827,
    "per_class_iou": {
-    "background": 0.4372999266738593,
-    "vegetation": 0.6861166714983401,
-    "water": 0.7172657589421623,
-    "urban": 0.6840708497253976,
-    "agriculture": 0.8305631891825921,
-    "bare_soil": 0.2524991494567368,
-    "road": 0.4394942911898322
+    "background": 0.43713346907207,
+    "vegetation": 0.6861104363829214,
+    "water": 0.7172684428151813,
+    "urban": 0.6840683616729323,
+    "agriculture": 0.8305614662352139,
+    "bare_soil": 0.2589475313593489,
+    "road": 0.4394965794292741
    },
    "per_class_f1": {
-    "background": 0.6085019764821176,
-    "vegetation": 0.8138424569101159,
-    "water": 0.8353578948590997,
-    "urban": 0.8124015039261004,
-    "agriculture": 0.9074400594468495,
-    "bare_soil": 0.40319252362521196,
-    "road": 0.6106231755344158
+    "background": 0.6083408046574565,
+    "vegetation": 0.8138380705846401,
+    "water": 0.8353597150471549,
+    "urban": 0.8123997493611268,
+    "agriculture": 0.9074390311157551,
+    "bare_soil": 0.41137143823814387,
+    "road": 0.6106253841029077
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b4_rgbnir_plain__s1",
@@ -455,28 +456,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.767214724892064,
-   "mean_iou": 0.571816012446459,
-   "kappa": 0.6902894407361174,
+   "overall_accuracy": 0.767121680697104,
+   "mean_iou": 0.5721839614000599,
+   "kappa": 0.6901992388682845,
    "per_class_iou": {
-    "background": 0.43837169908839874,
-    "vegetation": 0.6871764424045596,
-    "water": 0.6910641658535622,
-    "urban": 0.6733042448042799,
-    "agriculture": 0.826051366886423,
-    "bare_soil": 0.2513064019157019,
-    "road": 0.43543776617228735
+    "background": 0.4380108514381948,
+    "vegetation": 0.6871780521819478,
+    "water": 0.6910630882913639,
+    "urban": 0.6733024261629277,
+    "agriculture": 0.8260542058132317,
+    "bare_soil": 0.25424234125236855,
+    "road": 0.43543676466038433
    },
    "per_class_f1": {
-    "background": 0.6095388219578493,
-    "vegetation": 0.8145875214045087,
-    "water": 0.8173127615053457,
-    "urban": 0.8047600939430214,
-    "agriculture": 0.9047405536366006,
-    "bare_soil": 0.401670443669211,
-    "road": 0.6066968180157465
+    "background": 0.6091899061990858,
+    "vegetation": 0.8145886524352306,
+    "water": 0.8173120078852975,
+    "urban": 0.8047587948875282,
+    "agriculture": 0.9047422564126597,
+    "bare_soil": 0.40541182479559856,
+    "road": 0.6066958459006778
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b4_rgbnir_plain__s2",
@@ -495,28 +497,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7639395539324384,
-   "mean_iou": 0.5698016163973895,
-   "kappa": 0.6851081127481196,
+   "overall_accuracy": 0.7638491771573709,
+   "mean_iou": 0.5701960649485854,
+   "kappa": 0.6850168067244675,
    "per_class_iou": {
-    "background": 0.4058833105415645,
-    "vegetation": 0.6909153481764116,
-    "water": 0.7114534040302277,
-    "urban": 0.6842850045623502,
-    "agriculture": 0.8182510233257577,
-    "bare_soil": 0.253122328732078,
-    "road": 0.4247008954133366
+    "background": 0.4055109598013228,
+    "vegetation": 0.6909187959062345,
+    "water": 0.7114497322454837,
+    "urban": 0.6842829333007056,
+    "agriculture": 0.8182551221945167,
+    "bare_soil": 0.2562617308310272,
+    "road": 0.42469318036080744
    },
    "per_class_f1": {
-    "background": 0.5774068217886139,
-    "vegetation": 0.8172086730756664,
-    "water": 0.8314025939331158,
-    "urban": 0.8125525056645861,
-    "agriculture": 0.9000418625215696,
-    "bare_soil": 0.40398661776329003,
-    "road": 0.5961965676182117
+    "background": 0.577029945593924,
+    "vegetation": 0.817211084749654,
+    "water": 0.8314000867966076,
+    "urban": 0.8125510453906569,
+    "agriculture": 0.9000443421428083,
+    "bare_soil": 0.4079750603308169,
+    "road": 0.5961889656886903
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b4_rgbnir_plain__s3",
@@ -535,28 +538,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7732307701780083,
-   "mean_iou": 0.5816940433752039,
-   "kappa": 0.698429998652247,
+   "overall_accuracy": 0.773095955526022,
+   "mean_iou": 0.5819055168070228,
+   "kappa": 0.6982864909581618,
    "per_class_iou": {
-    "background": 0.4593838169635739,
-    "vegetation": 0.692466088807326,
-    "water": 0.689049191242129,
-    "urban": 0.6728993606327701,
-    "agriculture": 0.8331195249336194,
-    "bare_soil": 0.28680778404615453,
-    "road": 0.438132537000855
+    "background": 0.4589153100664509,
+    "vegetation": 0.6924612446782761,
+    "water": 0.6890537419128465,
+    "urban": 0.6729018316800452,
+    "agriculture": 0.833116078906171,
+    "bare_soil": 0.28874911127853203,
+    "road": 0.43814129912683786
    },
    "per_class_f1": {
-    "background": 0.6295585958617118,
-    "vegetation": 0.8182924185693503,
-    "water": 0.8159018584040553,
-    "urban": 0.8044708155026425,
-    "agriculture": 0.9089636644228956,
-    "bare_soil": 0.44576631318423393,
-    "road": 0.6093075876338342
+    "background": 0.6291185009204577,
+    "vegetation": 0.8182890363093281,
+    "water": 0.815905048616766,
+    "urban": 0.8044725814216366,
+    "agriculture": 0.9089616134119513,
+    "bare_soil": 0.44810755723034856,
+    "road": 0.6093160606692095
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b4_rgbnir_plain__s4",
@@ -575,28 +579,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.77199825965671,
-   "mean_iou": 0.5786885174076647,
-   "kappa": 0.698056727490008,
+   "overall_accuracy": 0.7718904442655711,
+   "mean_iou": 0.5790714954720458,
+   "kappa": 0.697944988346499,
    "per_class_iou": {
-    "background": 0.43744325571210846,
-    "vegetation": 0.6961875048044271,
-    "water": 0.7249341416296428,
-    "urban": 0.6866190260112831,
-    "agriculture": 0.8296403625097212,
-    "bare_soil": 0.22962818010855376,
-    "road": 0.44636715107791597
+    "background": 0.43700112688823617,
+    "vegetation": 0.6961900690944487,
+    "water": 0.7249296695362557,
+    "urban": 0.6866185284983194,
+    "agriculture": 0.8296410606522338,
+    "bare_soil": 0.23274973172210942,
+    "road": 0.44637028191271844
    },
    "per_class_f1": {
-    "background": 0.6086407242816556,
-    "vegetation": 0.8208850714864362,
-    "water": 0.8405354382195993,
-    "urban": 0.8141957504437758,
-    "agriculture": 0.9068889984452048,
-    "bare_soil": 0.37349205355688286,
-    "road": 0.6172252282786544
+    "background": 0.6082126382996981,
+    "vegetation": 0.8208868540653431,
+    "water": 0.8405324321644141,
+    "urban": 0.8141954006593002,
+    "agriculture": 0.9068894155473753,
+    "bare_soil": 0.3776106741862339,
+    "road": 0.6172282214536944
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b5_rgbnir_aug__s0",
@@ -615,28 +620,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7715123398859697,
-   "mean_iou": 0.584895707173373,
-   "kappa": 0.6963929161329963,
+   "overall_accuracy": 0.7714426332249079,
+   "mean_iou": 0.5851530261664325,
+   "kappa": 0.6963335349333374,
    "per_class_iou": {
-    "background": 0.4434894447186237,
-    "vegetation": 0.689510622530096,
-    "water": 0.7339978422195292,
-    "urban": 0.6879180751514667,
-    "agriculture": 0.825767601504758,
-    "bare_soil": 0.2678588176665477,
-    "road": 0.44572754642259044
+    "background": 0.4432521928983732,
+    "vegetation": 0.6895080861398847,
+    "water": 0.733998882449253,
+    "urban": 0.6879218666324272,
+    "agriculture": 0.8257665088671826,
+    "bare_soil": 0.2698949364849846,
+    "road": 0.44572870969292205
    },
    "per_class_f1": {
-    "background": 0.6144685612230903,
-    "vegetation": 0.8162252537721065,
-    "water": 0.8465960222248493,
-    "urban": 0.815108364628377,
-    "agriculture": 0.9045703256651316,
-    "bare_soil": 0.42253729008072044,
-    "road": 0.6166134745674506
+    "background": 0.6142407979418856,
+    "vegetation": 0.8162234766189299,
+    "water": 0.8465967141544163,
+    "urban": 0.8151110261817028,
+    "agriculture": 0.9045696701006816,
+    "bare_soil": 0.42506655563089785,
+    "road": 0.6166145876756959
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b5_rgbnir_aug__s1",
@@ -655,28 +661,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7617263698338864,
-   "mean_iou": 0.5743932588287713,
-   "kappa": 0.6831437497777386,
+   "overall_accuracy": 0.7617737141468172,
+   "mean_iou": 0.5752786163197049,
+   "kappa": 0.6832339685395049,
    "per_class_iou": {
-    "background": 0.3910372307273634,
-    "vegetation": 0.6862078314278922,
-    "water": 0.708882037293248,
-    "urban": 0.6877815291473581,
-    "agriculture": 0.8242588472345249,
-    "bare_soil": 0.28631706481944696,
-    "road": 0.4362682711515651
+    "background": 0.3909452904552156,
+    "vegetation": 0.6862073243669321,
+    "water": 0.7088814623416436,
+    "urban": 0.6877890830125839,
+    "agriculture": 0.8242563945041056,
+    "bare_soil": 0.29262315153268026,
+    "road": 0.4362476080247732
    },
    "per_class_f1": {
-    "background": 0.5622239558935004,
-    "vegetation": 0.8139065831120372,
-    "water": 0.8296441972716346,
-    "urban": 0.8150125037518577,
-    "agriculture": 0.9036643499615374,
-    "bare_soil": 0.44517338621202823,
-    "road": 0.6075024789276069
+    "background": 0.562128920148821,
+    "vegetation": 0.813906226440786,
+    "water": 0.829643803506497,
+    "urban": 0.8150178072793551,
+    "agriculture": 0.9036628759276271,
+    "bare_soil": 0.45275863746331796,
+    "road": 0.6074824452283099
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b5_rgbnir_aug__s2",
@@ -695,28 +702,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7704901635497434,
-   "mean_iou": 0.5836374395661429,
-   "kappa": 0.6955589561855389,
+   "overall_accuracy": 0.7704370254860784,
+   "mean_iou": 0.5843073404152195,
+   "kappa": 0.6955191192007196,
    "per_class_iou": {
-    "background": 0.43386772672456403,
-    "vegetation": 0.6937299494997003,
-    "water": 0.7231313586681836,
-    "urban": 0.6836040576227601,
-    "agriculture": 0.8289954529160144,
-    "bare_soil": 0.29075375353497696,
-    "road": 0.4313797779968001
+    "background": 0.4335450784989825,
+    "vegetation": 0.6937276625090868,
+    "water": 0.7231335582901569,
+    "urban": 0.6836046966908391,
+    "agriculture": 0.8289963135118894,
+    "bare_soil": 0.29576489874033096,
+    "road": 0.4313791746652508
    },
    "per_class_f1": {
-    "background": 0.6051711954628367,
-    "vegetation": 0.8191742083558936,
-    "water": 0.839322377510757,
-    "urban": 0.8120722331702199,
-    "agriculture": 0.9065035640470316,
-    "bare_soil": 0.45051776841563534,
-    "road": 0.6027467777215001
+    "background": 0.6048572611160588,
+    "vegetation": 0.8191726139215785,
+    "water": 0.839323859144017,
+    "urban": 0.8120726840876528,
+    "agriculture": 0.9065040785688547,
+    "bare_soil": 0.45651012122443163,
+    "road": 0.6027461887741814
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b5_rgbnir_aug__s3",
@@ -735,28 +743,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7684111822219121,
-   "mean_iou": 0.584227153682184,
-   "kappa": 0.6919254671834135,
+   "overall_accuracy": 0.7684329231281327,
+   "mean_iou": 0.5850493979172203,
+   "kappa": 0.6919891290631975,
    "per_class_iou": {
-    "background": 0.4485718321672387,
-    "vegetation": 0.6841250687360182,
-    "water": 0.7308120958738253,
-    "urban": 0.6775277750597881,
-    "agriculture": 0.8200642663429937,
-    "bare_soil": 0.2847293919336396,
-    "road": 0.4437596456617841
+    "background": 0.4485014537123758,
+    "vegetation": 0.6841299560754045,
+    "water": 0.7308102854124809,
+    "urban": 0.6775191461350922,
+    "agriculture": 0.8200653082174054,
+    "bare_soil": 0.29056225107062045,
+    "road": 0.44375738479716315
    },
    "per_class_f1": {
-    "background": 0.6193297682386272,
-    "vegetation": 0.8124397376746125,
-    "water": 0.8444730578079699,
-    "urban": 0.8077693626795469,
-    "agriculture": 0.9011376982206853,
-    "bare_soil": 0.44325192606387104,
-    "road": 0.6147278646995358
+    "background": 0.619262685504882,
+    "vegetation": 0.8124431839704308,
+    "water": 0.8444718491042373,
+    "urban": 0.8077632300113385,
+    "agriculture": 0.9011383272511398,
+    "bare_soil": 0.4502878456318868,
+    "road": 0.6147256954204129
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "segformer_b2__b5_rgbnir_aug__s4",
@@ -775,28 +784,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.770803551924856,
-   "mean_iou": 0.5902044047069174,
-   "kappa": 0.695094553165433,
+   "overall_accuracy": 0.7708315168108257,
+   "mean_iou": 0.5913704665299574,
+   "kappa": 0.6951648409400476,
    "per_class_iou": {
-    "background": 0.4437333078779342,
-    "vegetation": 0.6929634578558768,
-    "water": 0.7379326140827903,
-    "urban": 0.6736945061912096,
-    "agriculture": 0.8211337128496417,
-    "bare_soil": 0.31825547883303074,
-    "road": 0.44371775525793805
+    "background": 0.44355716290511865,
+    "vegetation": 0.6929620804360148,
+    "water": 0.7379318546127458,
+    "urban": 0.673699498347626,
+    "agriculture": 0.8211344391746901,
+    "bare_soil": 0.326581996018203,
+    "road": 0.44372623421530344
    },
    "per_class_f1": {
-    "background": 0.6147025934133704,
-    "vegetation": 0.8186395877769082,
-    "water": 0.8492073901583358,
-    "urban": 0.8050387923431029,
-    "agriculture": 0.9017829964967707,
-    "bare_soil": 0.48284339516015534,
-    "road": 0.6146876701332504
+    "background": 0.6145335573822802,
+    "vegetation": 0.8186386266040049,
+    "water": 0.8492068872660573,
+    "urban": 0.8050423565631081,
+    "agriculture": 0.9017834344998624,
+    "bare_soil": 0.49236608620437883,
+    "road": 0.6146958060276406
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b0_rgb_plain__s0",
@@ -1182,28 +1192,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7634986169953691,
-   "mean_iou": 0.5688173222055856,
-   "kappa": 0.6862503357461529,
+   "overall_accuracy": 0.7634633382161458,
+   "mean_iou": 0.5693410661194951,
+   "kappa": 0.6862342446388389,
    "per_class_iou": {
-    "background": 0.4246929526578833,
-    "vegetation": 0.6838040635359571,
-    "water": 0.6956976699825154,
-    "urban": 0.6691148090383181,
-    "agriculture": 0.8187610002811272,
-    "bare_soil": 0.264336315181437,
-    "road": 0.42531444476186125
+    "background": 0.42448398953541583,
+    "vegetation": 0.6838144903257792,
+    "water": 0.6956192020431009,
+    "urban": 0.6691383027477383,
+    "agriculture": 0.8187678106598354,
+    "bare_soil": 0.2682483679756206,
+    "road": 0.4253152995489756
    },
    "per_class_f1": {
-    "background": 0.5961887413317878,
-    "vegetation": 0.8122133378125642,
-    "water": 0.82054446151683,
-    "urban": 0.8017600721759861,
-    "agriculture": 0.9003502885847418,
-    "bare_soil": 0.41814240224895843,
-    "road": 0.5968008571956162
+    "background": 0.5959828107733345,
+    "vegetation": 0.8122206930182186,
+    "water": 0.8204898800134212,
+    "urban": 0.8017769378248341,
+    "agriculture": 0.9003544062246657,
+    "bare_soil": 0.4230218175045299,
+    "road": 0.5968016987192934
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b4_rgbnir_plain__s1",
@@ -1219,28 +1230,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7648950638926416,
-   "mean_iou": 0.5705118552572942,
-   "kappa": 0.6880786651328639,
+   "overall_accuracy": 0.7648030713686069,
+   "mean_iou": 0.5708607138285716,
+   "kappa": 0.6879911830535393,
    "per_class_iou": {
-    "background": 0.43009577304577357,
-    "vegetation": 0.681543978133018,
-    "water": 0.7027102899382096,
-    "urban": 0.678090925401411,
-    "agriculture": 0.825227224045864,
-    "bare_soil": 0.23763464293497313,
-    "road": 0.43828015330181025
+    "background": 0.42976831086970296,
+    "vegetation": 0.68154278999829,
+    "water": 0.7026514570684116,
+    "urban": 0.6780924870750118,
+    "agriculture": 0.8252313190471612,
+    "bare_soil": 0.24045699661052017,
+    "road": 0.4382816361309031
    },
    "per_class_f1": {
-    "background": 0.601492260290569,
-    "vegetation": 0.8106168887596745,
-    "water": 0.8254020544033118,
-    "urban": 0.8081694632321736,
-    "agriculture": 0.9042460123454038,
-    "bare_soil": 0.3840142019917198,
-    "road": 0.6094503198158501
+    "background": 0.6011719577751056,
+    "vegetation": 0.8106160483722676,
+    "water": 0.8253614677245776,
+    "urban": 0.8081705723786382,
+    "agriculture": 0.9042484707263991,
+    "bare_soil": 0.38769097876105796,
+    "road": 0.6094517534345778
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b4_rgbnir_plain__s2",
@@ -1256,28 +1268,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7627140800456952,
-   "mean_iou": 0.5728189079702447,
-   "kappa": 0.6853621052222467,
+   "overall_accuracy": 0.7626894040215283,
+   "mean_iou": 0.573143211059376,
+   "kappa": 0.6853583690528808,
    "per_class_iou": {
-    "background": 0.41974357141084573,
-    "vegetation": 0.6799521657764321,
-    "water": 0.7044208277078486,
-    "urban": 0.6759657499959489,
-    "agriculture": 0.8173241673806203,
-    "bare_soil": 0.2845637401228423,
-    "road": 0.427762133397175
+    "background": 0.41961920222014826,
+    "vegetation": 0.679965277858755,
+    "water": 0.7044208654715017,
+    "urban": 0.6759692318705236,
+    "agriculture": 0.8173398086642647,
+    "bare_soil": 0.2869198875609356,
+    "road": 0.42776820376950314
    },
    "per_class_f1": {
-    "background": 0.591294901893193,
-    "vegetation": 0.8094899074336622,
-    "water": 0.826580867823053,
-    "urban": 0.8066581859657594,
-    "agriculture": 0.8994808713905716,
-    "bare_soil": 0.4430511747398616,
-    "road": 0.5992064361907092
+    "background": 0.591171488859128,
+    "vegetation": 0.8094991993318508,
+    "water": 0.8265808938216982,
+    "urban": 0.8066606651678601,
+    "agriculture": 0.899490343219498,
+    "bare_soil": 0.4459017026203779,
+    "road": 0.5992123918761784
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b4_rgbnir_plain__s3",
@@ -1293,28 +1306,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7603828219841595,
-   "mean_iou": 0.5650625914892825,
-   "kappa": 0.6813991734273632,
+   "overall_accuracy": 0.7603248271129482,
+   "mean_iou": 0.5657381220391862,
+   "kappa": 0.6813584280449194,
    "per_class_iou": {
-    "background": 0.4332088990826187,
-    "vegetation": 0.679491254605276,
-    "water": 0.6859871332783558,
-    "urban": 0.6714350929085519,
-    "agriculture": 0.809752794220842,
-    "bare_soil": 0.2503882770911943,
-    "road": 0.42517468923813856
+    "background": 0.43289708965732937,
+    "vegetation": 0.6794858208896525,
+    "water": 0.6859323996726505,
+    "urban": 0.6714377857811105,
+    "agriculture": 0.8097557584509656,
+    "bare_soil": 0.25547658524619266,
+    "road": 0.4251814145764021
    },
    "per_class_f1": {
-    "background": 0.6045300106346542,
-    "vegetation": 0.8091631898017143,
-    "water": 0.8137513217353367,
-    "urban": 0.8034234671508678,
-    "agriculture": 0.8948766840256751,
-    "bare_soil": 0.4004968353475054,
-    "road": 0.5966632566327278
+    "background": 0.6042263456351303,
+    "vegetation": 0.8091593370341101,
+    "water": 0.8137128103056206,
+    "urban": 0.8034253949690178,
+    "agriculture": 0.8948784941261749,
+    "bare_soil": 0.40697944527418817,
+    "road": 0.5966698788874021
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b4_rgbnir_plain__s4",
@@ -1330,28 +1344,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7660915307831345,
-   "mean_iou": 0.5730551474362198,
-   "kappa": 0.6896875390094644,
+   "overall_accuracy": 0.7660025211802699,
+   "mean_iou": 0.5734803169829723,
+   "kappa": 0.6896025595781944,
    "per_class_iou": {
-    "background": 0.4380708285449177,
-    "vegetation": 0.6823974181535883,
-    "water": 0.6860185503263463,
-    "urban": 0.6808486875290324,
-    "agriculture": 0.8218023440907036,
-    "bare_soil": 0.2638753977303393,
-    "road": 0.43837280567861026
+    "background": 0.4377223217240124,
+    "vegetation": 0.6823957536770607,
+    "water": 0.6860374950892926,
+    "urban": 0.6808563385888279,
+    "agriculture": 0.8217953531869129,
+    "bare_soil": 0.26717864233262173,
+    "road": 0.43837631428207785
    },
    "per_class_f1": {
-    "background": 0.609247912218097,
-    "vegetation": 0.8112202343960808,
-    "water": 0.8137734261447509,
-    "urban": 0.8101248950954344,
-    "agriculture": 0.9021860600878465,
-    "bare_soil": 0.4175655212975555,
-    "road": 0.6095398917337935
+    "background": 0.608910791078598,
+    "vegetation": 0.8112190582780412,
+    "water": 0.813786754900029,
+    "urban": 0.8101303112665434,
+    "agriculture": 0.9021818473690142,
+    "bare_soil": 0.42169056570405017,
+    "road": 0.6095432834561645
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b5_rgbnir_aug__s0",
@@ -1367,28 +1382,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7646228914571584,
-   "mean_iou": 0.5750637232836934,
-   "kappa": 0.6880157130462189,
+   "overall_accuracy": 0.7645196364935776,
+   "mean_iou": 0.5753527503883822,
+   "kappa": 0.6879115594302834,
    "per_class_iou": {
-    "background": 0.43219996875365096,
-    "vegetation": 0.6824986930788632,
-    "water": 0.712120345406552,
-    "urban": 0.6789318585839116,
-    "agriculture": 0.816026380220287,
-    "bare_soil": 0.2560247265743279,
-    "road": 0.44764409036826064
+    "background": 0.43182868904865834,
+    "vegetation": 0.6825010259437181,
+    "water": 0.7121186881243334,
+    "urban": 0.6789468122765152,
+    "agriculture": 0.8160286506539832,
+    "bare_soil": 0.25839160644104775,
+    "road": 0.4476537802304189
    },
    "per_class_f1": {
-    "background": 0.6035469551883428,
-    "vegetation": 0.8112917908141596,
-    "water": 0.8318578107432517,
-    "urban": 0.8087664200652238,
-    "agriculture": 0.898694407272545,
-    "bare_soil": 0.4076746548747136,
-    "road": 0.6184449475303672
+    "background": 0.6031848485501442,
+    "vegetation": 0.8112934390126127,
+    "water": 0.8318566800148195,
+    "urban": 0.8087770298954824,
+    "agriculture": 0.8986957841458232,
+    "bare_soil": 0.4106696230476606,
+    "road": 0.6184541949610222
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b5_rgbnir_aug__s1",
@@ -1404,28 +1420,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7679098028885689,
-   "mean_iou": 0.5748830711793522,
-   "kappa": 0.6916277516777675,
+   "overall_accuracy": 0.7678798015852619,
+   "mean_iou": 0.575639964325745,
+   "kappa": 0.6916206852697236,
    "per_class_iou": {
-    "background": 0.43960338996811354,
-    "vegetation": 0.6883655846110671,
-    "water": 0.6983515515986782,
-    "urban": 0.6833263246967658,
-    "agriculture": 0.8196378779728042,
-    "bare_soil": 0.25860109637889295,
-    "road": 0.43629567302914346
+    "background": 0.43938151112455515,
+    "vegetation": 0.6883647893533628,
+    "water": 0.6983275527280306,
+    "urban": 0.6833204323441726,
+    "agriculture": 0.8196420483650678,
+    "bare_soil": 0.26413349484908416,
+    "road": 0.436309921515942
    },
    "per_class_f1": {
-    "background": 0.610728467905343,
-    "vegetation": 0.8154224258857596,
-    "water": 0.8223875047536875,
-    "urban": 0.8118762363111842,
-    "agriculture": 0.900880206271493,
-    "bare_soil": 0.41093416170819735,
-    "road": 0.6075290452131458
+    "background": 0.6105143134523692,
+    "vegetation": 0.8154218679231349,
+    "water": 0.8223708640475184,
+    "urban": 0.8118720773620071,
+    "agriculture": 0.9008827253167461,
+    "bare_soil": 0.4178886055427878,
+    "road": 0.6075428588084338
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b5_rgbnir_aug__s2",
@@ -1441,28 +1458,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7665914568984716,
-   "mean_iou": 0.577556772758931,
-   "kappa": 0.6900609905720207,
+   "overall_accuracy": 0.7665055927477383,
+   "mean_iou": 0.5780121869700047,
+   "kappa": 0.6899809912119282,
    "per_class_iou": {
-    "background": 0.4393430653620816,
-    "vegetation": 0.6827004916010039,
-    "water": 0.7185194027294487,
-    "urban": 0.6816614569295499,
-    "agriculture": 0.8184993789638683,
-    "bare_soil": 0.2520355334507984,
-    "road": 0.4501380802757665
+    "background": 0.43897264753853427,
+    "vegetation": 0.6827033458894505,
+    "water": 0.7185183599311377,
+    "urban": 0.68166681091292,
+    "agriculture": 0.8185065437854993,
+    "bare_soil": 0.2555907355218347,
+    "road": 0.4501268652106556
    },
    "per_class_f1": {
-    "background": 0.6104771994124893,
-    "vegetation": 0.8114343471151598,
-    "water": 0.8362074903454174,
-    "urban": 0.8106999775934882,
-    "agriculture": 0.9001920857228886,
-    "bare_soil": 0.40260124187992263,
-    "road": 0.6208209863240048
+    "background": 0.6101195108831993,
+    "vegetation": 0.811436363221688,
+    "water": 0.8362067841551977,
+    "urban": 0.810703764010915,
+    "agriculture": 0.9001964189091097,
+    "bare_soil": 0.40712427250712446,
+    "road": 0.6208103199590567
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b5_rgbnir_aug__s3",
@@ -1478,28 +1496,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7687814277515076,
-   "mean_iou": 0.5725755918890499,
-   "kappa": 0.6918065792101513,
+   "overall_accuracy": 0.768690878884834,
+   "mean_iou": 0.5729672291892481,
+   "kappa": 0.6917185621041346,
    "per_class_iou": {
-    "background": 0.43478406068661896,
-    "vegetation": 0.6928825834340897,
-    "water": 0.6937399633970619,
-    "urban": 0.6735919944895515,
-    "agriculture": 0.8238870279361848,
-    "bare_soil": 0.24658326101558808,
-    "road": 0.44256025226425433
+    "background": 0.434424547113572,
+    "vegetation": 0.6928866855857195,
+    "water": 0.6937425301061814,
+    "urban": 0.6736056502030643,
+    "agriculture": 0.823892073033983,
+    "bare_soil": 0.24965593153882776,
+    "road": 0.44256318674338946
    },
    "per_class_f1": {
-    "background": 0.6060620117335039,
-    "vegetation": 0.8185831504149755,
-    "water": 0.8191811897430229,
-    "urban": 0.8049655979766853,
-    "agriculture": 0.9034408499623107,
-    "bare_soil": 0.39561458214048095,
-    "road": 0.6135761025779379
+    "background": 0.6057126454134395,
+    "vegetation": 0.8185860131884133,
+    "water": 0.8191829791640106,
+    "urban": 0.8049753488085846,
+    "agriculture": 0.9034438831725587,
+    "bare_soil": 0.3995594662261585,
+    "road": 0.6135789228578498
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "unetpp_effb3__b5_rgbnir_aug__s4",
@@ -1515,28 +1534,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7656445897611459,
-   "mean_iou": 0.5695465797391976,
-   "kappa": 0.6898633906588548,
+   "overall_accuracy": 0.7655525589945321,
+   "mean_iou": 0.5699453877204842,
+   "kappa": 0.6897761733158199,
    "per_class_iou": {
-    "background": 0.4407919128370034,
-    "vegetation": 0.680868140462398,
-    "water": 0.6897034638937917,
-    "urban": 0.6753664085396311,
-    "agriculture": 0.8241026233365475,
-    "bare_soil": 0.242276298081639,
-    "road": 0.4337172110233727
+    "background": 0.4404382447792141,
+    "vegetation": 0.6808716067776264,
+    "water": 0.6896816009896739,
+    "urban": 0.6753652738755328,
+    "agriculture": 0.8241068244934304,
+    "bare_soil": 0.24544316803287713,
+    "road": 0.43371099509503425
    },
    "per_class_f1": {
-    "background": 0.6118744911192197,
-    "vegetation": 0.810138665693232,
-    "water": 0.8163603548520216,
-    "urban": 0.8062312828096325,
-    "agriculture": 0.9035704551194944,
-    "bare_soil": 0.39005218943711545,
-    "road": 0.6050247623556098
+    "background": 0.6115336673088686,
+    "vegetation": 0.8101411194406978,
+    "water": 0.8163450396589493,
+    "urban": 0.8062304743134198,
+    "agriculture": 0.903572980340303,
+    "bare_soil": 0.3941459092177242,
+    "road": 0.6050187143681796
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b0_rgb_plain__s0",
@@ -1955,28 +1975,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7654428410350828,
-   "mean_iou": 0.5778768429315445,
-   "kappa": 0.6898419909709611,
+   "overall_accuracy": 0.7653452172912749,
+   "mean_iou": 0.57830008364614,
+   "kappa": 0.689746438578184,
    "per_class_iou": {
-    "background": 0.4380309248519535,
-    "vegetation": 0.6818055420954595,
-    "water": 0.6961642477356107,
-    "urban": 0.6827914479073519,
-    "agriculture": 0.8187974833635608,
-    "bare_soil": 0.2833551845656462,
-    "road": 0.4441930700012284
+    "background": 0.4376366794063701,
+    "vegetation": 0.6818125565513232,
+    "water": 0.6961520151396103,
+    "urban": 0.682789669594011,
+    "agriculture": 0.8187908639852284,
+    "bare_soil": 0.28672335105661695,
+    "road": 0.4441954497898205
    },
    "per_class_f1": {
-    "background": 0.6092093204553741,
-    "vegetation": 0.8108018683796212,
-    "water": 0.8208689039721073,
-    "urban": 0.8114985901071845,
-    "agriculture": 0.900372346351342,
-    "bare_soil": 0.44158497170627786,
-    "road": 0.6151436061086816
+    "background": 0.6088279216657174,
+    "vegetation": 0.8108068282532654,
+    "water": 0.8208604001150467,
+    "urban": 0.8114973341403989,
+    "agriculture": 0.900368344323635,
+    "bare_soil": 0.44566432667537487,
+    "road": 0.6151458881165858
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b4_rgbnir_plain__s1",
@@ -1995,28 +2016,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7635989368410038,
-   "mean_iou": 0.5764811069453645,
-   "kappa": 0.6846486646863151,
+   "overall_accuracy": 0.7634700497887785,
+   "mean_iou": 0.5766809082722164,
+   "kappa": 0.6845161075372993,
    "per_class_iou": {
-    "background": 0.45438770663877504,
-    "vegetation": 0.6729804443335318,
-    "water": 0.7196008274701663,
-    "urban": 0.653299590526556,
-    "agriculture": 0.8238567542635312,
-    "bare_soil": 0.26366116104272513,
-    "road": 0.4475812643422653
+    "background": 0.4539676443953452,
+    "vegetation": 0.6729844313823438,
+    "water": 0.7195958871468041,
+    "urban": 0.653297353771033,
+    "agriculture": 0.8238554112691052,
+    "bare_soil": 0.26549668374878177,
+    "road": 0.4475689461921018
    },
    "per_class_f1": {
-    "background": 0.6248508577621806,
-    "vegetation": 0.804528758755906,
-    "water": 0.8369393776470795,
-    "urban": 0.7902978868995908,
-    "agriculture": 0.903422648495067,
-    "bare_soil": 0.41729724081292413,
-    "road": 0.6183849870820856
+    "background": 0.6244535667814476,
+    "vegetation": 0.8045316077974659,
+    "water": 0.8369360362250754,
+    "urban": 0.7902962502866376,
+    "agriculture": 0.9034218410312433,
+    "bare_soil": 0.4195928508309375,
+    "road": 0.618373230169808
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b4_rgbnir_plain__s2",
@@ -2035,28 +2057,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.766864222093931,
-   "mean_iou": 0.5816736756903216,
-   "kappa": 0.6897758389169851,
+   "overall_accuracy": 0.7667403830621474,
+   "mean_iou": 0.5818508670938778,
+   "kappa": 0.6896460986524582,
    "per_class_iou": {
-    "background": 0.4398498822730397,
-    "vegetation": 0.681212202297019,
-    "water": 0.6909943724008906,
-    "urban": 0.6714127461900301,
-    "agriculture": 0.8275166186472537,
-    "bare_soil": 0.306494232652485,
-    "road": 0.4542356753715329
+    "background": 0.43941031011256565,
+    "vegetation": 0.681212864954641,
+    "water": 0.6909984321600884,
+    "urban": 0.6714086051892465,
+    "agriculture": 0.8275114889605057,
+    "bare_soil": 0.3081770758256333,
+    "road": 0.4542372924544637
    },
    "per_class_f1": {
-    "background": 0.6109663015474727,
-    "vegetation": 0.8103821720663464,
-    "water": 0.8172639477202172,
-    "urban": 0.8034074689721881,
-    "agriculture": 0.9056187020562041,
-    "bare_soil": 0.4691857366461885,
-    "road": 0.624707094500165
+    "background": 0.610542113574386,
+    "vegetation": 0.8103826409595701,
+    "water": 0.8172667872400381,
+    "urban": 0.8034045043526621,
+    "agriculture": 0.9056156302105567,
+    "bare_soil": 0.4711549810332595,
+    "road": 0.6247086237985227
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b4_rgbnir_plain__s3",
@@ -2075,28 +2098,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7630243134080317,
-   "mean_iou": 0.5767809299526612,
-   "kappa": 0.6849701562876853,
+   "overall_accuracy": 0.7628530057749353,
+   "mean_iou": 0.5763237154549793,
+   "kappa": 0.6847779615113389,
    "per_class_iou": {
-    "background": 0.4382879172612942,
-    "vegetation": 0.675000188222348,
-    "water": 0.6975709785861827,
-    "urban": 0.6651330150529486,
-    "agriculture": 0.8200374416152312,
-    "bare_soil": 0.2943369239142794,
-    "road": 0.44710004501634454
+    "background": 0.437827329333279,
+    "vegetation": 0.6750088694545353,
+    "water": 0.6975479436310148,
+    "urban": 0.6651257551503318,
+    "agriculture": 0.8200305779613168,
+    "bare_soil": 0.2916212913405293,
+    "road": 0.44710424131384763
    },
    "per_class_f1": {
-    "background": 0.609457826082982,
-    "vegetation": 0.8059702784316676,
-    "water": 0.821846017804192,
-    "urban": 0.798894748800711,
-    "agriculture": 0.9011215025753488,
-    "bare_soil": 0.45480726902849905,
-    "road": 0.6179255441893089
+    "background": 0.609012385296376,
+    "vegetation": 0.8059764668461964,
+    "water": 0.8218300307894384,
+    "urban": 0.7988895120147845,
+    "agriculture": 0.9011173585121903,
+    "bare_soil": 0.45155850277832893,
+    "road": 0.6179295519141174
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b4_rgbnir_plain__s4",
@@ -2115,28 +2139,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7611036850396253,
-   "mean_iou": 0.5755414398481004,
-   "kappa": 0.6826994101157131,
+   "overall_accuracy": 0.7610145893909578,
+   "mean_iou": 0.5759549647145745,
+   "kappa": 0.6826116239272861,
    "per_class_iou": {
-    "background": 0.40746702099125803,
-    "vegetation": 0.6836238721093998,
-    "water": 0.7157840504861128,
-    "urban": 0.6738474790135348,
-    "agriculture": 0.8175680048131996,
-    "bare_soil": 0.2974178736248895,
-    "road": 0.4330817778983079
+    "background": 0.40707512217318315,
+    "vegetation": 0.6836265502114027,
+    "water": 0.7157714478666676,
+    "urban": 0.6738416695102986,
+    "agriculture": 0.817573148195111,
+    "bare_soil": 0.3007208536768386,
+    "road": 0.4330759613685208
    },
    "per_class_f1": {
-    "background": 0.5790075524846585,
-    "vegetation": 0.8120862138457603,
-    "water": 0.8343521388884071,
-    "urban": 0.805147999777438,
-    "agriculture": 0.8996285125013149,
-    "bare_soil": 0.45847660425598996,
-    "road": 0.6044062259233989
+    "background": 0.5786117774113795,
+    "vegetation": 0.8120881034300462,
+    "water": 0.8343435770159316,
+    "urban": 0.8051438527325537,
+    "agriculture": 0.8996316263406577,
+    "bare_soil": 0.46239106525528384,
+    "road": 0.6044005615252822
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b5_rgbnir_aug__s0",
@@ -2155,28 +2180,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7749574704277783,
-   "mean_iou": 0.5852560073255801,
-   "kappa": 0.7007735886241694,
+   "overall_accuracy": 0.7747774243653567,
+   "mean_iou": 0.5850404235807379,
+   "kappa": 0.7005702744092681,
    "per_class_iou": {
-    "background": 0.46527907564188054,
-    "vegetation": 0.682178665025134,
-    "water": 0.722563329582614,
-    "urban": 0.6877130336980712,
-    "agriculture": 0.8337675486459609,
-    "bare_soil": 0.2616291538389256,
-    "road": 0.4436612448464739
+    "background": 0.46477227306093766,
+    "vegetation": 0.6821726716670771,
+    "water": 0.7225669256636218,
+    "urban": 0.6877194667207199,
+    "agriculture": 0.833768046210516,
+    "bare_soil": 0.2606244129262587,
+    "road": 0.443659168816034
    },
    "per_class_f1": {
-    "background": 0.6350722940268829,
-    "vegetation": 0.8110656436244004,
-    "water": 0.8389396347500793,
-    "urban": 0.8149644113044016,
-    "agriculture": 0.9093492189643727,
-    "bare_soil": 0.41474810611430246,
-    "road": 0.6146334437260212
+    "background": 0.6346000370799104,
+    "vegetation": 0.8110614076090392,
+    "water": 0.8389420586135832,
+    "urban": 0.8149689282640601,
+    "agriculture": 0.9093495148955666,
+    "bare_soil": 0.41348463116859085,
+    "road": 0.6146314515223374
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b5_rgbnir_aug__s1",
@@ -2195,28 +2221,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7673681732407188,
-   "mean_iou": 0.580615510749148,
-   "kappa": 0.6917883413773126,
+   "overall_accuracy": 0.7673271580746298,
+   "mean_iou": 0.5810261297560142,
+   "kappa": 0.691765546413795,
    "per_class_iou": {
-    "background": 0.43438364589367673,
-    "vegetation": 0.6849920099723771,
-    "water": 0.7123568442332837,
-    "urban": 0.6789221110962912,
-    "agriculture": 0.8246432961458864,
-    "bare_soil": 0.2869010240143516,
-    "road": 0.442109643888169
+    "background": 0.43420608886585726,
+    "vegetation": 0.6849859365251552,
+    "water": 0.7123237449840872,
+    "urban": 0.6789225929164922,
+    "agriculture": 0.8246409545107739,
+    "bare_soil": 0.28999005358909374,
+    "road": 0.4421135369006398
    },
    "per_class_f1": {
-    "background": 0.6056728875344772,
-    "vegetation": 0.8130507464837097,
-    "water": 0.8320191464207751,
-    "urban": 0.8087595039919485,
-    "agriculture": 0.903895345820668,
-    "bare_soil": 0.44587892222243125,
-    "road": 0.6131428940684855
+    "background": 0.6055002675885384,
+    "vegetation": 0.8130464681847247,
+    "water": 0.8319965693296938,
+    "urban": 0.8087598458562626,
+    "agriculture": 0.903893939145494,
+    "bare_soil": 0.4496004439089999,
+    "road": 0.6131466379151096
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b5_rgbnir_aug__s2",
@@ -2235,28 +2262,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7728270815129864,
-   "mean_iou": 0.5868659288927238,
-   "kappa": 0.6993076960127828,
+   "overall_accuracy": 0.7727486746651785,
+   "mean_iou": 0.5871578571681145,
+   "kappa": 0.699237431332809,
    "per_class_iou": {
-    "background": 0.4551553172819649,
-    "vegetation": 0.6897155537453946,
-    "water": 0.7169749616891133,
-    "urban": 0.6861544115075494,
-    "agriculture": 0.8235467707668543,
-    "bare_soil": 0.29054564272436795,
-    "road": 0.4459688445338222
+    "background": 0.4548688740485331,
+    "vegetation": 0.6897202965219091,
+    "water": 0.7169504633313697,
+    "urban": 0.6861568464734077,
+    "agriculture": 0.8235434060775747,
+    "bare_soil": 0.29289239839847525,
+    "road": 0.4459727153255318
    },
    "per_class_f1": {
-    "background": 0.6255762642516256,
-    "vegetation": 0.8163688237257397,
-    "water": 0.8351606440340904,
-    "urban": 0.8138690058525712,
-    "agriculture": 0.9032362420429705,
-    "bare_soil": 0.45026790203420386,
-    "road": 0.6168443291451119
+    "background": 0.6253056595361564,
+    "vegetation": 0.8163721459904557,
+    "water": 0.835144023489857,
+    "urban": 0.813870718735002,
+    "agriculture": 0.9032342183624666,
+    "bare_soil": 0.4530808527521923,
+    "road": 0.6168480317789531
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b5_rgbnir_aug__s3",
@@ -2275,28 +2303,29 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.7701249947225239,
-   "mean_iou": 0.5868537115575049,
-   "kappa": 0.6964958383812749,
+   "overall_accuracy": 0.7701420413521596,
+   "mean_iou": 0.5873927296609455,
+   "kappa": 0.696549897177745,
    "per_class_iou": {
-    "background": 0.43651589556038767,
-    "vegetation": 0.6894954864574806,
-    "water": 0.7318907329364083,
-    "urban": 0.6905913398169682,
-    "agriculture": 0.8215467029805793,
-    "bare_soil": 0.2854534727476285,
-    "road": 0.4524823504030817
+    "background": 0.4365042743955752,
+    "vegetation": 0.6894912523554723,
+    "water": 0.7318900548328964,
+    "urban": 0.6905849159769197,
+    "agriculture": 0.8215441215212944,
+    "bare_soil": 0.2892511371259841,
+    "road": 0.4524833514184759
    },
    "per_class_f1": {
-    "background": 0.6077425155274946,
-    "vegetation": 0.8162146484091634,
-    "water": 0.8451927303358666,
-    "urban": 0.8169819865334008,
-    "agriculture": 0.9020319897184602,
-    "bare_soil": 0.44412882402329507,
-    "road": 0.6230469467095343
+    "background": 0.607731252314143,
+    "vegetation": 0.8162116816770731,
+    "water": 0.845192278183109,
+    "urban": 0.8169774913327267,
+    "agriculture": 0.9020304336981196,
+    "bare_soil": 0.4487118539121881,
+    "road": 0.6230478956713371
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   },
   {
    "run": "upernet_convnextt__b5_rgbnir_aug__s4",
@@ -2315,28 +2344,30 @@
    "num_classes": 7,
    "n_train_tiles": 1286,
    "n_val_tiles": 304,
-   "overall_accuracy": 0.773815489651864,
-   "mean_iou": 0.5815851409579561,
-   "kappa": 0.7002613046483074,
+   "overall_accuracy": 0.7737306389294769,
+   "mean_iou": 0.5821557147666175,
+   "kappa": 0.7001816245491453,
    "per_class_iou": {
-    "background": 0.4475485710767575,
-    "vegetation": 0.6951772319209694,
-    "water": 0.7025423977215249,
-    "urban": 0.6944994947282759,
-    "agriculture": 0.8229094723051465,
-    "bare_soil": 0.2632447958896398,
-    "road": 0.44517402306337883
+    "background": 0.44718543047623277,
+    "vegetation": 0.695182093653398,
+    "water": 0.7025323837479454,
+    "urban": 0.6945018346980252,
+    "agriculture": 0.8229090514832874,
+    "bare_soil": 0.26760969929152406,
+    "road": 0.4451695100159098
    },
    "per_class_f1": {
-    "background": 0.6183537829507617,
-    "vegetation": 0.8201823556784923,
-    "water": 0.8252862241972944,
-    "urban": 0.819710472212393,
-    "agriculture": 0.9028528078328217,
-    "bare_soil": 0.41677558277162213,
-    "road": 0.6160836167926333
+    "background": 0.618007088031823,
+    "vegetation": 0.8201857393608152,
+    "water": 0.8252793147530088,
+    "urban": 0.8197121020966011,
+    "agriculture": 0.9028525545544047,
+    "bare_soil": 0.42222727794848264,
+    "road": 0.6160792950295502
    },
-   "per_block": {}
+   "per_block": {},
+   "labels_root": "/project/gisnorth/cmu_theos_ai_data_fixed"
   }
- ]
+ ],
+ "nir_rescore_note": "NIR runs re-scored on 2026-10-21 against the RGB reference masks (cmu_theos_ai_data_fixed); the NIR data root held the pre-fix masks (bare soil -> background in 463 of 2642 tiles). Rebuilt from the unified pass (unified_rgblabels/) with scripts/rerun_eval_from_unified.py; RGB runs unchanged. Originals in superseded_nirmasks/."
 }

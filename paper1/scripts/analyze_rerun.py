@@ -66,6 +66,21 @@ def load(results_dir, metric):
     return data, n_files
 
 
+def apply_eval(data, eval_file, metric):
+    """Replace the training-log value by the value in an eval_rerun-style file (same checkpoint).
+
+    Used for the NIR arm: its training logs were scored on the pre-fix masks of the NIR data root;
+    rerun_eval_val.json holds the same checkpoints re-scored on the RGB reference masks.
+    """
+    n = 0
+    for r in json.loads(Path(eval_file).read_text())["results"]:
+        m = RUN_RE.match(r["run"])
+        if m and m["arch"] in data and metric in r and (r.get("labels_root") or "").endswith("_fixed"):
+            data[m["arch"]][m["cond"]][int(m["seed"])] = r[metric]
+            n += 1
+    return n
+
+
 def ci95(x):
     """95% CI ของค่าเฉลี่ยจาก t-distribution; คืน (lo, hi) และ NaN ถ้า n < 2"""
     x = np.asarray(x, dtype=float)
@@ -124,9 +139,14 @@ def main():
     ap.add_argument("--results", required=True, help="โฟลเดอร์ผล (rerun_output)")
     ap.add_argument("--metric", default="mean_iou",
                     choices=["mean_iou", "overall_accuracy", "kappa"])
+    ap.add_argument("--val-eval", default=None,
+                    help="eval file whose re-scored runs (labels_root *_fixed) replace the training-log "
+                         "value, e.g. analysis/results/rerun_eval_val.json")
     args = ap.parse_args()
 
     data, n_files = load(args.results, args.metric)
+    if args.val_eval:
+        print(f"replaced {apply_eval(data, args.val_eval, args.metric)} runs from {args.val_eval}")
     if not n_files:
         raise SystemExit(f"ไม่พบผลใน {args.results}")
     print(f"อ่านผล {n_files} runs | metric = {args.metric}\n")
