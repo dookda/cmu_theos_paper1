@@ -426,7 +426,8 @@ def fig_audit(dpi):
     import numpy as np
     lr = (load("label_review_result_round2.json")
           or load("label_review_result.json"))
-    g1 = load("from_paper3/g1_adjudication_pilot.json")
+    # recomputed from the reviewer sheets by summarize_adjudication.py (rule stated there)
+    g1 = load("adjudication_summary.json")
     if not (lr and g1):
         return print("ข้าม fig_audit")
     cls = lr["classes"]

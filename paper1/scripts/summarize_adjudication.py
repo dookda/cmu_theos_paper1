@@ -5,14 +5,18 @@ Inputs  analysis/results/from_paper3/g1_pilot_key.json   80 parcels: 60 candidat
                                                          disagreement with the 2020 layer, 20 stable controls
         analysis/results/from_paper3/g1_pilot_r1.json, g1_pilot_r2.json   blinded answers:
                                                          q1 = current class, q2 = changed / unchanged
-Output  printed; compared with the stored summary g1_adjudication_pilot.json, which was computed
-        in a companion project.
+Output  analysis/results/adjudication_summary.json (used by the article and Fig. 7), and a printed
+        comparison with g1_adjudication_pilot.json, the summary first computed in a companion project.
 
 Reproduced exactly: Cohen's kappa of both questions, the candidate counts (changed / unchanged /
 no consensus), the confirmed-change rate and its Wilson interval, and the stable-control figures.
 The four-way decomposition of the candidates (real change / reference error / 2020 layer or
-definition / undecided) depends on a rule that the stored file does not record; the rule below is
-the plain reading of the two questions and differs from the stored counts by two parcels.
+definition / undecided) depends on a rule that the companion file does not record. The article uses
+the rule below (adopted 2026-10-21), which differs from the companion counts by two parcels:
+a parcel on which both reviewers agree is reference error if they name a current class other than
+the reference class, real change if they name the reference class and judge it changed, and a
+2020-layer or definition difference if they name the reference class and judge it unchanged;
+parcels without agreement on both questions are undecided.
 """
 import collections
 import json
@@ -68,6 +72,8 @@ def main():
         else:
             decomp["real_change" if a2 == "changed" else "t0_or_definition"] += 1
     got = {
+        "n_items": len(items),
+        "min_kappa_q2": round(kappa(*q2), 4),
         "inter_reviewer_kappa": {"r1|r2:q1": round(kappa(*q1), 4), "r1|r2:q2": round(kappa(*q2), 4)},
         "candidates": {"n": len(cand), "n_decided": decided, "changed": c2["changed"],
                        "unchanged": c2["unchanged"], "no_consensus": c2["no_consensus"],
@@ -78,6 +84,13 @@ def main():
                             "ci95": list(wilson(s2["changed"], s_dec)), "q1_vs_label": dict(s1)},
         "disagreement_decomposition": dict(decomp),
     }
+    got["rule"] = ("both reviewers agree; q1 != reference class -> t1_label_error; q1 == reference class and "
+                   "q2 changed -> real_change; q1 == reference class and q2 unchanged -> t0_or_definition; "
+                   "no agreement on q1 or q2 -> undecided")
+    out = D.parent / "adjudication_summary.json"
+    out.write_text(json.dumps(got, indent=1))
+    print(f"wrote {out}")
+    got.pop("rule")
     ref = json.loads((D / "g1_adjudication_pilot.json").read_text())
     for k, v in got.items():
         stored = ref[k]

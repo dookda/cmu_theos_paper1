@@ -70,7 +70,7 @@ Paths are relative to `paper1/`. "Script" is the program that wrote the file.
 | §3.2 | share of variance by factor and regime | `variance_decomposition.json` | `variance_decomposition.py` |
 | §3.2, Fig. 6 | Roi Et transfer, raw and moment matched (11.11% → 39.11%), calibration | `roiet_splits.json`, `ensemble_eval_roiet_raw.json`, `ensemble_eval_roiet_zscene.json`, `calibration.json` | `build_roiet_tiles.py`, `eval_ensemble.py`, `eval_calibration.py` |
 | §3.3, Fig. 7 (left) | blinded point audit, two reviewers, kappa | `label_review_result.json`, `label_review_result_round2.json`, `label_review_key.json` | `build_label_review.py`, `analyze_label_review.py`, `fig_results.py` |
-| §3.3, Fig. 7 (right) | parcel adjudication against the 2020 layer (80 parcels; 13.3% change, 33.3% reference error) | `from_paper3/g1_adjudication_pilot.json` (reviewer sheets `g1_pilot_r1/r2.json`, key `g1_pilot_key.json`) | `summarize_adjudication.py` (recomputes and compares; see *Known gaps*) |
+| §2.7, §3.3, Fig. 7 (right) | parcel adjudication against the 2020 layer (80 parcels; 11.7% change, 36.7% reference error; kappa 0.73 / 0.69) | `adjudication_summary.json` (rule recorded inside), from reviewer sheets `from_paper3/g1_pilot_r1/r2.json` and key `g1_pilot_key.json` | `summarize_adjudication.py` |
 | §3.3, Table 3 | background removed at inference or in training (+5.33 / +6.39 points) | `background_eval_*.json`, `addendum_results.json` | `eval_background.py`, `analyze_addendum.py` |
 | §3.3 | ensemble, seven vs six classes (58.94% → 72.38% / 80.29%) | `ensemble_bg_results.json`, `ensemble_bg_eval_*.json` | `analyze_ensemble_bg.py` |
 | §3.3, Fig. 8 | land-cover maps of both scenes; class composition | `map_composition.json` (maps not included) | `predict_ensemble_scene.py`, `qgis_make_maps.py` |
@@ -136,12 +136,15 @@ written for the CMU ERAWAN system and use `/project/gisnorth/...` paths that mus
 
 - `inference_cost.json` and `map_composition.json` were produced by commands run on the cluster
   that are not yet saved as scripts.
-- The parcel adjudication summary (`from_paper3/g1_adjudication_pilot.json`) was computed in a
-  companion project. `summarize_adjudication.py` recomputes it from the reviewer sheets: both kappas,
-  the candidate and control counts, the confirmed-change rate and its interval match exactly; the
-  four-way decomposition of the disagreement (Fig. 7, right) does not — the plain reading of the two
-  questions gives 22 / 7 / 12 / 19 parcels (reference error / change / 2020 layer or definition /
-  undecided) against the stored 20 / 8 / 13 / 19. The rule used for the stored numbers is being traced.
+
+## Note on the parcel adjudication
+
+A first summary of the adjudication (`from_paper3/g1_adjudication_pilot.json`) was computed in a
+companion project whose classification rule was not recorded. The article uses the summary
+recomputed here from the reviewer sheets (`adjudication_summary.json`), with the rule stated in
+Sec. 2.7 and in `summarize_adjudication.py`. The two agree on both kappas, the candidate and
+control counts and the confirmed-change rate; the four-way split differs by two parcels
+(22 / 7 / 12 / 19 here against 20 / 8 / 13 / 19). The script prints this comparison.
 
 ## Licence and citation
 
