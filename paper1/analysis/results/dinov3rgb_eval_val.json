@@ -1,0 +1,3503 @@
+{
+ "split": "val",
+ "evaluated_utc": "2026-10-12T19:15:24+00:00",
+ "unlock_reason": null,
+ "splits_file": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+ "results": [
+  {
+   "run": "dinov3_vitl_sat__b0_rgb_plain__s0",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 0,
+   "augment": false,
+   "class_weights_mode": "none",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7644061540302476,
+   "mean_iou": 0.556200682871322,
+   "kappa": 0.6857352478563757,
+   "per_class_iou": {
+    "background": 0.4148046312362801,
+    "vegetation": 0.695766358815911,
+    "water": 0.7147201305938284,
+    "urban": 0.6562491044062678,
+    "agriculture": 0.7936070210502734,
+    "bare_soil": 0.16597842893238104,
+    "road": 0.45227910506431246
+   },
+   "per_class_f1": {
+    "background": 0.5863772545900385,
+    "vegetation": 0.820592236624623,
+    "water": 0.8336288978656835,
+    "urban": 0.7924521722245754,
+    "agriculture": 0.8849285347954566,
+    "bare_soil": 0.28470239570691563,
+    "road": 0.6228542431883286
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7496975490025106,
+     "mean_iou": 0.5560137133627604,
+     "kappa": 0.656201352761175,
+     "per_class_iou": {
+      "background": 0.4076826840694962,
+      "vegetation": 0.6863299480593457,
+      "water": 0.7481496913903957,
+      "urban": 0.7029541613960201,
+      "agriculture": 0.7536321404136012,
+      "bare_soil": 0.17451166082149477,
+      "road": 0.41883570738896936
+     },
+     "per_class_f1": {
+      "background": 0.5792252547813911,
+      "vegetation": 0.8139924748142356,
+      "water": 0.8559332083727963,
+      "urban": 0.8255702626444984,
+      "agriculture": 0.8595099492849988,
+      "bare_soil": 0.2971646248820047,
+      "road": 0.5903935201158927
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7664662529440479,
+     "mean_iou": 0.4545369760715799,
+     "kappa": 0.6435032988485151,
+     "per_class_iou": {
+      "background": 0.39633976721077185,
+      "vegetation": 0.74657908367112,
+      "water": 0.165680611199067,
+      "urban": 0.6542527233209097,
+      "agriculture": 0.8008175231416406,
+      "bare_soil": 0.009196505327973531,
+      "road": 0.4088926186295764
+     },
+     "per_class_f1": {
+      "background": 0.5676838446355561,
+      "vegetation": 0.854904408612696,
+      "water": 0.28426415741302535,
+      "urban": 0.7909948824166156,
+      "agriculture": 0.8893932987114558,
+      "bare_soil": 0.018225399273792152,
+      "road": 0.5804453934167207
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8279907589866995,
+     "mean_iou": 0.49433907898735935,
+     "kappa": 0.7312331268087621,
+     "per_class_iou": {
+      "background": 0.29284919992647473,
+      "vegetation": 0.7555693063075655,
+      "water": 0.682355224255353,
+      "urban": 0.5512460295712409,
+      "agriculture": 0.8726251912247004,
+      "bare_soil": 0.0,
+      "road": 0.305728601626181
+     },
+     "per_class_f1": {
+      "background": 0.45302916491579487,
+      "vegetation": 0.8607684119422379,
+      "water": 0.8111904194983652,
+      "urban": 0.710713858667936,
+      "agriculture": 0.9319806127061674,
+      "bare_soil": 0.0,
+      "road": 0.4682881236611085
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7034952163696283,
+     "mean_iou": 0.4988372640863346,
+     "kappa": 0.603379861402977,
+     "per_class_iou": {
+      "background": 0.4528882669292163,
+      "vegetation": 0.6118385734396974,
+      "water": 0.6766732713876646,
+      "urban": 0.6214155160221406,
+      "agriculture": 0.6118886161977392,
+      "bare_soil": 0.127918371810342,
+      "road": 0.38923823281754244
+     },
+     "per_class_f1": {
+      "background": 0.623431648001774,
+      "vegetation": 0.7591809496482451,
+      "water": 0.8071617514804187,
+      "urban": 0.7665098870381061,
+      "agriculture": 0.759219472148228,
+      "bare_soil": 0.22682203340641408,
+      "road": 0.560362103704956
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7411585840685604,
+     "mean_iou": 0.4825200800359033,
+     "kappa": 0.6155804897208973,
+     "per_class_iou": {
+      "background": 0.4245082309626261,
+      "vegetation": 0.7025447541843619,
+      "water": 0.7189556538597827,
+      "urban": 0.6664431661101696,
+      "agriculture": 0.0005634503651450655,
+      "bare_soil": 0.41386405645128355,
+      "road": 0.45076124831795406
+     },
+     "per_class_f1": {
+      "background": 0.5960067034951088,
+      "vegetation": 0.8252878501072382,
+      "water": 0.8365028475344647,
+      "urban": 0.7998390530338149,
+      "agriculture": 0.0011262623905635284,
+      "bare_soil": 0.5854368404604507,
+      "road": 0.6214134065324657
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7399207523890898,
+     "mean_iou": 0.5578528859528064,
+     "kappa": 0.6649497979106344,
+     "per_class_iou": {
+      "background": 0.3934400152180158,
+      "vegetation": 0.5705052039113072,
+      "water": 0.8385822289781335,
+      "urban": 0.6377677346939701,
+      "agriculture": 0.8435993440966809,
+      "bare_soil": 0.16142595198497622,
+      "road": 0.45964972278656074
+     },
+     "per_class_f1": {
+      "background": 0.5647031913887101,
+      "vegetation": 0.7265244312471927,
+      "water": 0.9122052972824868,
+      "urban": 0.7788256138390824,
+      "agriculture": 0.9151655886537599,
+      "bare_soil": 0.27797889317349345,
+      "road": 0.6298082506420238
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8142722525247706,
+     "mean_iou": 0.5856833639664313,
+     "kappa": 0.7384402667405188,
+     "per_class_iou": {
+      "background": 0.3947179857087178,
+      "vegetation": 0.7359301243742741,
+      "water": 0.6864837103364962,
+      "urban": 0.709850626767065,
+      "agriculture": 0.8623703153017506,
+      "bare_soil": 0.13431824463483677,
+      "road": 0.5761125406418782
+     },
+     "per_class_f1": {
+      "background": 0.5660183438781778,
+      "vegetation": 0.847879888367894,
+      "water": 0.8141006069830196,
+      "urban": 0.8303071758220926,
+      "agriculture": 0.9260997166496474,
+      "bare_soil": 0.23682638055405578,
+      "road": 0.7310550762287119
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.767169811107493,
+     "mean_iou": 0.5968046847955469,
+     "kappa": 0.6788797310514274,
+     "per_class_iou": {
+      "background": 0.5147562202815481,
+      "vegetation": 0.6668497284850472,
+      "water": 0.7460575833734603,
+      "urban": 0.7485013018505903,
+      "agriculture": 0.7360470592202761,
+      "bare_soil": 0.15852962313699928,
+      "road": 0.6068912772209067
+     },
+     "per_class_f1": {
+      "background": 0.6796555242631732,
+      "vegetation": 0.8001317850503997,
+      "water": 0.8545623994838534,
+      "urban": 0.8561632716057602,
+      "agriculture": 0.8479574916733926,
+      "bare_soil": 0.2736738327251068,
+      "road": 0.7553607164579258
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b0_rgb_plain__s1",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 1,
+   "augment": false,
+   "class_weights_mode": "none",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7598271620901006,
+   "mean_iou": 0.5561361544317137,
+   "kappa": 0.6803413844609628,
+   "per_class_iou": {
+    "background": 0.3968454428572288,
+    "vegetation": 0.6918655097279192,
+    "water": 0.7049877441720048,
+    "urban": 0.6546103711230364,
+    "agriculture": 0.7900255429650677,
+    "bare_soil": 0.20759624743251395,
+    "road": 0.44702222274422465
+   },
+   "per_class_f1": {
+    "background": 0.5682023611708453,
+    "vegetation": 0.8178729355653502,
+    "water": 0.8269710352105366,
+    "urban": 0.7912562116410196,
+    "agriculture": 0.88269750294547,
+    "bare_soil": 0.34381730624857854,
+    "road": 0.6178512148811162
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7404792941346455,
+     "mean_iou": 0.5576652239843555,
+     "kappa": 0.6440536038325602,
+     "per_class_iou": {
+      "background": 0.380192011951227,
+      "vegetation": 0.6735839460485445,
+      "water": 0.7527585750470679,
+      "urban": 0.6872732075682533,
+      "agriculture": 0.7657457607391414,
+      "bare_soil": 0.21902580482472273,
+      "road": 0.425077261711532
+     },
+     "per_class_f1": {
+      "background": 0.5509262557163708,
+      "vegetation": 0.8049598509882591,
+      "water": 0.8589415352417149,
+      "urban": 0.8146555048789464,
+      "agriculture": 0.8673341013800945,
+      "bare_soil": 0.3593456372983041,
+      "road": 0.5965673154331046
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7635430728687952,
+     "mean_iou": 0.452103811298866,
+     "kappa": 0.64263330020322,
+     "per_class_iou": {
+      "background": 0.40066987818397365,
+      "vegetation": 0.7451462499898104,
+      "water": 0.09655089076092796,
+      "urban": 0.6523232156284723,
+      "agriculture": 0.787022161667787,
+      "bare_soil": 0.07781673621569943,
+      "road": 0.4051975466453916
+     },
+     "per_class_f1": {
+      "background": 0.5721117887025008,
+      "vegetation": 0.8539642401123956,
+      "water": 0.17609923839210215,
+      "urban": 0.7895830613976182,
+      "agriculture": 0.8808196944418741,
+      "bare_soil": 0.14439696642205016,
+      "road": 0.5767125684872982
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8316077277773896,
+     "mean_iou": 0.4842581295296767,
+     "kappa": 0.7360082234583873,
+     "per_class_iou": {
+      "background": 0.29034641803042277,
+      "vegetation": 0.7629733932497393,
+      "water": 0.6137686273305909,
+      "urban": 0.5737983580725484,
+      "agriculture": 0.8714025316666877,
+      "bare_soil": 0.0,
+      "road": 0.2775175783577477
+     },
+     "per_class_f1": {
+      "background": 0.45002862913010655,
+      "vegetation": 0.8655529252619919,
+      "water": 0.7606649589544106,
+      "urban": 0.7291891635253664,
+      "agriculture": 0.9312828343909018,
+      "bare_soil": 0.0,
+      "road": 0.43446380681063396
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7119950294494622,
+     "mean_iou": 0.5161446076066116,
+     "kappa": 0.6158529957051493,
+     "per_class_iou": {
+      "background": 0.46293127820819086,
+      "vegetation": 0.6114380113161746,
+      "water": 0.6493175142544304,
+      "urban": 0.6341869213868523,
+      "agriculture": 0.6185231576421418,
+      "bare_soil": 0.2764551932900151,
+      "road": 0.3601601771484766
+     },
+     "per_class_f1": {
+      "background": 0.6328817784685877,
+      "vegetation": 0.7588725138923046,
+      "water": 0.7873772084759804,
+      "urban": 0.7761497892409245,
+      "agriculture": 0.7643055963432847,
+      "bare_soil": 0.43316082190080646,
+      "road": 0.529584941263431
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7267479732118794,
+     "mean_iou": 0.4637726279890015,
+     "kappa": 0.5976502108404136,
+     "per_class_iou": {
+      "background": 0.3798159830383397,
+      "vegetation": 0.6907936925570004,
+      "water": 0.7174917309431655,
+      "urban": 0.6626648722663577,
+      "agriculture": 0.009396361862810875,
+      "bare_soil": 0.3447744155932372,
+      "road": 0.4414713396620987
+     },
+     "per_class_f1": {
+      "background": 0.5505313524706266,
+      "vegetation": 0.817123569109835,
+      "water": 0.8355111279948477,
+      "urban": 0.7971117681841245,
+      "agriculture": 0.018617780463198345,
+      "bare_soil": 0.5127617067422923,
+      "road": 0.6125287737762467
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7294874645414801,
+     "mean_iou": 0.5540155901494684,
+     "kappa": 0.6530953081306089,
+     "per_class_iou": {
+      "background": 0.3593714358794726,
+      "vegetation": 0.5722856725463807,
+      "water": 0.8324395534204824,
+      "urban": 0.634660887152196,
+      "agriculture": 0.8250489200721258,
+      "bare_soil": 0.16957863002172266,
+      "road": 0.4847240319538988
+     },
+     "per_class_f1": {
+      "background": 0.5287317698541658,
+      "vegetation": 0.7279665249724101,
+      "water": 0.9085588087045328,
+      "urban": 0.7765046415653947,
+      "agriculture": 0.904138959169067,
+      "bare_soil": 0.28998243145217206,
+      "road": 0.6529483160963415
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8083953857421868,
+     "mean_iou": 0.5713792487480972,
+     "kappa": 0.7293213558170902,
+     "per_class_iou": {
+      "background": 0.37213258551468487,
+      "vegetation": 0.7328406479136746,
+      "water": 0.6862307495863854,
+      "urban": 0.7001693849374938,
+      "agriculture": 0.8551103696471838,
+      "bare_soil": 0.12611632125351194,
+      "road": 0.5270546823837455
+     },
+     "per_class_f1": {
+      "background": 0.5424149036786726,
+      "vegetation": 0.8458257768443528,
+      "water": 0.8139227036946368,
+      "urban": 0.8236466164967933,
+      "agriculture": 0.9218970245688991,
+      "bare_soil": 0.22398453186791553,
+      "road": 0.690289201558642
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7584372626410579,
+     "mean_iou": 0.5933127158069184,
+     "kappa": 0.6670711076277248,
+     "per_class_iou": {
+      "background": 0.48250452434129637,
+      "vegetation": 0.6650932360009524,
+      "water": 0.7634808616459736,
+      "urban": 0.7475313240125118,
+      "agriculture": 0.7185564831142767,
+      "bare_soil": 0.17937005406251044,
+      "road": 0.5966525274709071
+     },
+     "per_class_f1": {
+      "background": 0.6509315995506981,
+      "vegetation": 0.7988660544523968,
+      "water": 0.8658793796549794,
+      "urban": 0.8555283781022148,
+      "agriculture": 0.8362326008816473,
+      "bare_soil": 0.30417942395025777,
+      "road": 0.7473792991460317
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b0_rgb_plain__s2",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 2,
+   "augment": false,
+   "class_weights_mode": "none",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7570043363069232,
+   "mean_iou": 0.5507228807743916,
+   "kappa": 0.6756710478624699,
+   "per_class_iou": {
+    "background": 0.4165463561795385,
+    "vegetation": 0.6872910371792181,
+    "water": 0.7109631501872133,
+    "urban": 0.6430358369755648,
+    "agriculture": 0.7854128838663254,
+    "bare_soil": 0.15497157715965018,
+    "road": 0.456839323873231
+   },
+   "per_class_f1": {
+    "background": 0.5881153847504116,
+    "vegetation": 0.8146680303755003,
+    "water": 0.8310677478146424,
+    "urban": 0.7827410923110005,
+    "agriculture": 0.8798109238487055,
+    "bare_soil": 0.2683556501942164,
+    "road": 0.6271650040612443
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7468483593999118,
+     "mean_iou": 0.5590549974765019,
+     "kappa": 0.652465945867113,
+     "per_class_iou": {
+      "background": 0.4112061589781195,
+      "vegetation": 0.6771434552903434,
+      "water": 0.7425771580506302,
+      "urban": 0.7027540608929845,
+      "agriculture": 0.7630815956854379,
+      "bare_soil": 0.16302881552814452,
+      "road": 0.4535937379098527
+     },
+     "per_class_f1": {
+      "background": 0.5827726202938567,
+      "vegetation": 0.8074961613937574,
+      "water": 0.8522746327446618,
+      "urban": 0.8254322485950161,
+      "agriculture": 0.8656225476428455,
+      "bare_soil": 0.28035214740275394,
+      "road": 0.6240997363795001
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7530931584975291,
+     "mean_iou": 0.46202867734420894,
+     "kappa": 0.631281166643812,
+     "per_class_iou": {
+      "background": 0.4170137308106848,
+      "vegetation": 0.7182147456309902,
+      "water": 0.16901608661655831,
+      "urban": 0.6372513276529158,
+      "agriculture": 0.8185762128781139,
+      "bare_soil": 0.05337054002350807,
+      "road": 0.42075809779669077
+     },
+     "per_class_f1": {
+      "background": 0.5885810676592661,
+      "vegetation": 0.8360011380008471,
+      "water": 0.2891595517122528,
+      "urban": 0.7784404419733538,
+      "agriculture": 0.9002385520447789,
+      "bare_soil": 0.10133288558197454,
+      "road": 0.5923008216065505
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8162726447695771,
+     "mean_iou": 0.4782000303093472,
+     "kappa": 0.7164468898737304,
+     "per_class_iou": {
+      "background": 0.2960404617238437,
+      "vegetation": 0.7519469822634731,
+      "water": 0.6259746766734559,
+      "urban": 0.5374168713734621,
+      "agriculture": 0.8546351744173278,
+      "bare_soil": 0.0,
+      "road": 0.28138604571386794
+     },
+     "per_class_f1": {
+      "background": 0.45683829675467347,
+      "vegetation": 0.8584129377255195,
+      "water": 0.7699685384027188,
+      "urban": 0.6991166515056055,
+      "agriculture": 0.9216207926713571,
+      "bare_soil": 0.0,
+      "road": 0.4391901154251891
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.6986176490783685,
+     "mean_iou": 0.48987350270019686,
+     "kappa": 0.5949912754203825,
+     "per_class_iou": {
+      "background": 0.45336090582854166,
+      "vegetation": 0.6078085739483737,
+      "water": 0.6483912506409171,
+      "urban": 0.5866873127328849,
+      "agriculture": 0.6145659220311436,
+      "bare_soil": 0.12112991226288641,
+      "road": 0.3971706414566309
+     },
+     "per_class_f1": {
+      "background": 0.6238793136358683,
+      "vegetation": 0.7560708156354692,
+      "water": 0.7866958117714697,
+      "urban": 0.7395121951788867,
+      "agriculture": 0.7612769594740453,
+      "bare_soil": 0.21608541241789744,
+      "road": 0.5685356193201246
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7321674741547674,
+     "mean_iou": 0.47094126710799994,
+     "kappa": 0.6053739776654825,
+     "per_class_iou": {
+      "background": 0.4240311356166996,
+      "vegetation": 0.6924417435544403,
+      "water": 0.7293682491318837,
+      "urban": 0.6547980127619342,
+      "agriculture": 0.008347559582218195,
+      "bare_soil": 0.3276871829482999,
+      "road": 0.4599149861605244
+     },
+     "per_class_f1": {
+      "background": 0.5955363214358854,
+      "vegetation": 0.8182754200723689,
+      "water": 0.8435083103106847,
+      "urban": 0.7913932740894146,
+      "agriculture": 0.016556905863520162,
+      "bare_soil": 0.4936210636591856,
+      "road": 0.63005721137304
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7361817132858997,
+     "mean_iou": 0.5547577893517628,
+     "kappa": 0.6569821293723166,
+     "per_class_iou": {
+      "background": 0.4199909891467175,
+      "vegetation": 0.5720506868101158,
+      "water": 0.8341490988893506,
+      "urban": 0.6306093942000109,
+      "agriculture": 0.8291018476006498,
+      "bare_soil": 0.16089929468590367,
+      "road": 0.4365032141295909
+     },
+     "per_class_f1": {
+      "background": 0.5915403531536093,
+      "vegetation": 0.727776384937442,
+      "water": 0.9095761024108016,
+      "urban": 0.7734646842702072,
+      "agriculture": 0.9065671702376631,
+      "bare_soil": 0.2771976746304924,
+      "road": 0.6077302248561821
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8083360253310778,
+     "mean_iou": 0.5868293626441466,
+     "kappa": 0.7301234375683641,
+     "per_class_iou": {
+      "background": 0.37597066819072644,
+      "vegetation": 0.7297946956728477,
+      "water": 0.6840163470439091,
+      "urban": 0.7053641376591296,
+      "agriculture": 0.8550237059290824,
+      "bare_soil": 0.15786237548968274,
+      "road": 0.5997736085236488
+     },
+     "per_class_f1": {
+      "background": 0.546480638646217,
+      "vegetation": 0.843793420312494,
+      "water": 0.8123630676645562,
+      "urban": 0.8272299362044965,
+      "agriculture": 0.9218466573331329,
+      "bare_soil": 0.27267899224309783,
+      "road": 0.7498231016748956
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.755783646195022,
+     "mean_iou": 0.5852583538575756,
+     "kappa": 0.662903874162409,
+     "per_class_iou": {
+      "background": 0.4872830834565806,
+      "vegetation": 0.6720940664588713,
+      "water": 0.7771493753543036,
+      "urban": 0.7088940986492821,
+      "agriculture": 0.7203812982296824,
+      "bare_soil": 0.13138563243224305,
+      "road": 0.5996209224220663
+     },
+     "per_class_f1": {
+      "background": 0.6552660824014417,
+      "vegetation": 0.8038950388988689,
+      "water": 0.8746021934960961,
+      "urban": 0.8296524576689678,
+      "agriculture": 0.8374670134747426,
+      "bare_soil": 0.23225614137793457,
+      "road": 0.7497037704770132
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b0_rgb_plain__s3",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 3,
+   "augment": false,
+   "class_weights_mode": "none",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7644328443627607,
+   "mean_iou": 0.5554030966091095,
+   "kappa": 0.6866786999323437,
+   "per_class_iou": {
+    "background": 0.42500996823050213,
+    "vegetation": 0.6967665345638748,
+    "water": 0.7000310207482806,
+    "urban": 0.6567792799792413,
+    "agriculture": 0.7935566970758562,
+    "bare_soil": 0.15344221849999512,
+    "road": 0.4622359571660159
+   },
+   "per_class_f1": {
+    "background": 0.5965010409059068,
+    "vegetation": 0.8212874501382652,
+    "water": 0.8235508740204126,
+    "urban": 0.7928385920605495,
+    "agriculture": 0.884897247894836,
+    "bare_soil": 0.26605964856690895,
+    "road": 0.6322316877044659
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.74706626424984,
+     "mean_iou": 0.559042411257337,
+     "kappa": 0.6528962641834567,
+     "per_class_iou": {
+      "background": 0.40069449391618245,
+      "vegetation": 0.6829251072067647,
+      "water": 0.7434015037418992,
+      "urban": 0.7008055996821788,
+      "agriculture": 0.7622512630037398,
+      "bare_soil": 0.18838646569736914,
+      "road": 0.4348324455532247
+     },
+     "per_class_f1": {
+      "background": 0.5721368824827584,
+      "vegetation": 0.8115929819073917,
+      "water": 0.8528173203832297,
+      "urban": 0.8240866511499821,
+      "agriculture": 0.8650880548095584,
+      "bare_soil": 0.31704579123659704,
+      "road": 0.6061090176926681
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7685185600729542,
+     "mean_iou": 0.46391071884908636,
+     "kappa": 0.6502610428785202,
+     "per_class_iou": {
+      "background": 0.40094608319813047,
+      "vegetation": 0.7547712822298341,
+      "water": 0.21777240773281684,
+      "urban": 0.6484922345346489,
+      "agriculture": 0.7929739806593951,
+      "bare_soil": 0.0027841467409100732,
+      "road": 0.42963489684786876
+     },
+     "per_class_f1": {
+      "background": 0.5723933055182048,
+      "vegetation": 0.8602503192156558,
+      "water": 0.35765698665626106,
+      "urban": 0.7867701367945404,
+      "agriculture": 0.8845348395810068,
+      "bare_soil": 0.005552830990615663,
+      "road": 0.6010414186801409
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8174005235944468,
+     "mean_iou": 0.4817710149405106,
+     "kappa": 0.720435807082364,
+     "per_class_iou": {
+      "background": 0.3102893258630661,
+      "vegetation": 0.7541921481040784,
+      "water": 0.5825870082756507,
+      "urban": 0.556975700934569,
+      "agriculture": 0.8527879987616303,
+      "bare_soil": 0.0,
+      "road": 0.3155649226445797
+     },
+     "per_class_f1": {
+      "background": 0.4736195533711202,
+      "vegetation": 0.8598740389279698,
+      "water": 0.7362464134516882,
+      "urban": 0.7154584322812324,
+      "agriculture": 0.9205456800281432,
+      "bare_soil": 0.0,
+      "road": 0.4797405496139044
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7208184242248529,
+     "mean_iou": 0.513646247497101,
+     "kappa": 0.6245514206116566,
+     "per_class_iou": {
+      "background": 0.49601188602287666,
+      "vegetation": 0.6087057375737773,
+      "water": 0.6818402424299616,
+      "urban": 0.6322695129072988,
+      "agriculture": 0.6338491764600767,
+      "bare_soil": 0.12896284975110234,
+      "road": 0.41388432733461294
+     },
+     "per_class_f1": {
+      "background": 0.6631122211221876,
+      "vegetation": 0.7567645459813324,
+      "water": 0.8108264043443973,
+      "urban": 0.7747121463047859,
+      "agriculture": 0.7758967981979586,
+      "bare_soil": 0.22846251717609659,
+      "road": 0.585457120934769
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7439079284667959,
+     "mean_iou": 0.483126606906327,
+     "kappa": 0.6221737998211369,
+     "per_class_iou": {
+      "background": 0.4194525988166743,
+      "vegetation": 0.7045127168748505,
+      "water": 0.7126715937955767,
+      "urban": 0.6733244135567729,
+      "agriculture": 0.0,
+      "bare_soil": 0.4020515489330847,
+      "road": 0.46987337636733045
+     },
+     "per_class_f1": {
+      "background": 0.5910061324221781,
+      "vegetation": 0.8266441260877901,
+      "water": 0.8322337944360485,
+      "urban": 0.8047745002937783,
+      "agriculture": 0.0,
+      "bare_soil": 0.5735189213020621,
+      "road": 0.639338571954764
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7325877235049287,
+     "mean_iou": 0.5475958477046026,
+     "kappa": 0.6547600442267463,
+     "per_class_iou": {
+      "background": 0.3935936386192701,
+      "vegetation": 0.5736611193669955,
+      "water": 0.828326067372824,
+      "urban": 0.6306776204301484,
+      "agriculture": 0.8200366701626622,
+      "bare_soil": 0.12546900665685784,
+      "road": 0.4614068113234594
+     },
+     "per_class_f1": {
+      "background": 0.5648614119054288,
+      "vegetation": 0.7290783363508321,
+      "water": 0.9061032138462208,
+      "urban": 0.7735160015928992,
+      "agriculture": 0.9011210367967861,
+      "bare_soil": 0.22296305734813826,
+      "road": 0.6314556688449384
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8104971908941494,
+     "mean_iou": 0.5785353996093703,
+     "kappa": 0.7348830401535464,
+     "per_class_iou": {
+      "background": 0.39050357039202455,
+      "vegetation": 0.7363604992098681,
+      "water": 0.6489915168462984,
+      "urban": 0.7226998537512855,
+      "agriculture": 0.863260344401144,
+      "bare_soil": 0.1115003134102622,
+      "road": 0.5764316992547095
+     },
+     "per_class_f1": {
+      "background": 0.5616721527809471,
+      "vegetation": 0.8481654532040499,
+      "water": 0.7871374790222251,
+      "urban": 0.8390316489355859,
+      "agriculture": 0.9266126897800269,
+      "bare_soil": 0.20063028282485712,
+      "road": 0.7313119821593723
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7746573554144954,
+     "mean_iou": 0.6013128432739545,
+     "kappa": 0.6889251841500886,
+     "per_class_iou": {
+      "background": 0.5427848221145176,
+      "vegetation": 0.6608136388217442,
+      "water": 0.7384181683885025,
+      "urban": 0.7495457861500613,
+      "agriculture": 0.7616655542675097,
+      "bare_soil": 0.15677873213893215,
+      "road": 0.599183201036414
+     },
+     "per_class_f1": {
+      "background": 0.7036429325427556,
+      "vegetation": 0.7957709633686749,
+      "water": 0.8495288159169381,
+      "urban": 0.8568461456830587,
+      "agriculture": 0.8647107256216626,
+      "bare_soil": 0.27106087933227785,
+      "road": 0.7493615449051931
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b0_rgb_plain__s4",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 4,
+   "augment": false,
+   "class_weights_mode": "none",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7601469065013683,
+   "mean_iou": 0.5536371508797558,
+   "kappa": 0.6820920935975464,
+   "per_class_iou": {
+    "background": 0.4156335928322994,
+    "vegetation": 0.68216630043625,
+    "water": 0.7039426373567322,
+    "urban": 0.6604437646543828,
+    "agriculture": 0.7880109631248401,
+    "bare_soil": 0.15442379957727642,
+    "road": 0.47083899817650965
+   },
+   "per_class_f1": {
+    "background": 0.5872050386638327,
+    "vegetation": 0.8110569044855487,
+    "water": 0.8262515623051722,
+    "urban": 0.7955027138814909,
+    "agriculture": 0.8814386208092198,
+    "bare_soil": 0.2675339798076421,
+    "road": 0.6402318609790707
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7526381356375552,
+     "mean_iou": 0.5681551982193938,
+     "kappa": 0.6627982060540316,
+     "per_class_iou": {
+      "background": 0.44396871505011026,
+      "vegetation": 0.6755396742000677,
+      "water": 0.7603779560810696,
+      "urban": 0.7009677570898349,
+      "agriculture": 0.740103479347727,
+      "bare_soil": 0.19784821237927952,
+      "road": 0.4582805933876669
+     },
+     "per_class_f1": {
+      "background": 0.6149284355555377,
+      "vegetation": 0.8063547290668535,
+      "water": 0.863880337818372,
+      "urban": 0.8241987538481672,
+      "agriculture": 0.8506430609402391,
+      "bare_soil": 0.33033936789129625,
+      "road": 0.6285218247527026
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7489803538602934,
+     "mean_iou": 0.43755986992362894,
+     "kappa": 0.6292500943661425,
+     "per_class_iou": {
+      "background": 0.40369198804084905,
+      "vegetation": 0.7197392102824302,
+      "water": 0.09070721401472864,
+      "urban": 0.6572311520613312,
+      "agriculture": 0.7260544144504986,
+      "bare_soil": 0.023923824637963914,
+      "road": 0.44157128597760104
+     },
+     "per_class_f1": {
+      "background": 0.575185992331542,
+      "vegetation": 0.837032966028728,
+      "water": 0.16632733441275885,
+      "urban": 0.7931677450286692,
+      "agriculture": 0.8412879733907822,
+      "bare_soil": 0.046729694492284236,
+      "road": 0.612624969269659
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8193418411981485,
+     "mean_iou": 0.48162355799721046,
+     "kappa": 0.7182313740955889,
+     "per_class_iou": {
+      "background": 0.2714616908537199,
+      "vegetation": 0.7382455245976558,
+      "water": 0.6278466931132981,
+      "urban": 0.5744767334727884,
+      "agriculture": 0.8670596338891035,
+      "bare_soil": 0.0,
+      "road": 0.29227463005390736
+     },
+     "per_class_f1": {
+      "background": 0.42700726200595146,
+      "vegetation": 0.8494145502709843,
+      "water": 0.7713830690908541,
+      "urban": 0.729736702136719,
+      "agriculture": 0.9287969312653648,
+      "bare_soil": 0.0,
+      "road": 0.4523413528245039
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7089305877685541,
+     "mean_iou": 0.5039512337426053,
+     "kappa": 0.6120818881369231,
+     "per_class_iou": {
+      "background": 0.4460108215963627,
+      "vegetation": 0.6026080212510064,
+      "water": 0.6651631908190483,
+      "urban": 0.6325080258753675,
+      "agriculture": 0.6356740992004639,
+      "bare_soil": 0.15367837481155866,
+      "road": 0.39201610264442993
+     },
+     "per_class_f1": {
+      "background": 0.6168844815674234,
+      "vegetation": 0.7520341958312731,
+      "water": 0.7989165149999062,
+      "urban": 0.7748911635100263,
+      "agriculture": 0.7772625310391775,
+      "bare_soil": 0.26641458372363847,
+      "road": 0.5632350064019055
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7376637952081079,
+     "mean_iou": 0.48351051529267863,
+     "kappa": 0.6181716927246461,
+     "per_class_iou": {
+      "background": 0.4497570908385065,
+      "vegetation": 0.6805493531371172,
+      "water": 0.7248149262297948,
+      "urban": 0.6801749598115776,
+      "agriculture": 0.006724269341177835,
+      "bare_soil": 0.3695657884367373,
+      "road": 0.47298721925383924
+     },
+     "per_class_f1": {
+      "background": 0.6204585444803825,
+      "vegetation": 0.809912958124953,
+      "water": 0.8404552986685789,
+      "urban": 0.8096477710719642,
+      "agriculture": 0.013358707448736337,
+      "bare_soil": 0.5396831442529341,
+      "road": 0.6422149620911274
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7353725433349603,
+     "mean_iou": 0.5457900002384355,
+     "kappa": 0.6588885026279866,
+     "per_class_iou": {
+      "background": 0.3871195995442642,
+      "vegetation": 0.5655416488135335,
+      "water": 0.8245447096449644,
+      "urban": 0.6302187973696076,
+      "agriculture": 0.8340435534769932,
+      "bare_soil": 0.09998758689174883,
+      "road": 0.4790741059279361
+     },
+     "per_class_f1": {
+      "background": 0.5581632560951754,
+      "vegetation": 0.7224868726238508,
+      "water": 0.9038361194713068,
+      "urban": 0.7731708091986654,
+      "agriculture": 0.9095133507771045,
+      "bare_soil": 0.1817976623656628,
+      "road": 0.647802703528776
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8061908628882425,
+     "mean_iou": 0.5807205485021835,
+     "kappa": 0.7275518443899941,
+     "per_class_iou": {
+      "background": 0.3688640608583979,
+      "vegetation": 0.7237650198349417,
+      "water": 0.6585080446444517,
+      "urban": 0.7174130333788352,
+      "agriculture": 0.850266750398218,
+      "bare_soil": 0.13390001539276078,
+      "road": 0.6123269150076783
+     },
+     "per_class_f1": {
+      "background": 0.5389345341105065,
+      "vegetation": 0.8397490460682775,
+      "water": 0.7940968904359542,
+      "urban": 0.8354577671782046,
+      "agriculture": 0.9190747718912488,
+      "bare_soil": 0.23617604899834285,
+      "road": 0.7595567688940869
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7643983629014746,
+     "mean_iou": 0.5945005182738115,
+     "kappa": 0.6779646946706032,
+     "per_class_iou": {
+      "background": 0.49227461423880847,
+      "vegetation": 0.6699231155929531,
+      "water": 0.7700676932437865,
+      "urban": 0.7755619652714912,
+      "agriculture": 0.7444213030155473,
+      "bare_soil": 0.12836619396032053,
+      "road": 0.5808887425937734
+     },
+     "per_class_f1": {
+      "background": 0.6597641022131967,
+      "vegetation": 0.8023400660446104,
+      "water": 0.870099704962478,
+      "urban": 0.873596051281141,
+      "agriculture": 0.8534879703408352,
+      "bare_soil": 0.22752576770719446,
+      "road": 0.7348888293068316
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b2_rgb_wt__s0",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 0,
+   "augment": false,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7620391469252735,
+   "mean_iou": 0.5586492998019292,
+   "kappa": 0.6839099402991448,
+   "per_class_iou": {
+    "background": 0.4281554306405475,
+    "vegetation": 0.6881892512920667,
+    "water": 0.7170036208156231,
+    "urban": 0.657792093724908,
+    "agriculture": 0.7905514977709941,
+    "bare_soil": 0.17552796315422955,
+    "road": 0.45332524121513573
+   },
+   "per_class_f1": {
+    "background": 0.599592198281098,
+    "vegetation": 0.8152986953860987,
+    "water": 0.8351800867869088,
+    "urban": 0.7935760968782203,
+    "agriculture": 0.8830256982600924,
+    "bare_soil": 0.2986368095408323,
+    "road": 0.623845543625824
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7544891980229587,
+     "mean_iou": 0.5687863664798595,
+     "kappa": 0.6642637470372047,
+     "per_class_iou": {
+      "background": 0.4333966116611142,
+      "vegetation": 0.6865716511343222,
+      "water": 0.7639909408593775,
+      "urban": 0.6973652288087995,
+      "agriculture": 0.7587849276338636,
+      "bare_soil": 0.2033205922485441,
+      "road": 0.4380746130129951
+     },
+     "per_class_f1": {
+      "background": 0.6047127565501283,
+      "vegetation": 0.8141624418658948,
+      "water": 0.8662073242614434,
+      "urban": 0.8217032053641193,
+      "agriculture": 0.862851291610749,
+      "bare_soil": 0.33793253542115226,
+      "road": 0.609251572171916
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7554459291345925,
+     "mean_iou": 0.4445671349909439,
+     "kappa": 0.6341341568709336,
+     "per_class_iou": {
+      "background": 0.40610665059632023,
+      "vegetation": 0.7297214516438497,
+      "water": 0.08744948361021836,
+      "urban": 0.6479038955766124,
+      "agriculture": 0.7877768105758186,
+      "bare_soil": 0.05166894664841975,
+      "road": 0.40134270628536783
+     },
+     "per_class_f1": {
+      "background": 0.5776327804288057,
+      "vegetation": 0.8437444614294702,
+      "water": 0.16083410268094664,
+      "urban": 0.7863369862781313,
+      "agriculture": 0.8812921181776987,
+      "bare_soil": 0.09826085348459145,
+      "road": 0.5727973621930055
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8188118707566028,
+     "mean_iou": 0.4871565427274,
+     "kappa": 0.719239303341484,
+     "per_class_iou": {
+      "background": 0.28863072469050494,
+      "vegetation": 0.7412575773322627,
+      "water": 0.6546514963188902,
+      "urban": 0.5663926015404693,
+      "agriculture": 0.8665521983284983,
+      "bare_soil": 0.0,
+      "road": 0.2926112008811748
+     },
+     "per_class_f1": {
+      "background": 0.44796498480234437,
+      "vegetation": 0.8514048497417385,
+      "water": 0.7912862541383068,
+      "urban": 0.7231808897314015,
+      "agriculture": 0.9285057170521669,
+      "bare_soil": 0.0,
+      "road": 0.4527443326803423
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7116509437561029,
+     "mean_iou": 0.5001129683772245,
+     "kappa": 0.6108847258026062,
+     "per_class_iou": {
+      "background": 0.4831060955100375,
+      "vegetation": 0.6004836370280634,
+      "water": 0.6779455230012423,
+      "urban": 0.6335377691351678,
+      "agriculture": 0.6186541164027517,
+      "bare_soil": 0.12690382457202348,
+      "road": 0.36015981299128513
+     },
+     "per_class_f1": {
+      "background": 0.6514788028519609,
+      "vegetation": 0.7503777222514867,
+      "water": 0.8080661851257936,
+      "urban": 0.7756634429128318,
+      "agriculture": 0.7644055713783553,
+      "bare_soil": 0.22522564788859473,
+      "road": 0.5295845475671292
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7417560445851283,
+     "mean_iou": 0.4834266738278393,
+     "kappa": 0.6216254676187436,
+     "per_class_iou": {
+      "background": 0.43279796655735375,
+      "vegetation": 0.7007067602414476,
+      "water": 0.7148887300420175,
+      "urban": 0.6720027728530286,
+      "agriculture": 0.0,
+      "bare_soil": 0.40682927768732785,
+      "road": 0.4567612094137
+     },
+     "per_class_f1": {
+      "background": 0.6041297839376912,
+      "vegetation": 0.8240183109433223,
+      "water": 0.8337435698102669,
+      "urban": 0.8038297299308546,
+      "agriculture": 0.0,
+      "bare_soil": 0.5783633886845143,
+      "road": 0.6270913898990924
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.739810216994512,
+     "mean_iou": 0.5642720145111121,
+     "kappa": 0.6633457035655982,
+     "per_class_iou": {
+      "background": 0.41310923864477855,
+      "vegetation": 0.5691571781086585,
+      "water": 0.8478904439262938,
+      "urban": 0.6386448269594637,
+      "agriculture": 0.8311315092763553,
+      "bare_soil": 0.18597558597557148,
+      "road": 0.4639953186866629
+     },
+     "per_class_f1": {
+      "background": 0.5846812459086563,
+      "vegetation": 0.7254304184775505,
+      "water": 0.9176847492172603,
+      "urban": 0.779479253121795,
+      "agriculture": 0.9077791523854702,
+      "bare_soil": 0.31362464100161563,
+      "road": 0.6338754081666381
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8043091006395287,
+     "mean_iou": 0.5797679253850726,
+     "kappa": 0.7263110082639214,
+     "per_class_iou": {
+      "background": 0.382697525812497,
+      "vegetation": 0.7235208385680516,
+      "water": 0.6739946310823696,
+      "urban": 0.7051957913005579,
+      "agriculture": 0.8555444571425325,
+      "bare_soil": 0.1307452809114172,
+      "road": 0.5866769528780823
+     },
+     "per_class_f1": {
+      "background": 0.5535520462166391,
+      "vegetation": 0.8395846665411485,
+      "water": 0.8052530329499822,
+      "urban": 0.8271141538538652,
+      "agriculture": 0.9221492368051675,
+      "bare_soil": 0.231255049745902,
+      "road": 0.7395039650335474
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7625557228370938,
+     "mean_iou": 0.5954176478435756,
+     "kappa": 0.6715851055121687,
+     "per_class_iou": {
+      "background": 0.5200231029392899,
+      "vegetation": 0.6545767222333779,
+      "water": 0.7697457161412542,
+      "urban": 0.7460612186862824,
+      "agriculture": 0.7239715351463537,
+      "bare_soil": 0.16499762231110204,
+      "road": 0.5885476174473695
+     },
+     "per_class_f1": {
+      "background": 0.684230520094589,
+      "vegetation": 0.7912316295780815,
+      "water": 0.8698941375864483,
+      "urban": 0.8545647842717812,
+      "agriculture": 0.8398880330445659,
+      "bare_soil": 0.2832582952920462,
+      "road": 0.7409883179061699
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b2_rgb_wt__s1",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 1,
+   "augment": false,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7574959428686844,
+   "mean_iou": 0.5528267153072697,
+   "kappa": 0.6800120777154848,
+   "per_class_iou": {
+    "background": 0.4047008427811125,
+    "vegetation": 0.691093036257419,
+    "water": 0.7015600313367604,
+    "urban": 0.6386512450453087,
+    "agriculture": 0.7916689204923242,
+    "bare_soil": 0.1711097105578778,
+    "road": 0.47100322068008543
+   },
+   "per_class_f1": {
+    "background": 0.5762092923522697,
+    "vegetation": 0.8173329523720738,
+    "water": 0.8246080234168661,
+    "urban": 0.7794840335310362,
+    "agriculture": 0.8837223294532446,
+    "bare_soil": 0.2922180664910825,
+    "road": 0.6403836652581975
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7386901232661027,
+     "mean_iou": 0.5558983227587503,
+     "kappa": 0.6458971743977213,
+     "per_class_iou": {
+      "background": 0.3835510234315194,
+      "vegetation": 0.6818877972783388,
+      "water": 0.7581343790635175,
+      "urban": 0.6654087542631092,
+      "agriculture": 0.7616058545601959,
+      "bare_soil": 0.21515827207645122,
+      "road": 0.4255421786381199
+     },
+     "per_class_f1": {
+      "background": 0.5544443444481729,
+      "vegetation": 0.8108600278754873,
+      "water": 0.8624305214655914,
+      "urban": 0.7990936141011735,
+      "agriculture": 0.8646722513833247,
+      "bare_soil": 0.3541238612878215,
+      "road": 0.5970250220177197
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.760236515718347,
+     "mean_iou": 0.4526992692163598,
+     "kappa": 0.6427631485920029,
+     "per_class_iou": {
+      "background": 0.38720393915711965,
+      "vegetation": 0.7437850083091399,
+      "water": 0.12229182980942263,
+      "urban": 0.6253439760682941,
+      "agriculture": 0.8152627663885399,
+      "bare_soil": 0.019091011181874916,
+      "road": 0.455916353600127
+     },
+     "per_class_f1": {
+      "background": 0.5582509172319048,
+      "vegetation": 0.8530696162721445,
+      "water": 0.21793231291749626,
+      "urban": 0.7694912354553021,
+      "agriculture": 0.8982311287889381,
+      "bare_soil": 0.03746674043369843,
+      "road": 0.6262947027597656
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8196300324939539,
+     "mean_iou": 0.48781825813920704,
+     "kappa": 0.723070665598906,
+     "per_class_iou": {
+      "background": 0.29860855581998363,
+      "vegetation": 0.7497969322137296,
+      "water": 0.6452558322941624,
+      "urban": 0.5749600960106243,
+      "agriculture": 0.8611347799893536,
+      "bare_soil": 0.0,
+      "road": 0.28497161064659504
+     },
+     "per_class_f1": {
+      "background": 0.45989001267190704,
+      "vegetation": 0.8570102210630247,
+      "water": 0.7843835779710402,
+      "urban": 0.7301265518350007,
+      "agriculture": 0.9253867958375279,
+      "bare_soil": 0.0,
+      "road": 0.4435453756968737
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.6974849700927728,
+     "mean_iou": 0.4976399082115533,
+     "kappa": 0.5981547336694449,
+     "per_class_iou": {
+      "background": 0.4411227165364561,
+      "vegetation": 0.605884947897858,
+      "water": 0.6602986419474781,
+      "urban": 0.6460075856508782,
+      "agriculture": 0.5990205067051572,
+      "bare_soil": 0.11342114928079597,
+      "road": 0.41772380946224924
+     },
+     "per_class_f1": {
+      "background": 0.6121931295429747,
+      "vegetation": 0.7545807620605374,
+      "water": 0.795397431671479,
+      "urban": 0.784938765989648,
+      "agriculture": 0.7492342971186068,
+      "bare_soil": 0.203734493456998,
+      "road": 0.5892879886047142
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7255589715365696,
+     "mean_iou": 0.47617844991092667,
+     "kappa": 0.6013176993509154,
+     "per_class_iou": {
+      "background": 0.38889034051890065,
+      "vegetation": 0.6846542757391804,
+      "water": 0.7175552954052439,
+      "urban": 0.653354959651539,
+      "agriculture": 0.0,
+      "bare_soil": 0.42888565353550967,
+      "road": 0.4599086245261131
+     },
+     "per_class_f1": {
+      "background": 0.5600015000976758,
+      "vegetation": 0.8128127905983299,
+      "water": 0.8355542242005756,
+      "urban": 0.7903383985852258,
+      "agriculture": 0.0,
+      "bare_soil": 0.6003078677571042,
+      "road": 0.630051241843815
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7292900993710466,
+     "mean_iou": 0.5446276509625257,
+     "kappa": 0.6527222759322161,
+     "per_class_iou": {
+      "background": 0.37080229664916786,
+      "vegetation": 0.5644503184264771,
+      "water": 0.817170612454914,
+      "urban": 0.6019405600133534,
+      "agriculture": 0.847848432760297,
+      "bare_soil": 0.11434973713693748,
+      "road": 0.49583159929653375
+     },
+     "per_class_f1": {
+      "background": 0.5410003969563092,
+      "vegetation": 0.7215957040849067,
+      "water": 0.8993878751004969,
+      "urban": 0.7515142211927123,
+      "agriculture": 0.9176601425846631,
+      "bare_soil": 0.20523132382610548,
+      "road": 0.6629510912839561
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8131289598418439,
+     "mean_iou": 0.5877522449156992,
+     "kappa": 0.7395190236670872,
+     "per_class_iou": {
+      "background": 0.4008028243185222,
+      "vegetation": 0.7324596708665363,
+      "water": 0.650466473545185,
+      "urban": 0.6884537808324649,
+      "agriculture": 0.8667817161562392,
+      "bare_soil": 0.1642372551178429,
+      "road": 0.6110639935731044
+     },
+     "per_class_f1": {
+      "background": 0.5722473054158307,
+      "vegetation": 0.8455719678242773,
+      "water": 0.7882213663355507,
+      "urban": 0.8154843022503258,
+      "agriculture": 0.9286374555609762,
+      "bare_soil": 0.2821370844470791,
+      "road": 0.7585843789982187
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.774124710648147,
+     "mean_iou": 0.6047685199014412,
+     "kappa": 0.6883280093033822,
+     "per_class_iou": {
+      "background": 0.5393611989360234,
+      "vegetation": 0.6647687140108115,
+      "water": 0.7279609784259267,
+      "urban": 0.7636730335745472,
+      "agriculture": 0.7386686052170482,
+      "bare_soil": 0.20157748115737198,
+      "road": 0.5973696279883598
+     },
+     "per_class_f1": {
+      "background": 0.7007597638044532,
+      "vegetation": 0.7986319111528468,
+      "water": 0.8425664505356537,
+      "urban": 0.8660029547806922,
+      "agriculture": 0.8496945290865073,
+      "bare_soil": 0.33552139907142214,
+      "road": 0.7479416329904922
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b2_rgb_wt__s2",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 2,
+   "augment": false,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7546663158818294,
+   "mean_iou": 0.5531018209854375,
+   "kappa": 0.6738991102616327,
+   "per_class_iou": {
+    "background": 0.42909601190400304,
+    "vegetation": 0.6760050889997441,
+    "water": 0.7137313487378147,
+    "urban": 0.6522271549469597,
+    "agriculture": 0.7802672715570552,
+    "bare_soil": 0.1698607355415715,
+    "road": 0.45052513521091403
+   },
+   "per_class_f1": {
+    "background": 0.6005138979567568,
+    "vegetation": 0.8066861959390305,
+    "water": 0.8329559297395596,
+    "urban": 0.7895126876076689,
+    "agriculture": 0.8765731747964493,
+    "bare_soil": 0.2903947923523198,
+    "road": 0.6211890034214228
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7462625308912623,
+     "mean_iou": 0.5617765908822326,
+     "kappa": 0.652467098667878,
+     "per_class_iou": {
+      "background": 0.4339099728740618,
+      "vegetation": 0.6707312139810165,
+      "water": 0.7470614913355128,
+      "urban": 0.6870096287537161,
+      "agriculture": 0.7489862207081762,
+      "bare_soil": 0.20031185507909194,
+      "road": 0.4444257534440529
+     },
+     "per_class_f1": {
+      "background": 0.6052122902030959,
+      "vegetation": 0.8029193495632376,
+      "water": 0.85522059834749,
+      "urban": 0.8144703063352782,
+      "agriculture": 0.8564804084425032,
+      "bare_soil": 0.33376634823006024,
+      "road": 0.6153666933469177
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7440858728745396,
+     "mean_iou": 0.4453572750339142,
+     "kappa": 0.621310012274757,
+     "per_class_iou": {
+      "background": 0.41544152587805755,
+      "vegetation": 0.7149148870520883,
+      "water": 0.08159364341664825,
+      "urban": 0.6390725919514474,
+      "agriculture": 0.7575168517894652,
+      "bare_soil": 0.11244675569027165,
+      "road": 0.39651466945942143
+     },
+     "per_class_f1": {
+      "background": 0.5870133308511404,
+      "vegetation": 0.8337613582720578,
+      "water": 0.1508767020460367,
+      "urban": 0.7797977844226153,
+      "agriculture": 0.8620308210708348,
+      "bare_soil": 0.20216114170837698,
+      "road": 0.5678632308875498
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8086605072021478,
+     "mean_iou": 0.4787112519693263,
+     "kappa": 0.7062553724956396,
+     "per_class_iou": {
+      "background": 0.29433772023911436,
+      "vegetation": 0.7275669639385447,
+      "water": 0.6293360995849969,
+      "urban": 0.5765472070399928,
+      "agriculture": 0.8532802235689928,
+      "bare_soil": 0.0,
+      "road": 0.26991054941364206
+     },
+     "per_class_f1": {
+      "background": 0.45480821964018775,
+      "vegetation": 0.8423024691172029,
+      "water": 0.7725061707134679,
+      "urban": 0.7314049341808806,
+      "agriculture": 0.9208323793505294,
+      "bare_soil": 0.0,
+      "road": 0.4250859189403227
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.713027667999267,
+     "mean_iou": 0.4962775317199181,
+     "kappa": 0.6124110333784069,
+     "per_class_iou": {
+      "background": 0.4904613163897283,
+      "vegetation": 0.590901689041504,
+      "water": 0.643238279601896,
+      "urban": 0.6348386492628167,
+      "agriculture": 0.6260433394309564,
+      "bare_soil": 0.12484602231986335,
+      "road": 0.36361342599266255
+     },
+     "per_class_f1": {
+      "background": 0.6581335688113407,
+      "vegetation": 0.7428512888446227,
+      "water": 0.782891055418702,
+      "urban": 0.7766376767253343,
+      "agriculture": 0.770020478773663,
+      "bare_soil": 0.22197886152571056,
+      "road": 0.5333086572223873
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7253898094440319,
+     "mean_iou": 0.4694502290356749,
+     "kappa": 0.60031470356316,
+     "per_class_iou": {
+      "background": 0.4254681090261257,
+      "vegetation": 0.6743455436295352,
+      "water": 0.7224403059777478,
+      "urban": 0.6621051490861941,
+      "agriculture": 0.0,
+      "bare_soil": 0.34584420082413775,
+      "road": 0.4559482947059835
+     },
+     "per_class_f1": {
+      "background": 0.5969521208765464,
+      "vegetation": 0.8055034302919868,
+      "water": 0.838856707219976,
+      "urban": 0.7967066888584791,
+      "agriculture": 0.0,
+      "bare_soil": 0.5139438836341191,
+      "road": 0.6263248395899018
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7303827376592721,
+     "mean_iou": 0.5579374258959279,
+     "kappa": 0.6511262745360052,
+     "per_class_iou": {
+      "background": 0.40510983866770833,
+      "vegetation": 0.5641768876964331,
+      "water": 0.839796450762575,
+      "urban": 0.6346628110073662,
+      "agriculture": 0.8078879329891308,
+      "bare_soil": 0.19237382856158883,
+      "road": 0.4615542315866921
+     },
+     "per_class_f1": {
+      "background": 0.5766237257969079,
+      "vegetation": 0.7213722287101142,
+      "water": 0.9129232158433311,
+      "urban": 0.776506081492145,
+      "agriculture": 0.8937367341506716,
+      "bare_soil": 0.322673680590063,
+      "road": 0.6315937075818737
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8076046269114417,
+     "mean_iou": 0.5951586346424997,
+     "kappa": 0.7317366905494911,
+     "per_class_iou": {
+      "background": 0.4085511190124216,
+      "vegetation": 0.7194679535619412,
+      "water": 0.703204320144779,
+      "urban": 0.7075218112371711,
+      "agriculture": 0.8599009187300852,
+      "bare_soil": 0.18319457648802873,
+      "road": 0.5842697433230708
+     },
+     "per_class_f1": {
+      "background": 0.5801012259914112,
+      "vegetation": 0.8368495007707257,
+      "water": 0.8257427574278651,
+      "urban": 0.8287118821117629,
+      "agriculture": 0.9246738957127291,
+      "bare_soil": 0.30966094235170377,
+      "road": 0.737588711580807
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7497688576027188,
+     "mean_iou": 0.5823539771696257,
+     "kappa": 0.6534986647222902,
+     "per_class_iou": {
+      "background": 0.5038392569353075,
+      "vegetation": 0.6617640321829595,
+      "water": 0.8050895819976185,
+      "urban": 0.7241987946044024,
+      "agriculture": 0.6857177602713822,
+      "bare_soil": 0.10387189697534062,
+      "road": 0.5919965172203693
+     },
+     "per_class_f1": {
+      "background": 0.6700706220503294,
+      "vegetation": 0.7964596840795903,
+      "water": 0.8920217428803059,
+      "urban": 0.8400409425907448,
+      "agriculture": 0.8135617625539978,
+      "bare_soil": 0.18819556114024089,
+      "road": 0.743715839624065
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b2_rgb_wt__s3",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 3,
+   "augment": false,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7567499938764068,
+   "mean_iou": 0.5554013561336623,
+   "kappa": 0.6770952937369293,
+   "per_class_iou": {
+    "background": 0.3833044154588115,
+    "vegetation": 0.6900352891868106,
+    "water": 0.7074485175001577,
+    "urban": 0.6480008363902003,
+    "agriculture": 0.7947841114792102,
+    "bare_soil": 0.21072159337697471,
+    "road": 0.4535147295434712
+   },
+   "per_class_f1": {
+    "background": 0.5541866385808637,
+    "vegetation": 0.8165927532912366,
+    "water": 0.8286616035338017,
+    "urban": 0.7864083779124186,
+    "agriculture": 0.8856598427752196,
+    "bare_soil": 0.3480925615949778,
+    "road": 0.6240249469948591
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7378528361417804,
+     "mean_iou": 0.5581926957030392,
+     "kappa": 0.6432639645465215,
+     "per_class_iou": {
+      "background": 0.36607801422638464,
+      "vegetation": 0.6778028628275862,
+      "water": 0.7603369276730224,
+      "urban": 0.6920370061367855,
+      "agriculture": 0.771530084890996,
+      "bare_soil": 0.2441361310484284,
+      "road": 0.39542784311807105
+     },
+     "per_class_f1": {
+      "background": 0.535954765696086,
+      "vegetation": 0.8079648374636291,
+      "water": 0.8638538581113283,
+      "urban": 0.8179927500554336,
+      "agriculture": 0.8710324335425764,
+      "bare_soil": 0.3924588680163859,
+      "road": 0.5667478142057029
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7625624712775727,
+     "mean_iou": 0.4598286044310096,
+     "kappa": 0.6417779824442629,
+     "per_class_iou": {
+      "background": 0.380551969586882,
+      "vegetation": 0.744289160100089,
+      "water": 0.1077211223721564,
+      "urban": 0.6534796231600393,
+      "agriculture": 0.7956872204447416,
+      "bare_soil": 0.07199521843076288,
+      "road": 0.4650759169223961
+     },
+     "per_class_f1": {
+      "background": 0.5513040791664814,
+      "vegetation": 0.8534011134940286,
+      "water": 0.194491407208963,
+      "urban": 0.7904296005516858,
+      "agriculture": 0.886220280346976,
+      "bare_soil": 0.1343200331635975,
+      "road": 0.6348830227108251
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8184612819126668,
+     "mean_iou": 0.47493677633525844,
+     "kappa": 0.7171384509546237,
+     "per_class_iou": {
+      "background": 0.24632693510776102,
+      "vegetation": 0.7617441672380908,
+      "water": 0.6408294998479906,
+      "urban": 0.5694107971524052,
+      "agriculture": 0.8571751359443668,
+      "bare_soil": 0.0,
+      "road": 0.24907089905619512
+     },
+     "per_class_f1": {
+      "background": 0.3952846160311931,
+      "vegetation": 0.8647613847684295,
+      "water": 0.781104308326453,
+      "urban": 0.7256363907563453,
+      "agriculture": 0.9230956356364942,
+      "bare_soil": 0.0,
+      "road": 0.3988098623389631
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7152860641479486,
+     "mean_iou": 0.5105878313569706,
+     "kappa": 0.6222799560588054,
+     "per_class_iou": {
+      "background": 0.4657793488818815,
+      "vegetation": 0.6013275356833409,
+      "water": 0.6437396302887215,
+      "urban": 0.6143303530583784,
+      "agriculture": 0.6575024057470017,
+      "bare_soil": 0.216163417649942,
+      "road": 0.375272128189528
+     },
+     "per_class_f1": {
+      "background": 0.6355381464440056,
+      "vegetation": 0.7510362724764318,
+      "water": 0.7832622811080947,
+      "urban": 0.7610962005102327,
+      "agriculture": 0.7933652455994638,
+      "bare_soil": 0.35548415910817927,
+      "road": 0.5457423550007923
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7294953444908395,
+     "mean_iou": 0.47846771014713035,
+     "kappa": 0.5991859229446421,
+     "per_class_iou": {
+      "background": 0.38470152768192234,
+      "vegetation": 0.6931296060669002,
+      "water": 0.7189266116561737,
+      "urban": 0.6569035798971549,
+      "agriculture": 0.0,
+      "bare_soil": 0.4441023563567019,
+      "road": 0.4515102893710598
+     },
+     "per_class_f1": {
+      "background": 0.5556454103160627,
+      "vegetation": 0.8187555156692022,
+      "water": 0.8364831896178669,
+      "urban": 0.7929291525876939,
+      "agriculture": 0.0,
+      "bare_soil": 0.6150566145114771,
+      "road": 0.6221248160541144
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.72371718997047,
+     "mean_iou": 0.5481952512322181,
+     "kappa": 0.6458070054987479,
+     "per_class_iou": {
+      "background": 0.356866105767372,
+      "vegetation": 0.5681808545724472,
+      "water": 0.8326710729928375,
+      "urban": 0.6207967588983153,
+      "agriculture": 0.8163976189259531,
+      "bare_soil": 0.1471737770983752,
+      "road": 0.4952805703702266
+     },
+     "per_class_f1": {
+      "background": 0.5260152065784369,
+      "vegetation": 0.7246368925246927,
+      "water": 0.9086966894203512,
+      "urban": 0.7660389885135281,
+      "agriculture": 0.8989194941468331,
+      "bare_soil": 0.25658497184908075,
+      "road": 0.6624583726296904
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8041844251679204,
+     "mean_iou": 0.5738486058311362,
+     "kappa": 0.7232166435159445,
+     "per_class_iou": {
+      "background": 0.32332078481873394,
+      "vegetation": 0.7291364433824618,
+      "water": 0.6725939626131036,
+      "urban": 0.7003272143217735,
+      "agriculture": 0.8478903432740332,
+      "bare_soil": 0.13773535776174317,
+      "road": 0.6059361346461042
+     },
+     "per_class_f1": {
+      "background": 0.4886506512139488,
+      "vegetation": 0.843353272506449,
+      "water": 0.8042525244899028,
+      "urban": 0.8237558090860121,
+      "agriculture": 0.9176846902691044,
+      "bare_soil": 0.24212195626534055,
+      "road": 0.7546204579249332
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7577859384042235,
+     "mean_iou": 0.5938760723121622,
+     "kappa": 0.6668766340782298,
+     "per_class_iou": {
+      "background": 0.473197325399628,
+      "vegetation": 0.653339000015476,
+      "water": 0.7713913817907525,
+      "urban": 0.7527756431713107,
+      "agriculture": 0.7424373435968632,
+      "bare_soil": 0.2272999093346489,
+      "road": 0.5366919028764565
+     },
+     "per_class_f1": {
+      "background": 0.642408608321918,
+      "vegetation": 0.790326721773606,
+      "water": 0.8709440333796177,
+      "urban": 0.8589526465969884,
+      "agriculture": 0.8521825384070352,
+      "bare_soil": 0.3704064589801909,
+      "road": 0.6985029310870241
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b2_rgb_wt__s4",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 4,
+   "augment": false,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.758731164430317,
+   "mean_iou": 0.5549769589413843,
+   "kappa": 0.6802400199550268,
+   "per_class_iou": {
+    "background": 0.4160758775379572,
+    "vegetation": 0.6802550634927444,
+    "water": 0.7084438238516493,
+    "urban": 0.6439360907927085,
+    "agriculture": 0.7977455621392923,
+    "bare_soil": 0.17504696613632678,
+    "road": 0.46333532863901183
+   },
+   "per_class_f1": {
+    "background": 0.5876462986299655,
+    "vegetation": 0.8097045193580522,
+    "water": 0.8293440026416541,
+    "urban": 0.7834076887978396,
+    "agriculture": 0.8874955104289105,
+    "bare_soil": 0.29794036876038454,
+    "road": 0.6332592617915792
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7477507299306436,
+     "mean_iou": 0.5713912021875894,
+     "kappa": 0.6563006132362809,
+     "per_class_iou": {
+      "background": 0.4155257034260812,
+      "vegetation": 0.6805991802329978,
+      "water": 0.745731220396727,
+      "urban": 0.6661042248036829,
+      "agriculture": 0.771345332180515,
+      "bare_soil": 0.2632917038358315,
+      "road": 0.45714105043729064
+     },
+     "per_class_f1": {
+      "background": 0.5870973574755817,
+      "vegetation": 0.8099482423305207,
+      "water": 0.8543482608556591,
+      "urban": 0.7995949002277604,
+      "agriculture": 0.870914681334239,
+      "bare_soil": 0.41683437100135406,
+      "road": 0.6274492735961624
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.743374544031479,
+     "mean_iou": 0.44541601596689373,
+     "kappa": 0.6220585346042647,
+     "per_class_iou": {
+      "background": 0.40344529899971787,
+      "vegetation": 0.7028692455388963,
+      "water": 0.10720872261514153,
+      "urban": 0.6357671022408995,
+      "agriculture": 0.8089115318343075,
+      "bare_soil": 0.04760232668202812,
+      "road": 0.4121078838572653
+     },
+     "per_class_f1": {
+      "background": 0.5749355472374683,
+      "vegetation": 0.8255116981338656,
+      "water": 0.19365584433497424,
+      "urban": 0.7773320508987246,
+      "agriculture": 0.8943627292763343,
+      "bare_soil": 0.09087861527554127,
+      "road": 0.5836776143002068
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8181798117501388,
+     "mean_iou": 0.48527472065996563,
+     "kappa": 0.7178512891044149,
+     "per_class_iou": {
+      "background": 0.2806738586103656,
+      "vegetation": 0.7383737832549471,
+      "water": 0.6479765369731527,
+      "urban": 0.577035457359071,
+      "agriculture": 0.8649481282236431,
+      "bare_soil": 0.0,
+      "road": 0.2879152801985798
+     },
+     "per_class_f1": {
+      "background": 0.43832214351945337,
+      "vegetation": 0.8494994414198767,
+      "water": 0.7863904835065816,
+      "urban": 0.7317976913426769,
+      "agriculture": 0.927584108610471,
+      "bare_soil": 0.0,
+      "road": 0.4471028203707174
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7148171424865716,
+     "mean_iou": 0.49997671706126084,
+     "kappa": 0.6180075684341313,
+     "per_class_iou": {
+      "background": 0.47638325283832417,
+      "vegetation": 0.5868525739493459,
+      "water": 0.6693818922060278,
+      "urban": 0.6298578657930467,
+      "agriculture": 0.6496033202443736,
+      "bare_soil": 0.13397364467682318,
+      "road": 0.35378446972088473
+     },
+     "per_class_f1": {
+      "background": 0.6453381914694487,
+      "vegetation": 0.7396434673477978,
+      "water": 0.8019517776717264,
+      "urban": 0.772899128125398,
+      "agriculture": 0.7875873043563937,
+      "bare_soil": 0.23629057466797937,
+      "road": 0.5226599569580238
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7338337076121353,
+     "mean_iou": 0.48124069006018305,
+     "kappa": 0.6123872195854855,
+     "per_class_iou": {
+      "background": 0.43097115145887005,
+      "vegetation": 0.6836266840614676,
+      "water": 0.7186962521838789,
+      "urban": 0.6552349293177065,
+      "agriculture": 0.003520173300839128,
+      "bare_soil": 0.4156403475632269,
+      "road": 0.4609952925352926
+     },
+     "per_class_f1": {
+      "background": 0.6023477796106017,
+      "vegetation": 0.8120881978460103,
+      "water": 0.8363272416830313,
+      "urban": 0.7917122984648503,
+      "agriculture": 0.007015646198810085,
+      "bare_soil": 0.5872117801667374,
+      "road": 0.6310701906279059
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7340530213855555,
+     "mean_iou": 0.5529077086001267,
+     "kappa": 0.6575696952905009,
+     "per_class_iou": {
+      "background": 0.3841894879764397,
+      "vegetation": 0.5748480029189763,
+      "water": 0.8023852928337996,
+      "urban": 0.6241952484924791,
+      "agriculture": 0.8309934012921226,
+      "bare_soil": 0.17541541919376719,
+      "road": 0.47832710749330287
+     },
+     "per_class_f1": {
+      "background": 0.5551111143575657,
+      "vegetation": 0.7300361659348336,
+      "water": 0.8903593382837957,
+      "urban": 0.7686209463937927,
+      "agriculture": 0.9076967684646575,
+      "bare_soil": 0.29847390906038335,
+      "road": 0.6471194384654402
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8042928183951022,
+     "mean_iou": 0.5826908077179248,
+     "kappa": 0.7256022077300475,
+     "per_class_iou": {
+      "background": 0.37363689872675104,
+      "vegetation": 0.722332258044553,
+      "water": 0.6734889801694682,
+      "urban": 0.696612847307038,
+      "agriculture": 0.8506770963492959,
+      "bare_soil": 0.15996127626960108,
+      "road": 0.6021262971587671
+     },
+     "per_class_f1": {
+      "background": 0.5440111511887544,
+      "vegetation": 0.8387838645709631,
+      "water": 0.8048920357200924,
+      "urban": 0.8211806767573511,
+      "agriculture": 0.9193144427007962,
+      "bare_soil": 0.2758045061451686,
+      "road": 0.7516589600238656
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7665224428530082,
+     "mean_iou": 0.5965263417413355,
+     "kappa": 0.6782354589584385,
+     "per_class_iou": {
+      "background": 0.5094512748231141,
+      "vegetation": 0.6712736051561179,
+      "water": 0.7777532752623458,
+      "urban": 0.7479997074181125,
+      "agriculture": 0.7436733658721509,
+      "bare_soil": 0.13138579061094102,
+      "road": 0.594147373046566
+     },
+     "per_class_f1": {
+      "background": 0.6750151920299517,
+      "vegetation": 0.8033078472871267,
+      "water": 0.8749844893209694,
+      "urban": 0.8558350437727918,
+      "agriculture": 0.8529961815949686,
+      "bare_soil": 0.23225638851316124,
+      "road": 0.7454108435761574
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b3_rgb_aug_wt__s0",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 0,
+   "augment": true,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7587103969172426,
+   "mean_iou": 0.5599373625712718,
+   "kappa": 0.6821112603741323,
+   "per_class_iou": {
+    "background": 0.40904381550217145,
+    "vegetation": 0.6846075961549821,
+    "water": 0.7041300641902528,
+    "urban": 0.6576091002896566,
+    "agriculture": 0.7931500268965006,
+    "bare_soil": 0.1975035234408872,
+    "road": 0.47351741152445176
+   },
+   "per_class_f1": {
+    "background": 0.580597718112208,
+    "vegetation": 0.8127798942692458,
+    "water": 0.826380655709605,
+    "urban": 0.7934429125150827,
+    "agriculture": 0.8846443526990037,
+    "bare_soil": 0.32985877148392845,
+    "road": 0.6427035123174997
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7432321820940285,
+     "mean_iou": 0.5524376388838138,
+     "kappa": 0.6535615265673949,
+     "per_class_iou": {
+      "background": 0.4209986465583905,
+      "vegetation": 0.6778787491926858,
+      "water": 0.7599461338174408,
+      "urban": 0.6871516760576605,
+      "agriculture": 0.7506141368159638,
+      "bare_soil": 0.17875528397437332,
+      "road": 0.39171884577018173
+     },
+     "per_class_f1": {
+      "background": 0.5925391190064455,
+      "vegetation": 0.8080187502557403,
+      "water": 0.8636015782802777,
+      "urban": 0.8145701203254296,
+      "agriculture": 0.8575437803891633,
+      "bare_soil": 0.3032949815084648,
+      "road": 0.5629281285620257
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7486267089843742,
+     "mean_iou": 0.47801447675342484,
+     "kappa": 0.6325976583532438,
+     "per_class_iou": {
+      "background": 0.40046645361240346,
+      "vegetation": 0.7132527508709414,
+      "water": 0.1677869991362485,
+      "urban": 0.6497204114247144,
+      "agriculture": 0.7608364398072623,
+      "bare_soil": 0.15876662636032113,
+      "road": 0.4952716560620826
+     },
+     "per_class_f1": {
+      "background": 0.5719043809705995,
+      "vegetation": 0.8326299155061264,
+      "water": 0.2873589047937372,
+      "urban": 0.7876733570585536,
+      "agriculture": 0.8641761587962582,
+      "bare_soil": 0.2740269177406284,
+      "road": 0.6624503986823084
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8221009572346998,
+     "mean_iou": 0.49585001210489216,
+     "kappa": 0.7239229498806359,
+     "per_class_iou": {
+      "background": 0.2848564923253743,
+      "vegetation": 0.74402538971362,
+      "water": 0.6908416297934308,
+      "urban": 0.5792016267907416,
+      "agriculture": 0.8686149877098888,
+      "bare_soil": 0.0,
+      "road": 0.30340995840118945
+     },
+     "per_class_f1": {
+      "background": 0.44340592248572697,
+      "vegetation": 0.8532276992648371,
+      "water": 0.8171571049556102,
+      "urban": 0.7335372672075197,
+      "agriculture": 0.9296885540909959,
+      "bare_soil": 0.0,
+      "road": 0.4655633534936131
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7150814056396478,
+     "mean_iou": 0.5148881561583672,
+     "kappa": 0.6226409348764446,
+     "per_class_iou": {
+      "background": 0.4599044173167206,
+      "vegetation": 0.620837479250041,
+      "water": 0.6774064777572602,
+      "urban": 0.6487073445149858,
+      "agriculture": 0.6410506059264018,
+      "bare_soil": 0.1349655020340814,
+      "road": 0.42134526630908004
+     },
+     "per_class_f1": {
+      "background": 0.6300472938343399,
+      "vegetation": 0.76606998930603,
+      "water": 0.8076831496091708,
+      "urban": 0.7869284291740857,
+      "agriculture": 0.7812685355650277,
+      "bare_soil": 0.2378318982490276,
+      "road": 0.5928823529456335
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7354157546470895,
+     "mean_iou": 0.4858239252492842,
+     "kappa": 0.6172489476079427,
+     "per_class_iou": {
+      "background": 0.4181487976153872,
+      "vegetation": 0.6892950284211075,
+      "water": 0.7261715387528587,
+      "urban": 0.6711035775859527,
+      "agriculture": 0.010605875899059704,
+      "bare_soil": 0.42778476896696643,
+      "road": 0.4576578895036565
+     },
+     "per_class_f1": {
+      "background": 0.5897107479523369,
+      "vegetation": 0.8160741760338552,
+      "water": 0.8413665944517289,
+      "urban": 0.803186089025638,
+      "agriculture": 0.020989138550548816,
+      "bare_soil": 0.5992286439537573,
+      "road": 0.6279359365491828
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7270228068033848,
+     "mean_iou": 0.5505872218668691,
+     "kappa": 0.650697748838562,
+     "per_class_iou": {
+      "background": 0.35532950327041074,
+      "vegetation": 0.5694603433686116,
+      "water": 0.7578401362569374,
+      "urban": 0.6286433490089264,
+      "agriculture": 0.8167650941196258,
+      "bare_soil": 0.22208356101665738,
+      "road": 0.5039885660269143
+     },
+     "per_class_f1": {
+      "background": 0.5243440789024484,
+      "vegetation": 0.7256766210821926,
+      "water": 0.8622401050613151,
+      "urban": 0.7719840509241738,
+      "agriculture": 0.8991422085610309,
+      "bare_soil": 0.3634506926389222,
+      "road": 0.6702026513414365
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8077450263790961,
+     "mean_iou": 0.590028471065928,
+     "kappa": 0.7308275249591554,
+     "per_class_iou": {
+      "background": 0.3719272371420924,
+      "vegetation": 0.7285860633457907,
+      "water": 0.6456013133624351,
+      "urban": 0.7214316595926511,
+      "agriculture": 0.8533409303072086,
+      "bare_soil": 0.1831694177229587,
+      "road": 0.6261426759883599
+     },
+     "per_class_f1": {
+      "background": 0.5421967341343796,
+      "vegetation": 0.8429849973631759,
+      "water": 0.7846387870791494,
+      "urban": 0.8381763531341438,
+      "agriculture": 0.9208677278148413,
+      "bare_soil": 0.3096249987963698,
+      "road": 0.770095614817949
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7653784575285724,
+     "mean_iou": 0.5961350371836515,
+     "kappa": 0.6787568277275156,
+     "per_class_iou": {
+      "background": 0.5102979034671048,
+      "vegetation": 0.6511356166316756,
+      "water": 0.7484296409996031,
+      "urban": 0.7673495330294324,
+      "agriculture": 0.7465880815829906,
+      "bare_soil": 0.1779491703043465,
+      "road": 0.5711953142704073
+     },
+     "per_class_f1": {
+      "background": 0.6757579395883495,
+      "vegetation": 0.788712454562267,
+      "water": 0.8561163905088441,
+      "urban": 0.8683619332526792,
+      "agriculture": 0.8549103078262765,
+      "bare_soil": 0.3021338655689226,
+      "road": 0.7270837753380681
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b3_rgb_aug_wt__s1",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 1,
+   "augment": true,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7569689374220997,
+   "mean_iou": 0.5610670002042386,
+   "kappa": 0.6783958613182562,
+   "per_class_iou": {
+    "background": 0.3991825507367584,
+    "vegetation": 0.6805040924804935,
+    "water": 0.717417988735996,
+    "urban": 0.6571294831818874,
+    "agriculture": 0.7979338722016178,
+    "bare_soil": 0.21785127535142648,
+    "road": 0.4574497387414906
+   },
+   "per_class_f1": {
+    "background": 0.5705939472390109,
+    "vegetation": 0.8098809057686087,
+    "water": 0.8354611272827652,
+    "urban": 0.7930937029770488,
+    "agriculture": 0.8876120307247588,
+    "bare_soil": 0.3577633441031205,
+    "road": 0.6277399803698631
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7352917729591831,
+     "mean_iou": 0.560797844714082,
+     "kappa": 0.6394971373214638,
+     "per_class_iou": {
+      "background": 0.38250852733356033,
+      "vegetation": 0.6668878246361407,
+      "water": 0.7659553937586239,
+      "urban": 0.6733311165493586,
+      "agriculture": 0.7807057136529753,
+      "bare_soil": 0.23870722523782367,
+      "road": 0.4174891118300911
+     },
+     "per_class_f1": {
+      "background": 0.5533543069178439,
+      "vegetation": 0.8001592076374625,
+      "water": 0.8674685578725048,
+      "urban": 0.8047792881832604,
+      "agriculture": 0.8768497828908348,
+      "bare_soil": 0.3854134671811803,
+      "road": 0.5890544131561053
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7668066585765158,
+     "mean_iou": 0.49259162296010484,
+     "kappa": 0.6507122760564357,
+     "per_class_iou": {
+      "background": 0.40123712210089946,
+      "vegetation": 0.738958229837754,
+      "water": 0.3036634304206334,
+      "urban": 0.6676613961734217,
+      "agriculture": 0.8072935582923255,
+      "bare_soil": 0.059297721027949876,
+      "road": 0.47002990286775
+     },
+     "per_class_f1": {
+      "background": 0.5726898214202666,
+      "vegetation": 0.8498861132041821,
+      "water": 0.46586169433798214,
+      "urban": 0.8007157730568127,
+      "agriculture": 0.8933729111910707,
+      "bare_soil": 0.11195666490780966,
+      "road": 0.6394834531557049
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8204786209833047,
+     "mean_iou": 0.49032898438905664,
+     "kappa": 0.7241651323793639,
+     "per_class_iou": {
+      "background": 0.2926223348525264,
+      "vegetation": 0.750652247133605,
+      "water": 0.674961265787047,
+      "urban": 0.5860464701899328,
+      "agriculture": 0.8673257431338671,
+      "bare_soil": 0.0,
+      "road": 0.2606948296264178
+     },
+     "per_class_f1": {
+      "background": 0.452757659761655,
+      "vegetation": 0.8575686507600613,
+      "water": 0.8059425317904038,
+      "urban": 0.7390028946127672,
+      "agriculture": 0.928949586494299,
+      "bare_soil": 0.0,
+      "road": 0.4135732469251544
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7177344322204583,
+     "mean_iou": 0.5055666011483583,
+     "kappa": 0.6238795095913056,
+     "per_class_iou": {
+      "background": 0.4803586398119204,
+      "vegetation": 0.5855638676113868,
+      "water": 0.6600764176738934,
+      "urban": 0.642361081398259,
+      "agriculture": 0.6526050461282705,
+      "bare_soil": 0.1458698607198368,
+      "road": 0.3721312946949411
+     },
+     "per_class_f1": {
+      "background": 0.6489760294568264,
+      "vegetation": 0.7386190813459108,
+      "water": 0.7952361788865021,
+      "urban": 0.7822409877683896,
+      "agriculture": 0.7897894824003133,
+      "bare_soil": 0.25460109042098605,
+      "road": 0.5424135326813679
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7248464123956079,
+     "mean_iou": 0.48133836971964944,
+     "kappa": 0.5962089377209029,
+     "per_class_iou": {
+      "background": 0.36980014537474276,
+      "vegetation": 0.6826858406856193,
+      "water": 0.7314050857359308,
+      "urban": 0.6646188625597901,
+      "agriculture": 0.0,
+      "bare_soil": 0.49134841022196407,
+      "road": 0.4295102434594988
+     },
+     "per_class_f1": {
+      "background": 0.5399329869490885,
+      "vegetation": 0.8114239984470232,
+      "water": 0.8448688149109312,
+      "urban": 0.7985237622312458,
+      "agriculture": 0.0,
+      "bare_soil": 0.6589317470449781,
+      "road": 0.6009194295848592
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7259466988699771,
+     "mean_iou": 0.5568285263383306,
+     "kappa": 0.64942931447842,
+     "per_class_iou": {
+      "background": 0.35839517754826417,
+      "vegetation": 0.570905566963577,
+      "water": 0.8313132715742707,
+      "urban": 0.6321500654102359,
+      "agriculture": 0.8109181439305343,
+      "bare_soil": 0.19927223387194495,
+      "road": 0.4948452250694866
+     },
+     "per_class_f1": {
+      "background": 0.5276743913345866,
+      "vegetation": 0.7268489908700762,
+      "water": 0.9078875579617774,
+      "urban": 0.7746224747599788,
+      "agriculture": 0.8955878454486568,
+      "bare_soil": 0.3323219307936214,
+      "road": 0.6620688390336548
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.8027307463855271,
+     "mean_iou": 0.5774933459811452,
+     "kappa": 0.7231178042867181,
+     "per_class_iou": {
+      "background": 0.3471306595597437,
+      "vegetation": 0.7206037022068098,
+      "water": 0.6500543315109942,
+      "urban": 0.6997356857148058,
+      "agriculture": 0.854811770146401,
+      "bare_soil": 0.18331363180321814,
+      "road": 0.586803640926043
+     },
+     "per_class_f1": {
+      "background": 0.5153630106535264,
+      "vegetation": 0.8376172816341865,
+      "water": 0.7879186945433287,
+      "urban": 0.8233464618669253,
+      "agriculture": 0.9217234646342608,
+      "bare_soil": 0.3098310109539768,
+      "road": 0.7396046011773345
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7565217194733785,
+     "mean_iou": 0.6058517310246738,
+     "kappa": 0.6632615800813136,
+     "per_class_iou": {
+      "background": 0.5041235065656632,
+      "vegetation": 0.6306624159480048,
+      "water": 0.770818083817965,
+      "urban": 0.7930422701799323,
+      "agriculture": 0.7234831598523354,
+      "bare_soil": 0.277686183993561,
+      "road": 0.5411464968152553
+     },
+     "per_class_f1": {
+      "background": 0.6703219524308806,
+      "vegetation": 0.7735045656385103,
+      "water": 0.870578504324041,
+      "urban": 0.8845773230079993,
+      "agriculture": 0.8395592975923266,
+      "bare_soil": 0.4346703980406419,
+      "road": 0.7022648322749204
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b3_rgb_aug_wt__s2",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 2,
+   "augment": true,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7516278718647202,
+   "mean_iou": 0.558541935518688,
+   "kappa": 0.6717531156503466,
+   "per_class_iou": {
+    "background": 0.415166676218337,
+    "vegetation": 0.6547624089037796,
+    "water": 0.7223245038733018,
+    "urban": 0.6507234384518034,
+    "agriculture": 0.799173222582658,
+    "bare_soil": 0.20104591424693039,
+    "road": 0.4665973843540059
+   },
+   "per_class_f1": {
+    "background": 0.586738904551297,
+    "vegetation": 0.7913672697031764,
+    "water": 0.8387786365974879,
+    "urban": 0.7884100015845648,
+    "agriculture": 0.8883782929334636,
+    "bare_soil": 0.3347847222776717,
+    "road": 0.6362992129620539
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7424216757015301,
+     "mean_iou": 0.5599410625055709,
+     "kappa": 0.6506025225728161,
+     "per_class_iou": {
+      "background": 0.4233854636768164,
+      "vegetation": 0.6653988311124251,
+      "water": 0.7455147374410447,
+      "urban": 0.6730079889369813,
+      "agriculture": 0.7896356687565427,
+      "bare_soil": 0.19021818409150498,
+      "road": 0.43242656352368075
+     },
+     "per_class_f1": {
+      "background": 0.594899232779456,
+      "vegetation": 0.7990864584738645,
+      "water": 0.8542061743585846,
+      "urban": 0.804548441228652,
+      "agriculture": 0.8824540973017918,
+      "bare_soil": 0.31963581851890777,
+      "road": 0.6037678595041674
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.6985474754782277,
+     "mean_iou": 0.4357468550903189,
+     "kappa": 0.5673244888804445,
+     "per_class_iou": {
+      "background": 0.38021125054922683,
+      "vegetation": 0.6023716052111823,
+      "water": 0.1306148213609063,
+      "urban": 0.6581243387475586,
+      "agriculture": 0.8155856841501007,
+      "bare_soil": 0.0,
+      "road": 0.46332028561325755
+     },
+     "per_class_f1": {
+      "background": 0.5509464540878288,
+      "vegetation": 0.7518500693890732,
+      "water": 0.23105095755957833,
+      "urban": 0.793817832893111,
+      "agriculture": 0.8984270879983224,
+      "bare_soil": 0.0,
+      "road": 0.6332452116156285
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8160855429513106,
+     "mean_iou": 0.48395113866674977,
+     "kappa": 0.7188170286818525,
+     "per_class_iou": {
+      "background": 0.3103005576707657,
+      "vegetation": 0.7279228890350156,
+      "water": 0.6432189467919317,
+      "urban": 0.5812916434409688,
+      "agriculture": 0.8718369713735582,
+      "bare_soil": 0.0,
+      "road": 0.2530869623550086
+     },
+     "per_class_f1": {
+      "background": 0.4736326374275225,
+      "vegetation": 0.8425409367043064,
+      "water": 0.7828767358607024,
+      "urban": 0.7352111698214188,
+      "agriculture": 0.9315308758491505,
+      "bare_soil": 0.0,
+      "road": 0.40394157316443474
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7188694000244135,
+     "mean_iou": 0.5347381092481441,
+     "kappa": 0.6247111821260556,
+     "per_class_iou": {
+      "background": 0.48031800260575364,
+      "vegetation": 0.5837312200195948,
+      "water": 0.7183921637892366,
+      "urban": 0.6546161131053265,
+      "agriculture": 0.6344271838619873,
+      "bare_soil": 0.2774866097581242,
+      "road": 0.3941954715969857
+     },
+     "per_class_f1": {
+      "background": 0.6489389415842051,
+      "vegetation": 0.7371594481203451,
+      "water": 0.8361213169296979,
+      "urban": 0.7912604063078779,
+      "agriculture": 0.7763296964721551,
+      "bare_soil": 0.4344258557006438,
+      "road": 0.5654809188668801
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7213404425259284,
+     "mean_iou": 0.47759777481082594,
+     "kappa": 0.5960439102461855,
+     "per_class_iou": {
+      "background": 0.4111439434963243,
+      "vegetation": 0.6615762741920105,
+      "water": 0.7171844336653218,
+      "urban": 0.6556497947705898,
+      "agriculture": 0.0,
+      "bare_soil": 0.4356292872255252,
+      "road": 0.46200069032601004
+     },
+     "per_class_f1": {
+      "background": 0.5827101365013783,
+      "vegetation": 0.7963236841041964,
+      "water": 0.835302737849059,
+      "urban": 0.7920150658902687,
+      "agriculture": 0.0,
+      "bare_soil": 0.6068826930893295,
+      "road": 0.6320115849083459
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.721432277134486,
+     "mean_iou": 0.5285572854888441,
+     "kappa": 0.6410784220480743,
+     "per_class_iou": {
+      "background": 0.3668305436318984,
+      "vegetation": 0.5668640095040464,
+      "water": 0.8269828693932165,
+      "urban": 0.6157364904453586,
+      "agriculture": 0.8031484603573189,
+      "bare_soil": 0.030233012814813446,
+      "road": 0.4901056122752562
+     },
+     "per_class_f1": {
+      "background": 0.5367608179025962,
+      "vegetation": 0.723565034551374,
+      "water": 0.9052989808277648,
+      "urban": 0.7621743893916102,
+      "agriculture": 0.8908289844217187,
+      "bare_soil": 0.058691601114101134,
+      "road": 0.6578132509879513
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.805025333311499,
+     "mean_iou": 0.5743445275920082,
+     "kappa": 0.7270504066557537,
+     "per_class_iou": {
+      "background": 0.3788829278844799,
+      "vegetation": 0.7150477875462278,
+      "water": 0.6671433617708937,
+      "urban": 0.6899439572267082,
+      "agriculture": 0.8614858616531172,
+      "bare_soil": 0.11836226732681072,
+      "road": 0.5895455297358192
+     },
+     "per_class_f1": {
+      "background": 0.5495505336630112,
+      "vegetation": 0.8338517310737551,
+      "water": 0.8003431173578003,
+      "urban": 0.8165287968190724,
+      "agriculture": 0.9255894710226691,
+      "bare_soil": 0.21167070522948261,
+      "road": 0.7417787219795821
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7818578084309884,
+     "mean_iou": 0.6387895762461672,
+     "kappa": 0.6986789261897484,
+     "per_class_iou": {
+      "background": 0.5357523914232973,
+      "vegetation": 0.6628474739809856,
+      "water": 0.8145796590240753,
+      "urban": 0.7744466306505929,
+      "agriculture": 0.7544753095523171,
+      "bare_soil": 0.3156889057439955,
+      "road": 0.6137366633479064
+     },
+     "per_class_f1": {
+      "background": 0.6977067274483185,
+      "vegetation": 0.797243860546974,
+      "water": 0.8978163625472677,
+      "urban": 0.8728880461532077,
+      "agriculture": 0.8600580481914263,
+      "bare_soil": 0.47988381015705056,
+      "road": 0.7606404108593898
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b3_rgb_aug_wt__s3",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 3,
+   "augment": true,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.7564720981999447,
+   "mean_iou": 0.5634199261848913,
+   "kappa": 0.676296631762075,
+   "per_class_iou": {
+    "background": 0.41054406270270477,
+    "vegetation": 0.6768570009056947,
+    "water": 0.7390306464458277,
+    "urban": 0.6522954925070114,
+    "agriculture": 0.7928228738491513,
+    "bare_soil": 0.20750469043151692,
+    "road": 0.4648847164523327
+   },
+   "per_class_f1": {
+    "background": 0.5821073868441796,
+    "vegetation": 0.8072924481347802,
+    "water": 0.8499340061802716,
+    "urban": 0.7895627523499402,
+    "agriculture": 0.8844408233871119,
+    "bare_soil": 0.3436917291263876,
+    "road": 0.6347048441516524
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7406604533292804,
+     "mean_iou": 0.5680312819248549,
+     "kappa": 0.645430378001121,
+     "per_class_iou": {
+      "background": 0.4051767711368701,
+      "vegetation": 0.6701041298380683,
+      "water": 0.7538442552893151,
+      "urban": 0.6850257684348572,
+      "agriculture": 0.7732643354969889,
+      "bare_soil": 0.26957469275873763,
+      "road": 0.41922902051914696
+     },
+     "per_class_f1": {
+      "background": 0.5766915252308402,
+      "vegetation": 0.802469874433928,
+      "water": 0.8596478833885265,
+      "urban": 0.8130745263123941,
+      "agriculture": 0.8721365625927872,
+      "bare_soil": 0.4246692878157035,
+      "road": 0.5907841667676366
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7406100104836849,
+     "mean_iou": 0.4775090023229592,
+     "kappa": 0.6158735468415111,
+     "per_class_iou": {
+      "background": 0.4044871415551528,
+      "vegetation": 0.6988320971882929,
+      "water": 0.28635014836788053,
+      "urban": 0.6446912392884637,
+      "agriculture": 0.7404522802169641,
+      "bare_soil": 0.09326473870361952,
+      "road": 0.47448537094034066
+     },
+     "per_class_f1": {
+      "background": 0.5759926539671796,
+      "vegetation": 0.8227206138916053,
+      "water": 0.4452133746617629,
+      "urban": 0.7839662786264519,
+      "agriculture": 0.8508734014532561,
+      "bare_soil": 0.17061693056477598,
+      "road": 0.6435945403498383
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8286673227945957,
+     "mean_iou": 0.5128186564419219,
+     "kappa": 0.7358525149371263,
+     "per_class_iou": {
+      "background": 0.30695724036607264,
+      "vegetation": 0.7599619984369169,
+      "water": 0.7598202745121241,
+      "urban": 0.5920910183897224,
+      "agriculture": 0.872151644948633,
+      "bare_soil": 0.0,
+      "road": 0.2987484184399845
+     },
+     "per_class_f1": {
+      "background": 0.4697280486886829,
+      "vegetation": 0.863611821977134,
+      "water": 0.8635203050189546,
+      "urban": 0.7437904084285967,
+      "agriculture": 0.9317104654665646,
+      "bare_soil": 0.0,
+      "road": 0.46005586808545795
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7115084648132318,
+     "mean_iou": 0.5077180434562504,
+     "kappa": 0.6147282935617904,
+     "per_class_iou": {
+      "background": 0.4743778887838786,
+      "vegetation": 0.5926666110405144,
+      "water": 0.7183637461700467,
+      "urban": 0.6259469875995156,
+      "agriculture": 0.6304991548105989,
+      "bare_soil": 0.14419840313848778,
+      "road": 0.3679735126507103
+     },
+     "per_class_f1": {
+      "background": 0.6434956583538378,
+      "vegetation": 0.7442444049207595,
+      "water": 0.8361020691705706,
+      "urban": 0.7699475915498674,
+      "agriculture": 0.7733817572057721,
+      "bare_soil": 0.25205139261029214,
+      "road": 0.5379833833276411
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7320746060075422,
+     "mean_iou": 0.5100264843077769,
+     "kappa": 0.6055567400253693,
+     "per_class_iou": {
+      "background": 0.41548943204254607,
+      "vegetation": 0.6789609380475032,
+      "water": 0.7344247021564071,
+      "urban": 0.6580147367325152,
+      "agriculture": 0.12151858994480838,
+      "bare_soil": 0.5055361153182606,
+      "road": 0.45624087591239765
+     },
+     "per_class_f1": {
+      "background": 0.5870611522766799,
+      "vegetation": 0.808787052118942,
+      "water": 0.8468798870033541,
+      "urban": 0.7937380989615208,
+      "agriculture": 0.21670365271187134,
+      "bare_soil": 0.6715695580148472,
+      "road": 0.6266008322134486
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7294326055617554,
+     "mean_iou": 0.5575057384645985,
+     "kappa": 0.6527754641144349,
+     "per_class_iou": {
+      "background": 0.37238717367207813,
+      "vegetation": 0.5751965998880298,
+      "water": 0.8607295851474202,
+      "urban": 0.6294650908067446,
+      "agriculture": 0.8219686116659497,
+      "bare_soil": 0.14418034952325665,
+      "road": 0.49861275854871
+     },
+     "per_class_f1": {
+      "background": 0.5426852967561775,
+      "vegetation": 0.7303172137752352,
+      "water": 0.9251527867043717,
+      "urban": 0.7726033412158886,
+      "agriculture": 0.9022862434050887,
+      "bare_soil": 0.252023813671363,
+      "road": 0.6654324166909418
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.7974632077100794,
+     "mean_iou": 0.5738808831987958,
+     "kappa": 0.7159762024858399,
+     "per_class_iou": {
+      "background": 0.3658378948232761,
+      "vegetation": 0.709222233261093,
+      "water": 0.6661667208643163,
+      "urban": 0.7014458717672858,
+      "agriculture": 0.8452342829253404,
+      "bare_soil": 0.14789564339112554,
+      "road": 0.5813635353591332
+     },
+     "per_class_f1": {
+      "background": 0.535697380774136,
+      "vegetation": 0.8298771396574035,
+      "water": 0.7996399260191104,
+      "urban": 0.8245291597666239,
+      "agriculture": 0.916126787948868,
+      "bare_soil": 0.25768133490734546,
+      "road": 0.7352686696208051
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7654712818287026,
+     "mean_iou": 0.621663403861352,
+     "kappa": 0.6756475126400282,
+     "per_class_iou": {
+      "background": 0.49536901107700365,
+      "vegetation": 0.6627219013693265,
+      "water": 0.8475867204557307,
+      "urban": 0.7843516115686754,
+      "agriculture": 0.7172868300699664,
+      "bare_soil": 0.2706331552273407,
+      "road": 0.5736945972614202
+     },
+     "per_class_f1": {
+      "background": 0.6625374789794266,
+      "vegetation": 0.7971530256469094,
+      "water": 0.9175068281897127,
+      "urban": 0.8791446730835755,
+      "agriculture": 0.8353721850278962,
+      "bare_soil": 0.42598156871441156,
+      "road": 0.7291053732135486
+     },
+     "n_tiles": 27
+    }
+   }
+  },
+  {
+   "run": "dinov3_vitl_sat__b3_rgb_aug_wt__s4",
+   "split": "val",
+   "model": "dinov3",
+   "encoder": "vit_large_patch16_dinov3.sat493m",
+   "seed": 4,
+   "augment": true,
+   "class_weights_mode": "auto",
+   "use_nir": false,
+   "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+   "ignore_background": false,
+   "backbone_lr_mult": 0.1,
+   "nir_mode": null,
+   "freeze_backbone": false,
+   "num_classes": 7,
+   "n_train_tiles": 1286,
+   "n_val_tiles": 304,
+   "overall_accuracy": 0.755725346113506,
+   "mean_iou": 0.5621492787459056,
+   "kappa": 0.6754773200702011,
+   "per_class_iou": {
+    "background": 0.41239688302666155,
+    "vegetation": 0.6714191458789015,
+    "water": 0.7243433361845394,
+    "urban": 0.6570529577608258,
+    "agriculture": 0.7874258051949031,
+    "bare_soil": 0.19574809695698536,
+    "road": 0.48665872621852274
+   },
+   "per_class_f1": {
+    "background": 0.5839674166030593,
+    "vegetation": 0.803412050599026,
+    "water": 0.8401381751238114,
+    "urban": 0.7930379660406751,
+    "agriculture": 0.8810724321410106,
+    "bare_soil": 0.32740690897393665,
+    "road": 0.6547013297990668
+   },
+   "per_block": {
+    "1_2": {
+     "overall_accuracy": 0.7424708775111601,
+     "mean_iou": 0.572675308499865,
+     "kappa": 0.6493804023084541,
+     "per_class_iou": {
+      "background": 0.40450808751236556,
+      "vegetation": 0.6671587618802739,
+      "water": 0.7701254374791028,
+      "urban": 0.69118391185334,
+      "agriculture": 0.763292223658912,
+      "bare_soil": 0.2709587057412823,
+      "road": 0.44150003137377836
+     },
+     "per_class_f1": {
+      "background": 0.5760138907897294,
+      "vegetation": 0.8003541989877773,
+      "water": 0.8701365640547335,
+      "urban": 0.8173965029146378,
+      "agriculture": 0.8657580507764904,
+      "bare_soil": 0.4263847477112911,
+      "road": 0.6125563901753683
+     },
+     "n_tiles": 49
+    },
+    "1_6": {
+     "overall_accuracy": 0.7396876391242524,
+     "mean_iou": 0.45562433368018823,
+     "kappa": 0.6142033274181579,
+     "per_class_iou": {
+      "background": 0.4013544860967994,
+      "vegetation": 0.694233532943767,
+      "water": 0.1450137131530699,
+      "urban": 0.6553031296821629,
+      "agriculture": 0.7781594342309951,
+      "bare_soil": 0.056906652277796795,
+      "road": 0.45839938737672614
+     },
+     "per_class_f1": {
+      "background": 0.5728093592324348,
+      "vegetation": 0.8195251896718893,
+      "water": 0.25329602381137584,
+      "urban": 0.7917620812696197,
+      "agriculture": 0.8752414601387098,
+      "bare_soil": 0.10768529239087582,
+      "road": 0.6286335385229073
+     },
+     "n_tiles": 34
+    },
+    "2_3": {
+     "overall_accuracy": 0.8251172020321793,
+     "mean_iou": 0.5047387785154022,
+     "kappa": 0.7294167094462357,
+     "per_class_iou": {
+      "background": 0.3015491788848918,
+      "vegetation": 0.740892948766947,
+      "water": 0.7249521156189304,
+      "urban": 0.5940420829688182,
+      "agriculture": 0.8758512319306032,
+      "bare_soil": 0.0,
+      "road": 0.29588389143762395
+     },
+     "per_class_f1": {
+      "background": 0.46336962220648387,
+      "vegetation": 0.8511642774500203,
+      "water": 0.8405475198414032,
+      "urban": 0.7453279751281573,
+      "agriculture": 0.9338173649725512,
+      "bare_soil": 0.0,
+      "road": 0.45665185057228924
+     },
+     "n_tiles": 42
+    },
+    "3_1": {
+     "overall_accuracy": 0.7103610038757318,
+     "mean_iou": 0.5062734568073413,
+     "kappa": 0.6111423695728835,
+     "per_class_iou": {
+      "background": 0.4727383894125107,
+      "vegetation": 0.573163830965317,
+      "water": 0.6712554686961917,
+      "urban": 0.6305280223145769,
+      "agriculture": 0.6350232863082224,
+      "bare_soil": 0.16261331841073515,
+      "road": 0.39859188154383496
+     },
+     "per_class_f1": {
+      "background": 0.6419855544363209,
+      "vegetation": 0.7286765888669969,
+      "water": 0.8032948607848801,
+      "urban": 0.7734034737460996,
+      "agriculture": 0.7767758264255588,
+      "bare_soil": 0.2797375756606521,
+      "road": 0.5699902642431853
+     },
+     "n_tiles": 40
+    },
+    "3_6": {
+     "overall_accuracy": 0.7346203244965642,
+     "mean_iou": 0.502105020784394,
+     "kappa": 0.6107245833374617,
+     "per_class_iou": {
+      "background": 0.43163601060544954,
+      "vegetation": 0.6757440634179125,
+      "water": 0.7310724689213519,
+      "urban": 0.6529626586323342,
+      "agriculture": 0.0,
+      "bare_soil": 0.5032454305966021,
+      "road": 0.5200745133171076
+     },
+     "per_class_f1": {
+      "background": 0.6029968565062044,
+      "vegetation": 0.8065003170595136,
+      "water": 0.8446468623014897,
+      "urban": 0.7900513070759164,
+      "agriculture": 0.0,
+      "bare_soil": 0.6695452610908889,
+      "road": 0.6842750207027027
+     },
+     "n_tiles": 29
+    },
+    "5_5": {
+     "overall_accuracy": 0.7280728476388107,
+     "mean_iou": 0.545634326269682,
+     "kappa": 0.6484750855553993,
+     "per_class_iou": {
+      "background": 0.3840292866059051,
+      "vegetation": 0.5748472022787755,
+      "water": 0.8512694847184772,
+      "urban": 0.6334998696913048,
+      "agriculture": 0.791008235500682,
+      "bare_soil": 0.06976165508415214,
+      "road": 0.5150245500084775
+     },
+     "per_class_f1": {
+      "background": 0.5549438684410103,
+      "vegetation": 0.7300355202952934,
+      "water": 0.9196602516463657,
+      "urban": 0.775635036630265,
+      "agriculture": 0.8833105458127418,
+      "bare_soil": 0.13042466815009413,
+      "road": 0.6798893737172818
+     },
+     "n_tiles": 42
+    },
+    "5_6": {
+     "overall_accuracy": 0.7981449220238656,
+     "mean_iou": 0.576737111660134,
+     "kappa": 0.7167067081412068,
+     "per_class_iou": {
+      "background": 0.3575859546304169,
+      "vegetation": 0.7080846686970482,
+      "water": 0.6677470441479408,
+      "urban": 0.7257071848611871,
+      "agriculture": 0.8454068305679227,
+      "bare_soil": 0.11969980290088444,
+      "road": 0.6129282958155376
+     },
+     "per_class_f1": {
+      "background": 0.5267967748517605,
+      "vegetation": 0.8290978514178979,
+      "water": 0.800777362890428,
+      "urban": 0.8410548288999697,
+      "agriculture": 0.9162281313331141,
+      "bare_soil": 0.2138069507961562,
+      "road": 0.760019268523862
+     },
+     "n_tiles": 41
+    },
+    "6_0": {
+     "overall_accuracy": 0.7605073716905371,
+     "mean_iou": 0.6139164364780463,
+     "kappa": 0.6684252567533474,
+     "per_class_iou": {
+      "background": 0.4977863729780123,
+      "vegetation": 0.6619448192526373,
+      "water": 0.7725897173897888,
+      "urban": 0.7845867844041841,
+      "agriculture": 0.6919952356588404,
+      "bare_soil": 0.28724543145940756,
+      "road": 0.6012666942034536
+     },
+     "per_class_f1": {
+      "background": 0.6646960851438615,
+      "vegetation": 0.7965906057144001,
+      "water": 0.8717073166144336,
+      "urban": 0.8792923793930572,
+      "agriculture": 0.817963569692265,
+      "bare_soil": 0.4462947336153113,
+      "road": 0.7509888170149406
+     },
+     "n_tiles": 27
+    }
+   }
+  }
+ ]
+}

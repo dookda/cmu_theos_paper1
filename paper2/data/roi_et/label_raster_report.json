@@ -1,0 +1,30 @@
+{
+ "masks_used": 445,
+ "masks_available": 445,
+ "labelled_px_4326": 51750625,
+ "labelled_frac_4326": 0.4693,
+ "labelled_px_utm": 51745374,
+ "labelled_frac_utm": 0.4611,
+ "tile_overlap_px_overwritten": 25731072,
+ "class_counts_4326": [
+  58519613,
+  15800689,
+  1795277,
+  13546743,
+  4856833,
+  5214125,
+  5582368,
+  4954590
+ ],
+ "class_counts_utm48n": [
+  60485026,
+  15797907,
+  1794539,
+  13546188,
+  4856333,
+  5213479,
+  5582728,
+  4954200
+ ],
+ "warp_resampling": "nearest"
+}

@@ -1,0 +1,62 @@
+{
+ "scene1": {
+  "valid_pixels": 437377404,
+  "share7_pct": {
+   "background": 24.04,
+   "vegetation": 35.48,
+   "water": 3.07,
+   "urban": 12.44,
+   "agriculture": 21.14,
+   "bare_soil": 1.07,
+   "road": 2.77
+  },
+  "share6_pct": {
+   "background": 0.0,
+   "vegetation": 47.76,
+   "water": 3.58,
+   "urban": 16.69,
+   "agriculture": 25.17,
+   "bare_soil": 2.22,
+   "road": 4.58
+  },
+  "background_reassigned_to_pct": {
+   "vegetation": 51.1,
+   "water": 2.14,
+   "urban": 17.68,
+   "agriculture": 16.78,
+   "bare_soil": 4.77,
+   "road": 7.52
+  },
+  "unchanged_outside_background_pct": 100.0
+ },
+ "scene2": {
+  "valid_pixels": 437444492,
+  "share7_pct": {
+   "background": 20.3,
+   "vegetation": 56.66,
+   "water": 1.64,
+   "urban": 7.52,
+   "agriculture": 11.36,
+   "bare_soil": 0.67,
+   "road": 1.84
+  },
+  "share6_pct": {
+   "background": 0.0,
+   "vegetation": 68.33,
+   "water": 2.02,
+   "urban": 10.34,
+   "agriculture": 14.51,
+   "bare_soil": 1.78,
+   "road": 3.03
+  },
+  "background_reassigned_to_pct": {
+   "vegetation": 57.46,
+   "water": 1.85,
+   "urban": 13.86,
+   "agriculture": 15.52,
+   "bare_soil": 5.45,
+   "road": 5.86
+  },
+  "unchanged_outside_background_pct": 100.0
+ }
+}

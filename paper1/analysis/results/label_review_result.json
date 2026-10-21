@@ -1,0 +1,189 @@
+{
+ "set_id": "s1p25",
+ "classes": [
+  "background",
+  "vegetation",
+  "water",
+  "urban",
+  "agriculture",
+  "bare_soil",
+  "road"
+ ],
+ "excluded_nodata_items": [
+  22,
+  26,
+  28,
+  39,
+  42,
+  45,
+  50,
+  68,
+  72,
+  92,
+  94,
+  104,
+  109,
+  127,
+  139,
+  140,
+  144,
+  156,
+  166,
+  171
+ ],
+ "max_nodata_fraction": 0.1,
+ "reviewers": [
+  "Chawis Srimanee"
+ ],
+ "primary_reviewer": "Chawis Srimanee",
+ "reviewer_roles": {
+  "Chawis Srimanee": "co-author"
+ },
+ "per_class": [
+  {
+   "class": "background",
+   "n_judged": 20,
+   "n_agree": 0,
+   "error_rate": 1.0,
+   "ci95": [
+    0.8388698745050667,
+    0.9999999999999998
+   ],
+   "n_unsure": 1
+  },
+  {
+   "class": "vegetation",
+   "n_judged": 19,
+   "n_agree": 11,
+   "error_rate": 0.42105263157894735,
+   "ci95": [
+    0.2314162039203038,
+    0.637244485348399
+   ],
+   "n_unsure": 1
+  },
+  {
+   "class": "water",
+   "n_judged": 17,
+   "n_agree": 15,
+   "error_rate": 0.11764705882352944,
+   "ci95": [
+    0.03287908001292091,
+    0.3433684249770991
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "urban",
+   "n_judged": 22,
+   "n_agree": 19,
+   "error_rate": 0.13636363636363635,
+   "ci95": [
+    0.04748917264236267,
+    0.3333541187947
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "agriculture",
+   "n_judged": 25,
+   "n_agree": 6,
+   "error_rate": 0.76,
+   "ci95": [
+    0.5656994004476144,
+    0.8850384226967326
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "bare_soil",
+   "n_judged": 22,
+   "n_agree": 16,
+   "error_rate": 0.2727272727272727,
+   "ci95": [
+    0.13150582015814438,
+    0.48152123699001975
+   ],
+   "n_unsure": 3
+  },
+  {
+   "class": "road",
+   "n_judged": 24,
+   "n_agree": 19,
+   "error_rate": 0.20833333333333337,
+   "ci95": [
+    0.09244689104788088,
+    0.40470844485235474
+   ],
+   "n_unsure": 1
+  }
+ ],
+ "weighted_error_rate_excl_background": 0.4432394731682146,
+ "confusion_label_vs_reviewer": [
+  [
+   0,
+   7,
+   2,
+   2,
+   2,
+   4,
+   3
+  ],
+  [
+   0,
+   11,
+   0,
+   0,
+   5,
+   1,
+   2
+  ],
+  [
+   0,
+   0,
+   15,
+   0,
+   2,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   0,
+   19,
+   0,
+   0,
+   2
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   6,
+   16,
+   0
+  ],
+  [
+   0,
+   5,
+   0,
+   0,
+   0,
+   16,
+   1
+  ],
+  [
+   0,
+   1,
+   0,
+   4,
+   0,
+   0,
+   19
+  ]
+ ],
+ "inter_reviewer": {},
+ "disputes": []
+}

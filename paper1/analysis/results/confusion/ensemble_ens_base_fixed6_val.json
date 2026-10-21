@@ -1,0 +1,151 @@
+{
+  "tag": "ens_base_fixed6",
+  "split": "val",
+  "members": [
+    {
+      "model": "hrnet",
+      "encoder": "tu-hrnet_w48",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/hrnet_w48/models/hrnet_best.pth"
+    },
+    {
+      "model": "unetpp",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/unetpp_efficientnet/models/unetpp_best.pth"
+    },
+    {
+      "model": "unet",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/unet_efficientnet/models/unet_best.pth"
+    },
+    {
+      "model": "hrnet",
+      "encoder": "tu-hrnet_w48",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data_fixed/train_output/hrnet_w48/models/hrnet_best.pth"
+    },
+    {
+      "model": "unetpp",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data_fixed/train_output/unetpp_efficientnet/models/unetpp_best.pth"
+    },
+    {
+      "model": "unet",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data_fixed/train_output/unet_efficientnet/models/unet_best.pth"
+    }
+  ],
+  "n_tiles": 396,
+  "class_names": [
+    "background",
+    "vegetation",
+    "water",
+    "urban",
+    "agriculture",
+    "bare_soil",
+    "road",
+    "grass"
+  ],
+  "overall_accuracy": 0.7750274581138534,
+  "mean_iou": 0.5763605805344681,
+  "per_class_iou": {
+    "background": 0.4557469814209374,
+    "vegetation": 0.7117823545951332,
+    "water": 0.7461767287796433,
+    "urban": 0.6896049461861076,
+    "agriculture": 0.7994433598092499,
+    "bare_soil": 0.34135895114175785,
+    "road": 0.47643819324282016,
+    "grass": 0.39033312910009577
+  },
+  "per_class_f1": {
+    "background": 0.6261348809064171,
+    "vegetation": 0.8316271664845877,
+    "water": 0.8546405601237469,
+    "urban": 0.8162913440123755,
+    "agriculture": 0.8885451775420095,
+    "bare_soil": 0.5089747988056365,
+    "road": 0.645388605392794,
+    "grass": 0.5614958328048213
+  },
+  "confusion_matrix": [
+    [
+      16752245,
+      5169339,
+      218056,
+      1978151,
+      1929800,
+      149606,
+      833709,
+      479074
+    ],
+    [
+      4296586,
+      29172750,
+      111253,
+      259480,
+      160480,
+      9647,
+      81115,
+      355205
+    ],
+    [
+      264568,
+      128770,
+      2729363,
+      8569,
+      81886,
+      251,
+      3739,
+      4245
+    ],
+    [
+      1470869,
+      212192,
+      5652,
+      9532865,
+      44690,
+      4104,
+      143747,
+      5688
+    ],
+    [
+      1482263,
+      472481,
+      93445,
+      9647,
+      18589522,
+      10392,
+      10020,
+      85002
+    ],
+    [
+      259966,
+      9209,
+      525,
+      5389,
+      46886,
+      275207,
+      1179,
+      15046
+    ],
+    [
+      648814,
+      100192,
+      1840,
+      132412,
+      17108,
+      518,
+      1811489,
+      5520
+    ],
+    [
+      824729,
+      446793,
+      5635,
+      10206,
+      219460,
+      18285,
+      10747,
+      1591403
+    ]
+  ]
+}

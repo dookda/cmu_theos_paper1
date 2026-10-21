@@ -1,0 +1,399 @@
+<title>THEOS Model Comparison — Baseline vs Weighted vs NIR</title>
+<style>
+  :root {
+    --page: #f9f9f7; --surface: #fcfcfb;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,.10);
+    --s-base: #2a78d6; --s-wt: #1baf7a; --s-nir: #eda100;
+    --pos: #2a78d6; --neg: #e34948;
+    --tip-bg: #0b0b0b; --tip-ink: #fcfcfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0d0d0d; --surface: #1a1a19;
+      --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+      --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,.10);
+      --s-base: #3987e5; --s-wt: #199e70; --s-nir: #c98500;
+      --pos: #3987e5; --neg: #e66767;
+      --tip-bg: #fcfcfb; --tip-ink: #0b0b0b;
+    }
+  }
+  :root[data-theme="light"] {
+    --page: #f9f9f7; --surface: #fcfcfb;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,.10);
+    --s-base: #2a78d6; --s-wt: #1baf7a; --s-nir: #eda100;
+    --pos: #2a78d6; --neg: #e34948;
+    --tip-bg: #0b0b0b; --tip-ink: #fcfcfb;
+  }
+  :root[data-theme="dark"] {
+    --page: #0d0d0d; --surface: #1a1a19;
+    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,.10);
+    --s-base: #3987e5; --s-wt: #199e70; --s-nir: #c98500;
+    --pos: #3987e5; --neg: #e66767;
+    --tip-bg: #fcfcfb; --tip-ink: #0b0b0b;
+  }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65; margin: 0; padding: 32px 20px 72px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  header h1 { font-size: 1.7rem; line-height: 1.3; margin: 0 0 6px; text-wrap: balance; }
+  .eyebrow { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .sub { color: var(--ink-2); margin: 0; max-width: 62ch; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .tile { background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; padding: 16px 18px; }
+  .tile .k { font-size: .75rem; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .tile .v { font-size: 1.75rem; font-weight: 650; margin: 2px 0; }
+  .tile .d { font-size: .82rem; color: var(--ink-2); }
+  section.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 22px 24px; }
+  section.card h2 { font-size: 1.06rem; margin: 0 0 4px; }
+  section.card p.note { font-size: .85rem; color: var(--ink-2); margin: 0 0 14px; max-width: 68ch; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 12px; font-size: .82rem; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .sw { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+  .chart-scroll { overflow-x: auto; }
+  svg text { font-family: inherit; }
+  .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .rowlab { fill: var(--ink-2); font-size: 12.5px; }
+  .dirlab { fill: var(--ink-2); font-size: 11px; font-variant-numeric: tabular-nums; }
+  #tip { position: fixed; pointer-events: none; background: var(--tip-bg); color: var(--tip-ink);
+         font-size: .78rem; line-height: 1.45; padding: 7px 10px; border-radius: 7px;
+         opacity: 0; transition: opacity .12s; z-index: 10; max-width: 240px; }
+  @media (prefers-reduced-motion: reduce) { #tip { transition: none; } }
+  .findings { display: flex; flex-direction: column; gap: 12px; }
+  .finding { border-left: 3px solid var(--axis); padding: 2px 0 2px 14px; }
+  .finding.warn { border-left-color: var(--neg); }
+  .finding.good { border-left-color: var(--s-wt); }
+  .finding h3 { font-size: .95rem; margin: 0 0 2px; }
+  .finding p { margin: 0; font-size: .88rem; color: var(--ink-2); max-width: 70ch; }
+  table { border-collapse: collapse; width: 100%; font-size: .84rem; font-variant-numeric: tabular-nums; }
+  th, td { padding: 7px 10px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: .76rem; letter-spacing: .03em; }
+  td.best { font-weight: 650; }
+  .next { margin: 0; padding-left: 20px; }
+  .next li { margin-bottom: 8px; max-width: 70ch; }
+  .next li b { font-weight: 650; }
+  footer { font-size: .78rem; color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">THEOS AI · Land Cover Segmentation · 8 กรกฎาคม 2026</p>
+    <h1>เปรียบเทียบผลเทรน 3 ชุด: Baseline · Class-weighted · RGB+NIR</h1>
+    <p class="sub">โมเดล semantic segmentation 6 สถาปัตยกรรม บนชุด validation เดียวกันของภาพ THEOS-2
+       — ตัวเลขจาก <code>best_metrics.json</code> (weighted / NIR) และ epoch ที่ดีที่สุดใน <code>history.json</code> (baseline)</p>
+  </header>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="k">mIoU สูงสุด</div>
+      <div class="v">54.69</div>
+      <div class="d">UNet++ EfficientNet — ชุด baseline</div>
+    </div>
+    <div class="tile">
+      <div class="k">คลาสที่อ่อนที่สุด</div>
+      <div class="v">27.2</div>
+      <div class="d">ดินโล่ง (bare_soil) — mean IoU ชุด weighted</div>
+    </div>
+    <div class="tile">
+      <div class="k">NIR ช่วยมากสุด</div>
+      <div class="v">+1.11</div>
+      <div class="d">ถนน (road) — Δ IoU เฉลี่ย 6 โมเดล</div>
+    </div>
+    <div class="tile">
+      <div class="k">NIR ฉุดมากสุด</div>
+      <div class="v">−2.72</div>
+      <div class="d">ดินโล่ง (bare_soil) — Δ IoU เฉลี่ย 6 โมเดล</div>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>mIoU รายโมเดล — baseline ยังนำทุกตัว</h2>
+    <p class="note">จุดแต่ละสีคือ mIoU ของโมเดลในแต่ละชุดเทรน (แกน x เริ่ม 50 เพื่อขยายช่วงต่าง ±3 จุด)
+       ชี้ที่จุดเพื่อดูค่า</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--s-base)"></i>Baseline</span>
+      <span><i class="sw" style="background:var(--s-wt)"></i>Class-weighted + Aug</span>
+      <span><i class="sw" style="background:var(--s-nir)"></i>RGB+NIR (4-ch)</span>
+    </div>
+    <div class="chart-scroll"><svg id="dotplot" width="100%"></svg></div>
+  </section>
+
+  <section class="card">
+    <h2>IoU รายคลาส — weighted เทียบ NIR (เฉลี่ย 6 โมเดล)</h2>
+    <p class="note">ชุด baseline ไม่ได้เก็บ per-class metrics จึงเทียบได้เฉพาะ weighted กับ NIR
+       — เห็นชัดว่ากลุ่มคลาสหลัก (เกษตร น้ำ พืชพรรณ เมือง) แม่นอยู่แล้ว ส่วนดินโล่ง ทุ่งหญ้า ถนน คือคอขวด</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--s-wt);border-radius:3px"></i>Class-weighted + Aug</span>
+      <span><i class="sw" style="background:var(--s-nir);border-radius:3px"></i>RGB+NIR (4-ch)</span>
+    </div>
+    <div class="chart-scroll"><svg id="classbars" width="100%"></svg></div>
+  </section>
+
+  <section class="card">
+    <h2>ผลสุทธิของ NIR รายคลาส (Δ IoU = NIR − weighted)</h2>
+    <p class="note">แท่งขวา (น้ำเงิน) = NIR ช่วย · แท่งซ้าย (แดง) = NIR ทำให้แย่ลง — เฉลี่ยจาก 6 โมเดล</p>
+    <div class="chart-scroll"><svg id="deltabars" width="100%"></svg></div>
+  </section>
+
+  <section class="card">
+    <h2>ผล test set ครั้งแรก — ยืนยันว่าไม่ overfit ต่อ val (HRNet-W48)</h2>
+    <p class="note">val และ test set ถูกยืนยันแล้วว่า byte-identical ทั้ง 3 data roots (396 / 397 tiles)
+       — baseline ได้ mIoU test เท่า val เป๊ะ ส่วน NIR ตกลงบน test มากสุด</p>
+    <div class="chart-scroll">
+      <table>
+        <thead><tr><th>ชุดเทรน</th><th>val mIoU</th><th>val OA</th><th>test mIoU</th><th>test OA</th><th>val→test</th></tr></thead>
+        <tbody>
+          <tr><td>Baseline</td><td class="best">54.66</td><td>75.34</td><td class="best">54.66</td><td>75.96</td><td>±0.00</td></tr>
+          <tr><td>Class-weighted + Aug</td><td>54.94</td><td>75.86</td><td>54.21</td><td>75.96</td><td>−0.73</td></tr>
+          <tr><td>RGB+NIR (4-ch)</td><td>53.95</td><td>74.89</td><td>52.75</td><td>74.78</td><td>−1.20</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Confusion analysis — พิกเซลคลาสอ่อนไหลไปที่ไหน (HRNet-W48, val)</h2>
+    <p class="note">ตัวเลขคือสัดส่วนพิกเซลจริงของคลาสนั้นที่โมเดลทายเป็นแต่ละคลาส —
+       จุดร่วมของทุกชุด: คลาสอ่อนรั่วไปที่ <b>พื้นหลัง (background)</b> เป็นหลัก
+       และ background เองก็กิน 26.5% ของพิกเซลทั้งหมด ขณะที่ดินโล่งมีแค่ 0.59%</p>
+    <div class="chart-scroll">
+      <table>
+        <thead><tr><th>คลาสจริง</th><th>ชุดเทรน</th><th>ทายถูก</th><th>รั่วไปที่ (top 3)</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3">ดินโล่ง<br><span style="color:var(--muted)">0.59% ของพิกเซล</span></td>
+              <td>Baseline</td><td>46%</td><td style="text-align:left">พื้นหลัง 42% · เกษตร 6% · ทุ่งหญ้า 3%</td></tr>
+          <tr><td>Weighted</td><td>49%</td><td style="text-align:left">พื้นหลัง 37% · เกษตร 6% · พืชพรรณ 5%</td></tr>
+          <tr><td>NIR</td><td class="best">58%</td><td style="text-align:left">พื้นหลัง 24% · ทุ่งหญ้า 11% · พืชพรรณ 4%</td></tr>
+          <tr><td rowspan="3">ทุ่งหญ้า<br><span style="color:var(--muted)">3.01% ของพิกเซล</span></td>
+              <td>Baseline</td><td class="best">51%</td><td style="text-align:left">พื้นหลัง 31% · พืชพรรณ 12% · เกษตร 4%</td></tr>
+          <tr><td>Weighted</td><td>45%</td><td style="text-align:left">พื้นหลัง 29% · พืชพรรณ 16% · เกษตร 8%</td></tr>
+          <tr><td>NIR</td><td>≥60%</td><td style="text-align:left">(พ้นเกณฑ์คลาสอ่อนในชุดนี้)</td></tr>
+          <tr><td rowspan="3">พื้นหลัง<br><span style="color:var(--muted)">26.5% ของพิกเซล</span></td>
+              <td>Baseline</td><td class="best">≥60%</td><td style="text-align:left">—</td></tr>
+          <tr><td>Weighted</td><td>60%</td><td style="text-align:left">พืชพรรณ 20% · เกษตร 7% · เมือง 6%</td></tr>
+          <tr><td>NIR</td><td>52%</td><td style="text-align:left">พืชพรรณ 20% · เมือง 8% · เกษตร 6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">
+      <b>ประเด็นสำคัญ:</b> การรั่วสองทางระหว่างคลาสอ่อนกับ background บ่งชี้ปัญหา label taxonomy —
+      พื้นที่ "background" จำนวนมากน่าจะมีดินโล่ง/ทุ่งหญ้าจริงที่ไม่ได้ติด label
+      โมเดลจึงถูกลงโทษทั้งตอนทายถูก (label บอกว่า background) และตอนทายผิด
+      · NIR เพิ่ม recall ดินโล่ง (46→58%) แต่ IoU กลับลดลง = over-predict (precision ตก)</p>
+  </section>
+
+  <section class="card">
+    <h2>ผล Ensemble — +2.33 mIoU โดยไม่ต้องเทรนใหม่ 🏆</h2>
+    <p class="note">เฉลี่ย softmax ของหลายโมเดลก่อน argmax แล้ววัดบน val/test เดียวกับ single
+       (job 73763) — <b>ens_mixed6</b> = HRNet + UNet++ + UNet-Eff จากทั้งชุด baseline และ weighted</p>
+    <div class="chart-scroll">
+      <table>
+        <thead><tr><th>รุ่น</th><th>สมาชิก</th><th>val mIoU</th><th>test mIoU</th><th>test OA</th><th>Δ test vs best single</th></tr></thead>
+        <tbody>
+          <tr><td>HRNet-W48 (best single)</td><td>1</td><td>54.66</td><td>54.66</td><td>75.96</td><td>—</td></tr>
+          <tr><td>ens_baseline3</td><td>3</td><td>56.78</td><td>56.48</td><td>77.27</td><td>+1.82</td></tr>
+          <tr><td>ens_mixed6</td><td>6</td><td class="best">57.28</td><td class="best">56.99</td><td class="best">77.79</td><td class="best">+2.33</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">
+      Per-class (test): ดีขึ้นเกือบทุกคลาส — <b>ทุ่งหญ้า +5.32</b>, น้ำ +4.37, ถนน +2.54,
+      พืชพรรณ +2.31, พื้นหลัง +1.90 · ยกเว้นดินโล่ง −0.55 (คลาส 0.59% ถูกการเฉลี่ยกลืน)
+      · ที่น่าสนใจ: โมเดลชุด weighted ที่แพ้เดี่ยวๆ กลับเพิ่มค่าให้ ensemble (+0.51 จาก baseline3 → mixed6)
+      — ความหลากหลายมีค่าแม้สมาชิกจะอ่อนกว่า</p>
+  </section>
+
+  <section class="card">
+    <h2>ข้อค้นพบหลัก</h2>
+    <div class="findings">
+      <div class="finding warn">
+        <h3>1 · Class weights + augmentation และ NIR ยังไม่เพิ่ม mIoU รวม — ยืนยันแล้วบน test set</h3>
+        <p>Baseline ชนะทั้ง 6 โมเดลบน val และยืนยันซ้ำบน test set ที่ไม่เคยแตะ (54.66 เท่า val เป๊ะ)
+           — val/test splits ตรวจแล้วว่า identical ทั้ง 3 data roots จึงเทียบกันได้จริง</p>
+      </div>
+      <div class="finding warn">
+        <h3>1.5 · ต้นตอน่าจะอยู่ที่ label ไม่ใช่โมเดล</h3>
+        <p>Confusion matrix ชี้ว่าดินโล่ง 24–42% และทุ่งหญ้า ~30% ถูกทายเป็น "พื้นหลัง"
+           ซึ่งเป็นคลาสครอบจักรวาลที่กิน 26.5% ของพิกเซล — ถ้าใน background มีดินโล่ง/หญ้าจริงที่ไม่ได้ label
+           การเทรนต่อกี่รอบก็ติดเพดานนี้ ควร audit label ก่อนทดลองใหญ่ครั้งถัดไป</p>
+      </div>
+      <div class="finding warn">
+        <h3>2 · คอขวดอยู่ที่ 4 คลาสหายาก ไม่ใช่สถาปัตยกรรม</h3>
+        <p>ดินโล่ง (~27) ทุ่งหญ้า (~31) พื้นหลัง (~39) ถนน (~44) ต่ำกว่ากลุ่มคลาสหลัก (67–78) มากกว่า 30 จุด
+           ขณะที่โมเดลทั้ง 6 ตัวต่างกันเองแค่ ~2 จุด — ลงทุนกับข้อมูล/loss ของคลาสอ่อนคุ้มกว่าเปลี่ยนโมเดล</p>
+      </div>
+      <div class="finding good">
+        <h3>3 · NIR ช่วยเฉพาะทาง: ถนน +1.1 ทุ่งหญ้า +0.6 แต่ฉุดดินโล่ง −2.7 น้ำ −1.2</h3>
+        <p>สอดคล้องกับฟิสิกส์: NIR แยกพืชพรรณ/สิ่งปลูกสร้างได้ดี แต่ raw NIR เพิ่ม noise ให้ดินโล่ง
+           — บ่งชี้ว่า NDVI/NDWI (index ที่ normalize แล้ว) น่าจะได้ผลกว่าใส่ NIR ดิบ</p>
+      </div>
+      <div class="finding good">
+        <h3>4 · HRNet-W48 เสถียรที่สุด · UNet++ ทำ peak สูงสุด</h3>
+        <p>HRNet นำใน weighted (54.41) และ NIR (53.95) และตามหลัง peak ของ baseline แค่ 0.03
+           — เป็นแกนที่ดีสำหรับ ensemble ร่วมกับ UNet++ และ UNet-EfficientNet</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>การทดลองถัดไปที่แนะนำ (เรียงตามความคุ้มค่า)</h2>
+    <ol class="next">
+      <li><s style="color:var(--muted)">ยืนยัน validation protocol</s> — <b>เสร็จแล้ว</b>: val/test identical ทั้ง 3 roots</li>
+      <li><s style="color:var(--muted)">Confusion matrix ของคลาสอ่อน</s> — <b>เสร็จแล้ว</b>: คลาสอ่อนรั่วไป background เป็นหลัก</li>
+      <li><b>Audit label บริเวณ background</b> — สุ่มดู val tiles ที่โมเดลทาย "ดินโล่ง/หญ้า" แต่ label บอก "background" ว่าใครถูกกันแน่ ถ้า label ผิดเยอะ → แก้ label แล้วเทรนใหม่คุ้มกว่าทุกเทคนิค</li>
+      <li><b>Ensemble HRNet + UNet++ + UNet-EfficientNet</b> — เฉลี่ย softmax ก่อน argmax ใช้ checkpoints ที่มีอยู่แล้ว คาดหวัง +1–3 จุดโดยไม่ต้องเทรน</li>
+      <li><b>Dice + Focal loss แทน weighted CE</b> — Dice optimize IoU ของคลาสหายากตรงกว่า pixel-weighted CE ที่ผลออกมาแล้วว่าไม่ช่วย</li>
+      <li><b>NDVI + NDWI เป็น channel 5–6</b> — NIR ดิบเพิ่ม recall ดินโล่งแต่ precision ตก index ที่ normalize แล้วน่าจะเสถียรกว่า</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>ตารางตัวเลขเต็ม — mIoU / Overall Accuracy (%)</h2>
+    <div class="chart-scroll">
+      <table id="fulltable">
+        <thead><tr><th>โมเดล</th><th>Baseline mIoU</th><th>Baseline OA</th><th>Weighted mIoU</th><th>Weighted OA</th><th>NIR mIoU</th><th>NIR OA</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>ที่มา: hpc_output/*/logs — สร้างโดย analysis/compare_model_sets.py · ค่า per-class ของ baseline ไม่มีในไฟล์ log จึงแสดงเฉพาะภาพรวม</footer>
+</div>
+<div id="tip" role="status"></div>
+
+<script>
+const MODELS = [
+  ["unet_mobilenet","UNet · MobileNetV2"],
+  ["unet_resnet50","UNet · ResNet50"],
+  ["unet_efficientnet","UNet · EfficientNet-B3"],
+  ["unetpp_efficientnet","UNet++ · EfficientNet-B3"],
+  ["deeplabv3_resnet101","DeepLabV3+ · ResNet101"],
+  ["hrnet_w48","HRNet-W48"],
+];
+const MIOU = { // [miou, oa] per set
+  baseline:{unet_mobilenet:[53.26,74.44],unet_resnet50:[53.86,75.11],unet_efficientnet:[54.02,75.29],unetpp_efficientnet:[54.69,75.04],deeplabv3_resnet101:[53.89,74.75],hrnet_w48:[54.66,75.34]},
+  weighted:{unet_mobilenet:[52.94,74.05],unet_resnet50:[52.20,73.77],unet_efficientnet:[53.74,74.95],unetpp_efficientnet:[52.31,73.95],deeplabv3_resnet101:[53.27,74.47],hrnet_w48:[54.41,75.18]},
+  nir:{unet_mobilenet:[51.54,73.72],unet_resnet50:[53.09,74.31],unet_efficientnet:[53.25,74.69],unetpp_efficientnet:[52.61,74.24],deeplabv3_resnet101:[52.26,73.96],hrnet_w48:[53.95,74.89]},
+};
+const SETMETA = [["baseline","Baseline","--s-base"],["weighted","Weighted+Aug","--s-wt"],["nir","RGB+NIR","--s-nir"]];
+const CLASSES = [ // [key, thai, weighted mean IoU, nir mean IoU, delta]
+  ["agriculture","เกษตร",77.94,77.99,+0.05],
+  ["water","แหล่งน้ำ",70.19,69.00,-1.20],
+  ["vegetation","พืชพรรณ",68.68,68.70,+0.02],
+  ["urban","สิ่งปลูกสร้าง",67.09,66.73,-0.36],
+  ["road","ถนน",43.71,44.82,+1.11],
+  ["background","พื้นหลัง",39.39,38.98,-0.41],
+  ["grass","ทุ่งหญ้า",30.98,31.59,+0.61],
+  ["bare_soil","ดินโล่ง",27.19,24.47,-2.72],
+];
+
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const tip = document.getElementById("tip");
+function bindTip(el, html) {
+  el.addEventListener("mousemove", e => {
+    tip.innerHTML = html; tip.style.opacity = 1;
+    const pad = 14, w = tip.offsetWidth;
+    tip.style.left = Math.min(e.clientX + pad, innerWidth - w - 8) + "px";
+    tip.style.top = (e.clientY + pad) + "px";
+  });
+  el.addEventListener("mouseleave", () => tip.style.opacity = 0);
+}
+const S = (t, a = {}) => { const el = document.createElementNS("http://www.w3.org/2000/svg", t); for (const k in a) el.setAttribute(k, a[k]); return el; };
+
+/* ── dot plot ── */
+(function () {
+  const svg = document.getElementById("dotplot");
+  const W = 860, ROW = 42, L = 210, R = 30, T = 26;
+  const H = T + MODELS.length * ROW + 30;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.minWidth = "640px";
+  const x0 = 50, x1 = 56, X = v => L + (v - x0) / (x1 - x0) * (W - L - R);
+  for (let v = x0; v <= x1; v++) {
+    const g = S("line", { x1: X(v), x2: X(v), y1: T, y2: H - 28, stroke: css("--grid"), "stroke-width": 1 });
+    svg.appendChild(g);
+    const t = S("text", { x: X(v), y: H - 10, "text-anchor": "middle", class: "tick" });
+    t.textContent = v; svg.appendChild(t);
+  }
+  MODELS.forEach(([key, label], i) => {
+    const cy = T + i * ROW + ROW / 2;
+    svg.appendChild(S("line", { x1: L, x2: W - R, y1: cy, y2: cy, stroke: css("--grid"), "stroke-width": 1, "stroke-dasharray": "1 3" }));
+    const lab = S("text", { x: L - 14, y: cy + 4, "text-anchor": "end", class: "rowlab" });
+    lab.textContent = label; svg.appendChild(lab);
+    SETMETA.forEach(([sk, sname, cvar]) => {
+      const [m, oa] = MIOU[sk][key];
+      const c = S("circle", { cx: X(m), cy, r: 6.5, fill: css(cvar), stroke: css("--surface"), "stroke-width": 2 });
+      c.style.cursor = "default";
+      bindTip(c, `<b>${label}</b><br>${sname}: mIoU ${m.toFixed(2)} · OA ${oa.toFixed(2)}`);
+      svg.appendChild(c);
+    });
+  });
+})();
+
+/* ── grouped class bars ── */
+(function () {
+  const svg = document.getElementById("classbars");
+  const W = 860, H = 300, L = 46, R = 12, T = 14, B = 46;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.minWidth = "640px";
+  const ymax = 85, Y = v => T + (1 - v / ymax) * (H - T - B);
+  for (let v = 0; v <= 80; v += 20) {
+    svg.appendChild(S("line", { x1: L, x2: W - R, y1: Y(v), y2: Y(v), stroke: css("--grid"), "stroke-width": 1 }));
+    const t = S("text", { x: L - 8, y: Y(v) + 4, "text-anchor": "end", class: "tick" }); t.textContent = v; svg.appendChild(t);
+  }
+  const gw = (W - L - R) / CLASSES.length, bw = 26;
+  CLASSES.forEach(([key, thai, w, n], i) => {
+    const cx = L + i * gw + gw / 2;
+    [[w, "--s-wt", "Weighted+Aug", -1], [n, "--s-nir", "RGB+NIR", 1]].forEach(([v, cvar, sname, side]) => {
+      const x = cx + (side < 0 ? -bw - 1 : 1), h = Y(0) - Y(v);
+      const r = S("path", { d: `M${x},${Y(0)} v${-(h - 4)} q0,-4 4,-4 h${bw - 8} q4,0 4,4 v${h - 4} z`, fill: css(cvar) });
+      bindTip(r, `<b>${thai}</b> (${key})<br>${sname}: IoU ${v.toFixed(2)}`);
+      svg.appendChild(r);
+    });
+    const t = S("text", { x: cx, y: H - 26, "text-anchor": "middle", class: "rowlab" }); t.textContent = thai; svg.appendChild(t);
+    const t2 = S("text", { x: cx, y: H - 10, "text-anchor": "middle", class: "tick" }); t2.textContent = key; svg.appendChild(t2);
+  });
+  svg.appendChild(S("line", { x1: L, x2: W - R, y1: Y(0), y2: Y(0), stroke: css("--axis"), "stroke-width": 1 }));
+})();
+
+/* ── diverging delta bars ── */
+(function () {
+  const svg = document.getElementById("deltabars");
+  const ROW = 34, W = 860, L = 150, R = 70, T = 24;
+  const H = T + CLASSES.length * ROW + 30;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.minWidth = "640px";
+  const dmax = 3, X = v => L + (v + dmax) / (2 * dmax) * (W - L - R);
+  [-3, -2, -1, 0, 1, 2, 3].forEach(v => {
+    svg.appendChild(S("line", { x1: X(v), x2: X(v), y1: T, y2: H - 28, stroke: v === 0 ? css("--axis") : css("--grid"), "stroke-width": 1 }));
+    const t = S("text", { x: X(v), y: H - 10, "text-anchor": "middle", class: "tick" }); t.textContent = (v > 0 ? "+" : "") + v; svg.appendChild(t);
+  });
+  const sorted = [...CLASSES].sort((a, b) => b[4] - a[4]);
+  sorted.forEach(([key, thai, w, n, d], i) => {
+    const cy = T + i * ROW + ROW / 2;
+    const lab = S("text", { x: L - 12, y: cy + 4, "text-anchor": "end", class: "rowlab" }); lab.textContent = thai; svg.appendChild(lab);
+    const x0 = X(0), x1 = X(d), neg = d < 0;
+    const bx = neg ? x1 : x0, bwid = Math.max(Math.abs(x1 - x0), 2);
+    const r = S("rect", { x: bx, y: cy - 8, width: bwid, height: 16, rx: 3, fill: css(neg ? "--neg" : "--pos") });
+    bindTip(r, `<b>${thai}</b> (${key})<br>Δ ${(d >= 0 ? "+" : "") + d.toFixed(2)} จุด<br>weighted ${w.toFixed(2)} → NIR ${n.toFixed(2)}`);
+    svg.appendChild(r);
+    const vl = S("text", { x: neg ? x1 - 6 : x1 + 6, y: cy + 4, "text-anchor": neg ? "end" : "start", class: "dirlab" });
+    vl.textContent = (d >= 0 ? "+" : "") + d.toFixed(2); svg.appendChild(vl);
+  });
+})();
+
+/* ── full table ── */
+(function () {
+  const tb = document.querySelector("#fulltable tbody");
+  MODELS.forEach(([key, label]) => {
+    const tr = document.createElement("tr");
+    const cells = [label];
+    let bestM = -1, bestI = 0;
+    SETMETA.forEach(([sk], si) => { if (MIOU[sk][key][0] > bestM) { bestM = MIOU[sk][key][0]; bestI = si; } });
+    SETMETA.forEach(([sk]) => { const [m, oa] = MIOU[sk][key]; cells.push(m.toFixed(2), oa.toFixed(2)); });
+    tr.innerHTML = cells.map((c, i) => `<td${i === 1 + bestI * 2 ? ' class="best"' : ""}>${c}</td>`).join("");
+    tb.appendChild(tr);
+  });
+})();
+</script>

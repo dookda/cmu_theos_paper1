@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "tambon_labels_en",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32647" } },
+"features": [
+{ "type": "Feature", "properties": { "name_en": "Nai Mueang" }, "geometry": { "type": "Point", "coordinates": [ 501124.960903121391311, 2054564.93315 ] } },
+{ "type": "Feature", "properties": { "name_en": "Mueang Nga" }, "geometry": { "type": "Point", "coordinates": [ 502820.781310933758505, 2057977.503699999302626 ] } },
+{ "type": "Feature", "properties": { "name_en": "Umong" }, "geometry": { "type": "Point", "coordinates": [ 504543.400298565509729, 2061386.82405 ] } },
+{ "type": "Feature", "properties": { "name_en": "Nong Chang Khuen" }, "geometry": { "type": "Point", "coordinates": [ 501308.800178531440906, 2062622.139399999752641 ] } },
+{ "type": "Feature", "properties": { "name_en": "Pratu Pa" }, "geometry": { "type": "Point", "coordinates": [ 498560.498484827694483, 2058759.63045 ] } },
+{ "type": "Feature", "properties": { "name_en": "Rim Ping" }, "geometry": { "type": "Point", "coordinates": [ 497093.729755558888428, 2055580.748049999587238 ] } },
+{ "type": "Feature", "properties": { "name_en": "Ton Thong" }, "geometry": { "type": "Point", "coordinates": [ 497137.327630886109546, 2052531.678450000472367 ] } },
+{ "type": "Feature", "properties": { "name_en": "Ban Paen" }, "geometry": { "type": "Point", "coordinates": [ 495181.981303495820612, 2047809.322750000283122 ] } },
+{ "type": "Feature", "properties": { "name_en": "Mueang Chi" }, "geometry": { "type": "Point", "coordinates": [ 498130.338605612749234, 2042017.034249999560416 ] } },
+{ "type": "Feature", "properties": { "name_en": "Pa Sak" }, "geometry": { "type": "Point", "coordinates": [ 503149.020247205684427, 2047249.772149999625981 ] } },
+{ "type": "Feature", "properties": { "name_en": "Wiang Yong" }, "geometry": { "type": "Point", "coordinates": [ 501307.907384262187406, 2051739.80155 ] } },
+{ "type": "Feature", "properties": { "name_en": "Ban Klang" }, "geometry": { "type": "Point", "coordinates": [ 506826.74086017627269, 2053658.93114999961108 ] } },
+{ "type": "Feature", "properties": { "name_en": "Makhuea Chae" }, "geometry": { "type": "Point", "coordinates": [ 511401.886550669383723, 2055761.515800000168383 ] } },
+{ "type": "Feature", "properties": { "name_en": "Si Bua Ban" }, "geometry": { "type": "Point", "coordinates": [ 512518.703471667598933, 2046016.101199999451637 ] } },
+{ "type": "Feature", "properties": { "name_en": "Nong Nam" }, "geometry": { "type": "Point", "coordinates": [ 498602.497406025184318, 2045963.489799999631941 ] } }
+]
+}

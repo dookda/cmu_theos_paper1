@@ -1,0 +1,111 @@
+{
+  "grid": {
+    "transform": [
+      10.0,
+      0,
+      489250.0,
+      0,
+      -10.0,
+      2058610.0
+    ],
+    "crs": "EPSG:32647",
+    "width": 1462,
+    "height": 2242
+  },
+  "t0": {
+    "source": "paper1/Landuse_lamphoon_2563/landuse/LU_LPN_2563.shp",
+    "year_ce": 2020,
+    "polygons_used": 4661,
+    "polygons_dropped_mixed_code": 2
+  },
+  "t1": {
+    "source": "paper2/data/labels_fixed",
+    "image_date": "2026-01-08",
+    "tiles_used": 2276
+  },
+  "cells": {
+    "comparable": 900965,
+    "stable": 447388,
+    "candidate_change": 453577,
+    "candidate_rate": 0.503434650624608,
+    "candidate_rate_after_excluded_transitions": 0.20484924497621995,
+    "top_transitions": [
+      {
+        "from": "Agriculture",
+        "to": "Forest",
+        "cells": 241901
+      },
+      {
+        "from": "Built-up",
+        "to": "Forest",
+        "cells": 83890
+      },
+      {
+        "from": "Agriculture",
+        "to": "Built-up",
+        "cells": 30926
+      },
+      {
+        "from": "Agriculture",
+        "to": "Bare_Open",
+        "cells": 25816
+      },
+      {
+        "from": "Bare_Open",
+        "to": "Forest",
+        "cells": 20723
+      },
+      {
+        "from": "Agriculture",
+        "to": "Water",
+        "cells": 11520
+      }
+    ]
+  },
+  "transition_matrix_cells": {
+    "Water": {
+      "Water": 15994,
+      "Forest": 8654,
+      "Agriculture": 1202,
+      "Built-up": 914,
+      "Bare_Open": 881
+    },
+    "Forest": {
+      "Water": 3,
+      "Forest": 9643,
+      "Agriculture": 0,
+      "Built-up": 75,
+      "Bare_Open": 0
+    },
+    "Agriculture": {
+      "Water": 11520,
+      "Forest": 241901,
+      "Agriculture": 249530,
+      "Built-up": 30926,
+      "Bare_Open": 25816
+    },
+    "Built-up": {
+      "Water": 6590,
+      "Forest": 83890,
+      "Agriculture": 3137,
+      "Built-up": 166660,
+      "Bare_Open": 10642
+    },
+    "Bare_Open": {
+      "Water": 2432,
+      "Forest": 20723,
+      "Agriculture": 1298,
+      "Built-up": 2973,
+      "Bare_Open": 5561
+    }
+  },
+  "parcels": {
+    "R1_total": 15246,
+    "R2_pass": 3746,
+    "dropped_mmu": 7225,
+    "dropped_transition": 3090,
+    "dropped_no_interior": 9052,
+    "dropped_split_impure": 0
+  },
+  "caveat": "R1/R2 are candidate sets built from the disagreement of two maps. They are not change on the ground and must never be reported as accuracy. Only R3 (visual adjudication) is ground truth -- gate G1."
+}

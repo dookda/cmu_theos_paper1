@@ -1,0 +1,53 @@
+{
+  "gate": "G1",
+  "set_id": "pilot",
+  "reviewers": [
+    "r1",
+    "r2"
+  ],
+  "n_items": 80,
+  "inter_reviewer_kappa": {
+    "r1|r2:q1": 0.7314,
+    "r1|r2:q2": 0.6875
+  },
+  "min_kappa_q2": 0.6875,
+  "candidates": {
+    "n": 60,
+    "n_decided": 53,
+    "changed": 14,
+    "unchanged": 39,
+    "cannot_tell": 0,
+    "no_consensus": 7,
+    "confirmed_change_rate": 0.2642,
+    "ci95": [
+      0.1644,
+      0.3958
+    ]
+  },
+  "stable_controls": {
+    "n": 20,
+    "n_decided": 17,
+    "false_alarm_rate": 0.1765,
+    "ci95": [
+      0.0619,
+      0.4103
+    ],
+    "q1_vs_label": {
+      "agree": 14,
+      "disagree": 3,
+      "undecided": 3
+    }
+  },
+  "disagreement_decomposition": {
+    "t1_label_error": 20,
+    "real_change": 8,
+    "t0_or_definition": 13,
+    "undecided": 19
+  },
+  "criteria": {
+    "confirmed_change_rate": ">= 0.5",
+    "inter_reviewer_kappa_q2": ">= 0.6"
+  },
+  "verdict": "FAIL",
+  "action": "Take the pre-declared pivot in configs/experiments.yaml gates.G1_change_reference_validity.declared_pivot. Do NOT loosen the reference, redraw the sample, or add reviewers until it passes."
+}

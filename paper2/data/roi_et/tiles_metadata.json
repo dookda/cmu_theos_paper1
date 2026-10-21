@@ -1,0 +1,7394 @@
+[
+  {
+    "tile_id": 0,
+    "filename": "tile_00000.png",
+    "x_off": 0,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.078863875341465,
+      "right": 103.62828969114845,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8641,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 1,
+    "filename": "tile_00001.png",
+    "x_off": 448,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.078863875341465,
+      "right": 103.63036967565334,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8723,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 2,
+    "filename": "tile_00002.png",
+    "x_off": 896,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.078863875341465,
+      "right": 103.63244966015823,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8781,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 3,
+    "filename": "tile_00003.png",
+    "x_off": 1344,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.078863875341465,
+      "right": 103.63452964466313,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8838,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 4,
+    "filename": "tile_00004.png",
+    "x_off": 1792,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.078863875341465,
+      "right": 103.63660962916802,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8895,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 5,
+    "filename": "tile_00005.png",
+    "x_off": 2240,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.078863875341465,
+      "right": 103.63868961367291,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.8952,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 6,
+    "filename": "tile_00006.png",
+    "x_off": 2688,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.078863875341465,
+      "right": 103.64076959817781,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9009,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 7,
+    "filename": "tile_00007.png",
+    "x_off": 3136,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.078863875341465,
+      "right": 103.6428495826827,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9066,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 8,
+    "filename": "tile_00008.png",
+    "x_off": 3584,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.078863875341465,
+      "right": 103.6449295671876,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9122,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 9,
+    "filename": "tile_00009.png",
+    "x_off": 4032,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.078863875341465,
+      "right": 103.64700955169249,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9179,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 10,
+    "filename": "tile_00010.png",
+    "x_off": 4480,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.078863875341465,
+      "right": 103.64908953619738,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9235,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 11,
+    "filename": "tile_00011.png",
+    "x_off": 4928,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.078863875341465,
+      "right": 103.65116952070228,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9291,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 12,
+    "filename": "tile_00012.png",
+    "x_off": 5376,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.078863875341465,
+      "right": 103.65324950520717,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9348,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 13,
+    "filename": "tile_00013.png",
+    "x_off": 5824,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.078863875341465,
+      "right": 103.65532948971206,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9404,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 14,
+    "filename": "tile_00014.png",
+    "x_off": 6272,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.078863875341465,
+      "right": 103.65740947421696,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9461,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 15,
+    "filename": "tile_00015.png",
+    "x_off": 6720,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.078863875341465,
+      "right": 103.65948945872185,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9517,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 16,
+    "filename": "tile_00016.png",
+    "x_off": 7168,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.078863875341465,
+      "right": 103.66156944322674,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9573,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 17,
+    "filename": "tile_00017.png",
+    "x_off": 7616,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.078863875341465,
+      "right": 103.66364942773164,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9628,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 18,
+    "filename": "tile_00018.png",
+    "x_off": 8064,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.078863875341465,
+      "right": 103.66572941223653,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9684,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 19,
+    "filename": "tile_00019.png",
+    "x_off": 8512,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.078863875341465,
+      "right": 103.66780939674143,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.974,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 20,
+    "filename": "tile_00020.png",
+    "x_off": 8960,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.078863875341465,
+      "right": 103.66988938124632,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9796,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 21,
+    "filename": "tile_00021.png",
+    "x_off": 9408,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.078863875341465,
+      "right": 103.67196936575121,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9851,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 22,
+    "filename": "tile_00022.png",
+    "x_off": 9856,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.078863875341465,
+      "right": 103.67404935025611,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9907,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 23,
+    "filename": "tile_00023.png",
+    "x_off": 10304,
+    "y_off": 0,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.078863875341465,
+      "right": 103.676129334761,
+      "top": 16.081192545
+    },
+    "valid_ratio": 0.9962,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 24,
+    "filename": "tile_00024.png",
+    "x_off": 0,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.076826289390244,
+      "right": 103.62828969114845,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 0.9916,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 25,
+    "filename": "tile_00025.png",
+    "x_off": 448,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.076826289390244,
+      "right": 103.63036967565334,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 26,
+    "filename": "tile_00026.png",
+    "x_off": 896,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.076826289390244,
+      "right": 103.63244966015823,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 27,
+    "filename": "tile_00027.png",
+    "x_off": 1344,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.076826289390244,
+      "right": 103.63452964466313,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 28,
+    "filename": "tile_00028.png",
+    "x_off": 1792,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.076826289390244,
+      "right": 103.63660962916802,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 29,
+    "filename": "tile_00029.png",
+    "x_off": 2240,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.076826289390244,
+      "right": 103.63868961367291,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 30,
+    "filename": "tile_00030.png",
+    "x_off": 2688,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.076826289390244,
+      "right": 103.64076959817781,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 31,
+    "filename": "tile_00031.png",
+    "x_off": 3136,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.076826289390244,
+      "right": 103.6428495826827,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 32,
+    "filename": "tile_00032.png",
+    "x_off": 3584,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.076826289390244,
+      "right": 103.6449295671876,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 33,
+    "filename": "tile_00033.png",
+    "x_off": 4032,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.076826289390244,
+      "right": 103.64700955169249,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 34,
+    "filename": "tile_00034.png",
+    "x_off": 4480,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.076826289390244,
+      "right": 103.64908953619738,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 35,
+    "filename": "tile_00035.png",
+    "x_off": 4928,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.076826289390244,
+      "right": 103.65116952070228,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 36,
+    "filename": "tile_00036.png",
+    "x_off": 5376,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.076826289390244,
+      "right": 103.65324950520717,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 37,
+    "filename": "tile_00037.png",
+    "x_off": 5824,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.076826289390244,
+      "right": 103.65532948971206,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 38,
+    "filename": "tile_00038.png",
+    "x_off": 6272,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.076826289390244,
+      "right": 103.65740947421696,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 39,
+    "filename": "tile_00039.png",
+    "x_off": 6720,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.076826289390244,
+      "right": 103.65948945872185,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 40,
+    "filename": "tile_00040.png",
+    "x_off": 7168,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.076826289390244,
+      "right": 103.66156944322674,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 41,
+    "filename": "tile_00041.png",
+    "x_off": 7616,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.076826289390244,
+      "right": 103.66364942773164,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 42,
+    "filename": "tile_00042.png",
+    "x_off": 8064,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.076826289390244,
+      "right": 103.66572941223653,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 43,
+    "filename": "tile_00043.png",
+    "x_off": 8512,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.076826289390244,
+      "right": 103.66780939674143,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 44,
+    "filename": "tile_00044.png",
+    "x_off": 8960,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.076826289390244,
+      "right": 103.66988938124632,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 45,
+    "filename": "tile_00045.png",
+    "x_off": 9408,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.076826289390244,
+      "right": 103.67196936575121,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 46,
+    "filename": "tile_00046.png",
+    "x_off": 9856,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.076826289390244,
+      "right": 103.67404935025611,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 47,
+    "filename": "tile_00047.png",
+    "x_off": 10304,
+    "y_off": 448,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.076826289390244,
+      "right": 103.676129334761,
+      "top": 16.079154959048783
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 48,
+    "filename": "tile_00048.png",
+    "x_off": 0,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.074788703439026,
+      "right": 103.62828969114845,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 0.9857,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 49,
+    "filename": "tile_00049.png",
+    "x_off": 448,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.074788703439026,
+      "right": 103.63036967565334,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 50,
+    "filename": "tile_00050.png",
+    "x_off": 896,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.074788703439026,
+      "right": 103.63244966015823,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 51,
+    "filename": "tile_00051.png",
+    "x_off": 1344,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.074788703439026,
+      "right": 103.63452964466313,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 52,
+    "filename": "tile_00052.png",
+    "x_off": 1792,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.074788703439026,
+      "right": 103.63660962916802,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 53,
+    "filename": "tile_00053.png",
+    "x_off": 2240,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.074788703439026,
+      "right": 103.63868961367291,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 54,
+    "filename": "tile_00054.png",
+    "x_off": 2688,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.074788703439026,
+      "right": 103.64076959817781,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 55,
+    "filename": "tile_00055.png",
+    "x_off": 3136,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.074788703439026,
+      "right": 103.6428495826827,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 56,
+    "filename": "tile_00056.png",
+    "x_off": 3584,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.074788703439026,
+      "right": 103.6449295671876,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 57,
+    "filename": "tile_00057.png",
+    "x_off": 4032,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.074788703439026,
+      "right": 103.64700955169249,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 58,
+    "filename": "tile_00058.png",
+    "x_off": 4480,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.074788703439026,
+      "right": 103.64908953619738,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 59,
+    "filename": "tile_00059.png",
+    "x_off": 4928,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.074788703439026,
+      "right": 103.65116952070228,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 60,
+    "filename": "tile_00060.png",
+    "x_off": 5376,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.074788703439026,
+      "right": 103.65324950520717,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 61,
+    "filename": "tile_00061.png",
+    "x_off": 5824,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.074788703439026,
+      "right": 103.65532948971206,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 62,
+    "filename": "tile_00062.png",
+    "x_off": 6272,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.074788703439026,
+      "right": 103.65740947421696,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 63,
+    "filename": "tile_00063.png",
+    "x_off": 6720,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.074788703439026,
+      "right": 103.65948945872185,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 64,
+    "filename": "tile_00064.png",
+    "x_off": 7168,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.074788703439026,
+      "right": 103.66156944322674,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 65,
+    "filename": "tile_00065.png",
+    "x_off": 7616,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.074788703439026,
+      "right": 103.66364942773164,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 66,
+    "filename": "tile_00066.png",
+    "x_off": 8064,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.074788703439026,
+      "right": 103.66572941223653,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 67,
+    "filename": "tile_00067.png",
+    "x_off": 8512,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.074788703439026,
+      "right": 103.66780939674143,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 68,
+    "filename": "tile_00068.png",
+    "x_off": 8960,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.074788703439026,
+      "right": 103.66988938124632,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 69,
+    "filename": "tile_00069.png",
+    "x_off": 9408,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.074788703439026,
+      "right": 103.67196936575121,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 70,
+    "filename": "tile_00070.png",
+    "x_off": 9856,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.074788703439026,
+      "right": 103.67404935025611,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 71,
+    "filename": "tile_00071.png",
+    "x_off": 10304,
+    "y_off": 896,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.074788703439026,
+      "right": 103.676129334761,
+      "top": 16.07711737309756
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 72,
+    "filename": "tile_00072.png",
+    "x_off": 0,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.072751117487805,
+      "right": 103.62828969114845,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 0.9798,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 73,
+    "filename": "tile_00073.png",
+    "x_off": 448,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.072751117487805,
+      "right": 103.63036967565334,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 74,
+    "filename": "tile_00074.png",
+    "x_off": 896,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.072751117487805,
+      "right": 103.63244966015823,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 75,
+    "filename": "tile_00075.png",
+    "x_off": 1344,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.072751117487805,
+      "right": 103.63452964466313,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 76,
+    "filename": "tile_00076.png",
+    "x_off": 1792,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.072751117487805,
+      "right": 103.63660962916802,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 77,
+    "filename": "tile_00077.png",
+    "x_off": 2240,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.072751117487805,
+      "right": 103.63868961367291,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 78,
+    "filename": "tile_00078.png",
+    "x_off": 2688,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.072751117487805,
+      "right": 103.64076959817781,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 79,
+    "filename": "tile_00079.png",
+    "x_off": 3136,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.072751117487805,
+      "right": 103.6428495826827,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 80,
+    "filename": "tile_00080.png",
+    "x_off": 3584,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.072751117487805,
+      "right": 103.6449295671876,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 81,
+    "filename": "tile_00081.png",
+    "x_off": 4032,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.072751117487805,
+      "right": 103.64700955169249,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 82,
+    "filename": "tile_00082.png",
+    "x_off": 4480,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.072751117487805,
+      "right": 103.64908953619738,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 83,
+    "filename": "tile_00083.png",
+    "x_off": 4928,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.072751117487805,
+      "right": 103.65116952070228,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 84,
+    "filename": "tile_00084.png",
+    "x_off": 5376,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.072751117487805,
+      "right": 103.65324950520717,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 85,
+    "filename": "tile_00085.png",
+    "x_off": 5824,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.072751117487805,
+      "right": 103.65532948971206,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 86,
+    "filename": "tile_00086.png",
+    "x_off": 6272,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.072751117487805,
+      "right": 103.65740947421696,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 87,
+    "filename": "tile_00087.png",
+    "x_off": 6720,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.072751117487805,
+      "right": 103.65948945872185,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 88,
+    "filename": "tile_00088.png",
+    "x_off": 7168,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.072751117487805,
+      "right": 103.66156944322674,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 89,
+    "filename": "tile_00089.png",
+    "x_off": 7616,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.072751117487805,
+      "right": 103.66364942773164,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 90,
+    "filename": "tile_00090.png",
+    "x_off": 8064,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.072751117487805,
+      "right": 103.66572941223653,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 91,
+    "filename": "tile_00091.png",
+    "x_off": 8512,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.072751117487805,
+      "right": 103.66780939674143,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 92,
+    "filename": "tile_00092.png",
+    "x_off": 8960,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.072751117487805,
+      "right": 103.66988938124632,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 93,
+    "filename": "tile_00093.png",
+    "x_off": 9408,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.072751117487805,
+      "right": 103.67196936575121,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 94,
+    "filename": "tile_00094.png",
+    "x_off": 9856,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.072751117487805,
+      "right": 103.67404935025611,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 95,
+    "filename": "tile_00095.png",
+    "x_off": 10304,
+    "y_off": 1344,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.072751117487805,
+      "right": 103.676129334761,
+      "top": 16.075079787146343
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 96,
+    "filename": "tile_00096.png",
+    "x_off": 0,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.070713531536587,
+      "right": 103.62828969114845,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 0.974,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 97,
+    "filename": "tile_00097.png",
+    "x_off": 448,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.070713531536587,
+      "right": 103.63036967565334,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 98,
+    "filename": "tile_00098.png",
+    "x_off": 896,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.070713531536587,
+      "right": 103.63244966015823,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 99,
+    "filename": "tile_00099.png",
+    "x_off": 1344,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.070713531536587,
+      "right": 103.63452964466313,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 100,
+    "filename": "tile_00100.png",
+    "x_off": 1792,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.070713531536587,
+      "right": 103.63660962916802,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 101,
+    "filename": "tile_00101.png",
+    "x_off": 2240,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.070713531536587,
+      "right": 103.63868961367291,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 102,
+    "filename": "tile_00102.png",
+    "x_off": 2688,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.070713531536587,
+      "right": 103.64076959817781,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 103,
+    "filename": "tile_00103.png",
+    "x_off": 3136,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.070713531536587,
+      "right": 103.6428495826827,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 104,
+    "filename": "tile_00104.png",
+    "x_off": 3584,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.070713531536587,
+      "right": 103.6449295671876,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 105,
+    "filename": "tile_00105.png",
+    "x_off": 4032,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.070713531536587,
+      "right": 103.64700955169249,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 106,
+    "filename": "tile_00106.png",
+    "x_off": 4480,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.070713531536587,
+      "right": 103.64908953619738,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 107,
+    "filename": "tile_00107.png",
+    "x_off": 4928,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.070713531536587,
+      "right": 103.65116952070228,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 108,
+    "filename": "tile_00108.png",
+    "x_off": 5376,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.070713531536587,
+      "right": 103.65324950520717,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 109,
+    "filename": "tile_00109.png",
+    "x_off": 5824,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.070713531536587,
+      "right": 103.65532948971206,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 110,
+    "filename": "tile_00110.png",
+    "x_off": 6272,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.070713531536587,
+      "right": 103.65740947421696,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 111,
+    "filename": "tile_00111.png",
+    "x_off": 6720,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.070713531536587,
+      "right": 103.65948945872185,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 112,
+    "filename": "tile_00112.png",
+    "x_off": 7168,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.070713531536587,
+      "right": 103.66156944322674,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 113,
+    "filename": "tile_00113.png",
+    "x_off": 7616,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.070713531536587,
+      "right": 103.66364942773164,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 114,
+    "filename": "tile_00114.png",
+    "x_off": 8064,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.070713531536587,
+      "right": 103.66572941223653,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 115,
+    "filename": "tile_00115.png",
+    "x_off": 8512,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.070713531536587,
+      "right": 103.66780939674143,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 116,
+    "filename": "tile_00116.png",
+    "x_off": 8960,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.070713531536587,
+      "right": 103.66988938124632,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 117,
+    "filename": "tile_00117.png",
+    "x_off": 9408,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.070713531536587,
+      "right": 103.67196936575121,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 118,
+    "filename": "tile_00118.png",
+    "x_off": 9856,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.070713531536587,
+      "right": 103.67404935025611,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 119,
+    "filename": "tile_00119.png",
+    "x_off": 10304,
+    "y_off": 1792,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.070713531536587,
+      "right": 103.676129334761,
+      "top": 16.073042201195122
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 120,
+    "filename": "tile_00120.png",
+    "x_off": 0,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.068675945585365,
+      "right": 103.62828969114845,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 0.9681,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 121,
+    "filename": "tile_00121.png",
+    "x_off": 448,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.068675945585365,
+      "right": 103.63036967565334,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 122,
+    "filename": "tile_00122.png",
+    "x_off": 896,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.068675945585365,
+      "right": 103.63244966015823,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 123,
+    "filename": "tile_00123.png",
+    "x_off": 1344,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.068675945585365,
+      "right": 103.63452964466313,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 124,
+    "filename": "tile_00124.png",
+    "x_off": 1792,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.068675945585365,
+      "right": 103.63660962916802,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 125,
+    "filename": "tile_00125.png",
+    "x_off": 2240,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.068675945585365,
+      "right": 103.63868961367291,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 126,
+    "filename": "tile_00126.png",
+    "x_off": 2688,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.068675945585365,
+      "right": 103.64076959817781,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 127,
+    "filename": "tile_00127.png",
+    "x_off": 3136,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.068675945585365,
+      "right": 103.6428495826827,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 128,
+    "filename": "tile_00128.png",
+    "x_off": 3584,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.068675945585365,
+      "right": 103.6449295671876,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 129,
+    "filename": "tile_00129.png",
+    "x_off": 4032,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.068675945585365,
+      "right": 103.64700955169249,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 130,
+    "filename": "tile_00130.png",
+    "x_off": 4480,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.068675945585365,
+      "right": 103.64908953619738,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 131,
+    "filename": "tile_00131.png",
+    "x_off": 4928,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.068675945585365,
+      "right": 103.65116952070228,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 132,
+    "filename": "tile_00132.png",
+    "x_off": 5376,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.068675945585365,
+      "right": 103.65324950520717,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 133,
+    "filename": "tile_00133.png",
+    "x_off": 5824,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.068675945585365,
+      "right": 103.65532948971206,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 134,
+    "filename": "tile_00134.png",
+    "x_off": 6272,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.068675945585365,
+      "right": 103.65740947421696,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 135,
+    "filename": "tile_00135.png",
+    "x_off": 6720,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.068675945585365,
+      "right": 103.65948945872185,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 136,
+    "filename": "tile_00136.png",
+    "x_off": 7168,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.068675945585365,
+      "right": 103.66156944322674,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 137,
+    "filename": "tile_00137.png",
+    "x_off": 7616,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.068675945585365,
+      "right": 103.66364942773164,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 138,
+    "filename": "tile_00138.png",
+    "x_off": 8064,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.068675945585365,
+      "right": 103.66572941223653,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 139,
+    "filename": "tile_00139.png",
+    "x_off": 8512,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.068675945585365,
+      "right": 103.66780939674143,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 140,
+    "filename": "tile_00140.png",
+    "x_off": 8960,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.068675945585365,
+      "right": 103.66988938124632,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 141,
+    "filename": "tile_00141.png",
+    "x_off": 9408,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.068675945585365,
+      "right": 103.67196936575121,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 142,
+    "filename": "tile_00142.png",
+    "x_off": 9856,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.068675945585365,
+      "right": 103.67404935025611,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 143,
+    "filename": "tile_00143.png",
+    "x_off": 10304,
+    "y_off": 2240,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.068675945585365,
+      "right": 103.676129334761,
+      "top": 16.071004615243904
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 144,
+    "filename": "tile_00144.png",
+    "x_off": 0,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.066638359634148,
+      "right": 103.62828969114845,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 0.9622,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 145,
+    "filename": "tile_00145.png",
+    "x_off": 448,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.066638359634148,
+      "right": 103.63036967565334,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 146,
+    "filename": "tile_00146.png",
+    "x_off": 896,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.066638359634148,
+      "right": 103.63244966015823,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 147,
+    "filename": "tile_00147.png",
+    "x_off": 1344,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.066638359634148,
+      "right": 103.63452964466313,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 148,
+    "filename": "tile_00148.png",
+    "x_off": 1792,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.066638359634148,
+      "right": 103.63660962916802,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 149,
+    "filename": "tile_00149.png",
+    "x_off": 2240,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.066638359634148,
+      "right": 103.63868961367291,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 150,
+    "filename": "tile_00150.png",
+    "x_off": 2688,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.066638359634148,
+      "right": 103.64076959817781,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 151,
+    "filename": "tile_00151.png",
+    "x_off": 3136,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.066638359634148,
+      "right": 103.6428495826827,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 152,
+    "filename": "tile_00152.png",
+    "x_off": 3584,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.066638359634148,
+      "right": 103.6449295671876,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 153,
+    "filename": "tile_00153.png",
+    "x_off": 4032,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.066638359634148,
+      "right": 103.64700955169249,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 154,
+    "filename": "tile_00154.png",
+    "x_off": 4480,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.066638359634148,
+      "right": 103.64908953619738,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 155,
+    "filename": "tile_00155.png",
+    "x_off": 4928,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.066638359634148,
+      "right": 103.65116952070228,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 156,
+    "filename": "tile_00156.png",
+    "x_off": 5376,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.066638359634148,
+      "right": 103.65324950520717,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 157,
+    "filename": "tile_00157.png",
+    "x_off": 5824,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.066638359634148,
+      "right": 103.65532948971206,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 158,
+    "filename": "tile_00158.png",
+    "x_off": 6272,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.066638359634148,
+      "right": 103.65740947421696,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 159,
+    "filename": "tile_00159.png",
+    "x_off": 6720,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.066638359634148,
+      "right": 103.65948945872185,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 160,
+    "filename": "tile_00160.png",
+    "x_off": 7168,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.066638359634148,
+      "right": 103.66156944322674,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 161,
+    "filename": "tile_00161.png",
+    "x_off": 7616,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.066638359634148,
+      "right": 103.66364942773164,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 162,
+    "filename": "tile_00162.png",
+    "x_off": 8064,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.066638359634148,
+      "right": 103.66572941223653,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 163,
+    "filename": "tile_00163.png",
+    "x_off": 8512,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.066638359634148,
+      "right": 103.66780939674143,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 164,
+    "filename": "tile_00164.png",
+    "x_off": 8960,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.066638359634148,
+      "right": 103.66988938124632,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 165,
+    "filename": "tile_00165.png",
+    "x_off": 9408,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.066638359634148,
+      "right": 103.67196936575121,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 166,
+    "filename": "tile_00166.png",
+    "x_off": 9856,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.066638359634148,
+      "right": 103.67404935025611,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 167,
+    "filename": "tile_00167.png",
+    "x_off": 10304,
+    "y_off": 2688,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.066638359634148,
+      "right": 103.676129334761,
+      "top": 16.068967029292683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 168,
+    "filename": "tile_00168.png",
+    "x_off": 0,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.064600773682926,
+      "right": 103.62828969114845,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 0.9563,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 169,
+    "filename": "tile_00169.png",
+    "x_off": 448,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.064600773682926,
+      "right": 103.63036967565334,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 170,
+    "filename": "tile_00170.png",
+    "x_off": 896,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.064600773682926,
+      "right": 103.63244966015823,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 171,
+    "filename": "tile_00171.png",
+    "x_off": 1344,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.064600773682926,
+      "right": 103.63452964466313,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 172,
+    "filename": "tile_00172.png",
+    "x_off": 1792,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.064600773682926,
+      "right": 103.63660962916802,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 173,
+    "filename": "tile_00173.png",
+    "x_off": 2240,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.064600773682926,
+      "right": 103.63868961367291,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 174,
+    "filename": "tile_00174.png",
+    "x_off": 2688,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.064600773682926,
+      "right": 103.64076959817781,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 175,
+    "filename": "tile_00175.png",
+    "x_off": 3136,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.064600773682926,
+      "right": 103.6428495826827,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 176,
+    "filename": "tile_00176.png",
+    "x_off": 3584,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.064600773682926,
+      "right": 103.6449295671876,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 177,
+    "filename": "tile_00177.png",
+    "x_off": 4032,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.064600773682926,
+      "right": 103.64700955169249,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 178,
+    "filename": "tile_00178.png",
+    "x_off": 4480,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.064600773682926,
+      "right": 103.64908953619738,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 179,
+    "filename": "tile_00179.png",
+    "x_off": 4928,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.064600773682926,
+      "right": 103.65116952070228,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 180,
+    "filename": "tile_00180.png",
+    "x_off": 5376,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.064600773682926,
+      "right": 103.65324950520717,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 181,
+    "filename": "tile_00181.png",
+    "x_off": 5824,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.064600773682926,
+      "right": 103.65532948971206,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 182,
+    "filename": "tile_00182.png",
+    "x_off": 6272,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.064600773682926,
+      "right": 103.65740947421696,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 183,
+    "filename": "tile_00183.png",
+    "x_off": 6720,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.064600773682926,
+      "right": 103.65948945872185,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 184,
+    "filename": "tile_00184.png",
+    "x_off": 7168,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.064600773682926,
+      "right": 103.66156944322674,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 185,
+    "filename": "tile_00185.png",
+    "x_off": 7616,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.064600773682926,
+      "right": 103.66364942773164,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 186,
+    "filename": "tile_00186.png",
+    "x_off": 8064,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.064600773682926,
+      "right": 103.66572941223653,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 187,
+    "filename": "tile_00187.png",
+    "x_off": 8512,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.064600773682926,
+      "right": 103.66780939674143,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 188,
+    "filename": "tile_00188.png",
+    "x_off": 8960,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.064600773682926,
+      "right": 103.66988938124632,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 189,
+    "filename": "tile_00189.png",
+    "x_off": 9408,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.064600773682926,
+      "right": 103.67196936575121,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 190,
+    "filename": "tile_00190.png",
+    "x_off": 9856,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.064600773682926,
+      "right": 103.67404935025611,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 191,
+    "filename": "tile_00191.png",
+    "x_off": 10304,
+    "y_off": 3136,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.064600773682926,
+      "right": 103.676129334761,
+      "top": 16.066929443341465
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 192,
+    "filename": "tile_00192.png",
+    "x_off": 0,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.06256318773171,
+      "right": 103.62828969114845,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 0.9504,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 193,
+    "filename": "tile_00193.png",
+    "x_off": 448,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.06256318773171,
+      "right": 103.63036967565334,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 194,
+    "filename": "tile_00194.png",
+    "x_off": 896,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.06256318773171,
+      "right": 103.63244966015823,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 195,
+    "filename": "tile_00195.png",
+    "x_off": 1344,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.06256318773171,
+      "right": 103.63452964466313,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 196,
+    "filename": "tile_00196.png",
+    "x_off": 1792,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.06256318773171,
+      "right": 103.63660962916802,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 197,
+    "filename": "tile_00197.png",
+    "x_off": 2240,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.06256318773171,
+      "right": 103.63868961367291,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 198,
+    "filename": "tile_00198.png",
+    "x_off": 2688,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.06256318773171,
+      "right": 103.64076959817781,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 199,
+    "filename": "tile_00199.png",
+    "x_off": 3136,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.06256318773171,
+      "right": 103.6428495826827,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 200,
+    "filename": "tile_00200.png",
+    "x_off": 3584,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.06256318773171,
+      "right": 103.6449295671876,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 201,
+    "filename": "tile_00201.png",
+    "x_off": 4032,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.06256318773171,
+      "right": 103.64700955169249,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 202,
+    "filename": "tile_00202.png",
+    "x_off": 4480,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.06256318773171,
+      "right": 103.64908953619738,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 203,
+    "filename": "tile_00203.png",
+    "x_off": 4928,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.06256318773171,
+      "right": 103.65116952070228,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 204,
+    "filename": "tile_00204.png",
+    "x_off": 5376,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.06256318773171,
+      "right": 103.65324950520717,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 205,
+    "filename": "tile_00205.png",
+    "x_off": 5824,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.06256318773171,
+      "right": 103.65532948971206,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 206,
+    "filename": "tile_00206.png",
+    "x_off": 6272,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.06256318773171,
+      "right": 103.65740947421696,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 207,
+    "filename": "tile_00207.png",
+    "x_off": 6720,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.06256318773171,
+      "right": 103.65948945872185,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 208,
+    "filename": "tile_00208.png",
+    "x_off": 7168,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.06256318773171,
+      "right": 103.66156944322674,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 209,
+    "filename": "tile_00209.png",
+    "x_off": 7616,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.06256318773171,
+      "right": 103.66364942773164,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 210,
+    "filename": "tile_00210.png",
+    "x_off": 8064,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.06256318773171,
+      "right": 103.66572941223653,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 211,
+    "filename": "tile_00211.png",
+    "x_off": 8512,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.06256318773171,
+      "right": 103.66780939674143,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 212,
+    "filename": "tile_00212.png",
+    "x_off": 8960,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.06256318773171,
+      "right": 103.66988938124632,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 213,
+    "filename": "tile_00213.png",
+    "x_off": 9408,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.06256318773171,
+      "right": 103.67196936575121,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 214,
+    "filename": "tile_00214.png",
+    "x_off": 9856,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.06256318773171,
+      "right": 103.67404935025611,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 215,
+    "filename": "tile_00215.png",
+    "x_off": 10304,
+    "y_off": 3584,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.06256318773171,
+      "right": 103.676129334761,
+      "top": 16.064891857390244
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 216,
+    "filename": "tile_00216.png",
+    "x_off": 0,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.060525601780487,
+      "right": 103.62828969114845,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 0.9445,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 217,
+    "filename": "tile_00217.png",
+    "x_off": 448,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.060525601780487,
+      "right": 103.63036967565334,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 218,
+    "filename": "tile_00218.png",
+    "x_off": 896,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.060525601780487,
+      "right": 103.63244966015823,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 219,
+    "filename": "tile_00219.png",
+    "x_off": 1344,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.060525601780487,
+      "right": 103.63452964466313,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 220,
+    "filename": "tile_00220.png",
+    "x_off": 1792,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.060525601780487,
+      "right": 103.63660962916802,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 221,
+    "filename": "tile_00221.png",
+    "x_off": 2240,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.060525601780487,
+      "right": 103.63868961367291,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 222,
+    "filename": "tile_00222.png",
+    "x_off": 2688,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.060525601780487,
+      "right": 103.64076959817781,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 223,
+    "filename": "tile_00223.png",
+    "x_off": 3136,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.060525601780487,
+      "right": 103.6428495826827,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 224,
+    "filename": "tile_00224.png",
+    "x_off": 3584,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.060525601780487,
+      "right": 103.6449295671876,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 225,
+    "filename": "tile_00225.png",
+    "x_off": 4032,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.060525601780487,
+      "right": 103.64700955169249,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 226,
+    "filename": "tile_00226.png",
+    "x_off": 4480,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.060525601780487,
+      "right": 103.64908953619738,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 227,
+    "filename": "tile_00227.png",
+    "x_off": 4928,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.060525601780487,
+      "right": 103.65116952070228,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 228,
+    "filename": "tile_00228.png",
+    "x_off": 5376,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.060525601780487,
+      "right": 103.65324950520717,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 229,
+    "filename": "tile_00229.png",
+    "x_off": 5824,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.060525601780487,
+      "right": 103.65532948971206,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 230,
+    "filename": "tile_00230.png",
+    "x_off": 6272,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.060525601780487,
+      "right": 103.65740947421696,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 231,
+    "filename": "tile_00231.png",
+    "x_off": 6720,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.060525601780487,
+      "right": 103.65948945872185,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 232,
+    "filename": "tile_00232.png",
+    "x_off": 7168,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.060525601780487,
+      "right": 103.66156944322674,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 233,
+    "filename": "tile_00233.png",
+    "x_off": 7616,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.060525601780487,
+      "right": 103.66364942773164,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 234,
+    "filename": "tile_00234.png",
+    "x_off": 8064,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.060525601780487,
+      "right": 103.66572941223653,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 235,
+    "filename": "tile_00235.png",
+    "x_off": 8512,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.060525601780487,
+      "right": 103.66780939674143,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 236,
+    "filename": "tile_00236.png",
+    "x_off": 8960,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.060525601780487,
+      "right": 103.66988938124632,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 237,
+    "filename": "tile_00237.png",
+    "x_off": 9408,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.060525601780487,
+      "right": 103.67196936575121,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 238,
+    "filename": "tile_00238.png",
+    "x_off": 9856,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.060525601780487,
+      "right": 103.67404935025611,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 239,
+    "filename": "tile_00239.png",
+    "x_off": 10304,
+    "y_off": 4032,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.060525601780487,
+      "right": 103.676129334761,
+      "top": 16.062854271439026
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 240,
+    "filename": "tile_00240.png",
+    "x_off": 0,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.05848801582927,
+      "right": 103.62828969114845,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 0.9387,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 241,
+    "filename": "tile_00241.png",
+    "x_off": 448,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.05848801582927,
+      "right": 103.63036967565334,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 242,
+    "filename": "tile_00242.png",
+    "x_off": 896,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.05848801582927,
+      "right": 103.63244966015823,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 243,
+    "filename": "tile_00243.png",
+    "x_off": 1344,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.05848801582927,
+      "right": 103.63452964466313,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 244,
+    "filename": "tile_00244.png",
+    "x_off": 1792,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.05848801582927,
+      "right": 103.63660962916802,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 245,
+    "filename": "tile_00245.png",
+    "x_off": 2240,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.05848801582927,
+      "right": 103.63868961367291,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 246,
+    "filename": "tile_00246.png",
+    "x_off": 2688,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.05848801582927,
+      "right": 103.64076959817781,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 247,
+    "filename": "tile_00247.png",
+    "x_off": 3136,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.05848801582927,
+      "right": 103.6428495826827,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 248,
+    "filename": "tile_00248.png",
+    "x_off": 3584,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.05848801582927,
+      "right": 103.6449295671876,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 249,
+    "filename": "tile_00249.png",
+    "x_off": 4032,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.05848801582927,
+      "right": 103.64700955169249,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 250,
+    "filename": "tile_00250.png",
+    "x_off": 4480,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.05848801582927,
+      "right": 103.64908953619738,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 251,
+    "filename": "tile_00251.png",
+    "x_off": 4928,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.05848801582927,
+      "right": 103.65116952070228,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 252,
+    "filename": "tile_00252.png",
+    "x_off": 5376,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.05848801582927,
+      "right": 103.65324950520717,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 253,
+    "filename": "tile_00253.png",
+    "x_off": 5824,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.05848801582927,
+      "right": 103.65532948971206,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 254,
+    "filename": "tile_00254.png",
+    "x_off": 6272,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.05848801582927,
+      "right": 103.65740947421696,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 255,
+    "filename": "tile_00255.png",
+    "x_off": 6720,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.05848801582927,
+      "right": 103.65948945872185,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 256,
+    "filename": "tile_00256.png",
+    "x_off": 7168,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.05848801582927,
+      "right": 103.66156944322674,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 257,
+    "filename": "tile_00257.png",
+    "x_off": 7616,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.05848801582927,
+      "right": 103.66364942773164,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 258,
+    "filename": "tile_00258.png",
+    "x_off": 8064,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.05848801582927,
+      "right": 103.66572941223653,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 259,
+    "filename": "tile_00259.png",
+    "x_off": 8512,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.05848801582927,
+      "right": 103.66780939674143,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 260,
+    "filename": "tile_00260.png",
+    "x_off": 8960,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.05848801582927,
+      "right": 103.66988938124632,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 261,
+    "filename": "tile_00261.png",
+    "x_off": 9408,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.05848801582927,
+      "right": 103.67196936575121,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 262,
+    "filename": "tile_00262.png",
+    "x_off": 9856,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.05848801582927,
+      "right": 103.67404935025611,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 263,
+    "filename": "tile_00263.png",
+    "x_off": 10304,
+    "y_off": 4480,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.05848801582927,
+      "right": 103.676129334761,
+      "top": 16.060816685487804
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 264,
+    "filename": "tile_00264.png",
+    "x_off": 0,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.056450429878048,
+      "right": 103.62828969114845,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 0.9328,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 265,
+    "filename": "tile_00265.png",
+    "x_off": 448,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.056450429878048,
+      "right": 103.63036967565334,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 266,
+    "filename": "tile_00266.png",
+    "x_off": 896,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.056450429878048,
+      "right": 103.63244966015823,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 267,
+    "filename": "tile_00267.png",
+    "x_off": 1344,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.056450429878048,
+      "right": 103.63452964466313,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 268,
+    "filename": "tile_00268.png",
+    "x_off": 1792,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.056450429878048,
+      "right": 103.63660962916802,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 269,
+    "filename": "tile_00269.png",
+    "x_off": 2240,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.056450429878048,
+      "right": 103.63868961367291,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 270,
+    "filename": "tile_00270.png",
+    "x_off": 2688,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.056450429878048,
+      "right": 103.64076959817781,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 271,
+    "filename": "tile_00271.png",
+    "x_off": 3136,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.056450429878048,
+      "right": 103.6428495826827,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 272,
+    "filename": "tile_00272.png",
+    "x_off": 3584,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.056450429878048,
+      "right": 103.6449295671876,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 273,
+    "filename": "tile_00273.png",
+    "x_off": 4032,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.056450429878048,
+      "right": 103.64700955169249,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 274,
+    "filename": "tile_00274.png",
+    "x_off": 4480,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.056450429878048,
+      "right": 103.64908953619738,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 275,
+    "filename": "tile_00275.png",
+    "x_off": 4928,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.056450429878048,
+      "right": 103.65116952070228,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 276,
+    "filename": "tile_00276.png",
+    "x_off": 5376,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.056450429878048,
+      "right": 103.65324950520717,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 277,
+    "filename": "tile_00277.png",
+    "x_off": 5824,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.056450429878048,
+      "right": 103.65532948971206,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 278,
+    "filename": "tile_00278.png",
+    "x_off": 6272,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.056450429878048,
+      "right": 103.65740947421696,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 279,
+    "filename": "tile_00279.png",
+    "x_off": 6720,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.056450429878048,
+      "right": 103.65948945872185,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 280,
+    "filename": "tile_00280.png",
+    "x_off": 7168,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.056450429878048,
+      "right": 103.66156944322674,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 281,
+    "filename": "tile_00281.png",
+    "x_off": 7616,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.056450429878048,
+      "right": 103.66364942773164,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 282,
+    "filename": "tile_00282.png",
+    "x_off": 8064,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.056450429878048,
+      "right": 103.66572941223653,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 283,
+    "filename": "tile_00283.png",
+    "x_off": 8512,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.056450429878048,
+      "right": 103.66780939674143,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 284,
+    "filename": "tile_00284.png",
+    "x_off": 8960,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.056450429878048,
+      "right": 103.66988938124632,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 285,
+    "filename": "tile_00285.png",
+    "x_off": 9408,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.056450429878048,
+      "right": 103.67196936575121,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 286,
+    "filename": "tile_00286.png",
+    "x_off": 9856,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.056450429878048,
+      "right": 103.67404935025611,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 287,
+    "filename": "tile_00287.png",
+    "x_off": 10304,
+    "y_off": 4928,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.056450429878048,
+      "right": 103.676129334761,
+      "top": 16.058779099536586
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 288,
+    "filename": "tile_00288.png",
+    "x_off": 0,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.05441284392683,
+      "right": 103.62828969114845,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 0.9269,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 289,
+    "filename": "tile_00289.png",
+    "x_off": 448,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.05441284392683,
+      "right": 103.63036967565334,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 290,
+    "filename": "tile_00290.png",
+    "x_off": 896,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.05441284392683,
+      "right": 103.63244966015823,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 291,
+    "filename": "tile_00291.png",
+    "x_off": 1344,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.05441284392683,
+      "right": 103.63452964466313,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 292,
+    "filename": "tile_00292.png",
+    "x_off": 1792,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.05441284392683,
+      "right": 103.63660962916802,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 293,
+    "filename": "tile_00293.png",
+    "x_off": 2240,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.05441284392683,
+      "right": 103.63868961367291,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 294,
+    "filename": "tile_00294.png",
+    "x_off": 2688,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.05441284392683,
+      "right": 103.64076959817781,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 295,
+    "filename": "tile_00295.png",
+    "x_off": 3136,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.05441284392683,
+      "right": 103.6428495826827,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 296,
+    "filename": "tile_00296.png",
+    "x_off": 3584,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.05441284392683,
+      "right": 103.6449295671876,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 297,
+    "filename": "tile_00297.png",
+    "x_off": 4032,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.05441284392683,
+      "right": 103.64700955169249,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 298,
+    "filename": "tile_00298.png",
+    "x_off": 4480,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.05441284392683,
+      "right": 103.64908953619738,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 299,
+    "filename": "tile_00299.png",
+    "x_off": 4928,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.05441284392683,
+      "right": 103.65116952070228,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 300,
+    "filename": "tile_00300.png",
+    "x_off": 5376,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.05441284392683,
+      "right": 103.65324950520717,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 301,
+    "filename": "tile_00301.png",
+    "x_off": 5824,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.05441284392683,
+      "right": 103.65532948971206,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 302,
+    "filename": "tile_00302.png",
+    "x_off": 6272,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.05441284392683,
+      "right": 103.65740947421696,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 303,
+    "filename": "tile_00303.png",
+    "x_off": 6720,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.05441284392683,
+      "right": 103.65948945872185,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 304,
+    "filename": "tile_00304.png",
+    "x_off": 7168,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.05441284392683,
+      "right": 103.66156944322674,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 305,
+    "filename": "tile_00305.png",
+    "x_off": 7616,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.05441284392683,
+      "right": 103.66364942773164,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 306,
+    "filename": "tile_00306.png",
+    "x_off": 8064,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.05441284392683,
+      "right": 103.66572941223653,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 307,
+    "filename": "tile_00307.png",
+    "x_off": 8512,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.05441284392683,
+      "right": 103.66780939674143,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 308,
+    "filename": "tile_00308.png",
+    "x_off": 8960,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.05441284392683,
+      "right": 103.66988938124632,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 309,
+    "filename": "tile_00309.png",
+    "x_off": 9408,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.05441284392683,
+      "right": 103.67196936575121,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 310,
+    "filename": "tile_00310.png",
+    "x_off": 9856,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.05441284392683,
+      "right": 103.67404935025611,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 311,
+    "filename": "tile_00311.png",
+    "x_off": 10304,
+    "y_off": 5376,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.05441284392683,
+      "right": 103.676129334761,
+      "top": 16.056741513585365
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 312,
+    "filename": "tile_00312.png",
+    "x_off": 0,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.05237525797561,
+      "right": 103.62828969114845,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 0.921,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 313,
+    "filename": "tile_00313.png",
+    "x_off": 448,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.05237525797561,
+      "right": 103.63036967565334,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 314,
+    "filename": "tile_00314.png",
+    "x_off": 896,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.05237525797561,
+      "right": 103.63244966015823,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 315,
+    "filename": "tile_00315.png",
+    "x_off": 1344,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.05237525797561,
+      "right": 103.63452964466313,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 316,
+    "filename": "tile_00316.png",
+    "x_off": 1792,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.05237525797561,
+      "right": 103.63660962916802,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 317,
+    "filename": "tile_00317.png",
+    "x_off": 2240,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.05237525797561,
+      "right": 103.63868961367291,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 318,
+    "filename": "tile_00318.png",
+    "x_off": 2688,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.05237525797561,
+      "right": 103.64076959817781,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 319,
+    "filename": "tile_00319.png",
+    "x_off": 3136,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.05237525797561,
+      "right": 103.6428495826827,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 320,
+    "filename": "tile_00320.png",
+    "x_off": 3584,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.05237525797561,
+      "right": 103.6449295671876,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 321,
+    "filename": "tile_00321.png",
+    "x_off": 4032,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.05237525797561,
+      "right": 103.64700955169249,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 322,
+    "filename": "tile_00322.png",
+    "x_off": 4480,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.05237525797561,
+      "right": 103.64908953619738,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 323,
+    "filename": "tile_00323.png",
+    "x_off": 4928,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.05237525797561,
+      "right": 103.65116952070228,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 324,
+    "filename": "tile_00324.png",
+    "x_off": 5376,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.05237525797561,
+      "right": 103.65324950520717,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 325,
+    "filename": "tile_00325.png",
+    "x_off": 5824,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.05237525797561,
+      "right": 103.65532948971206,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 326,
+    "filename": "tile_00326.png",
+    "x_off": 6272,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.05237525797561,
+      "right": 103.65740947421696,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 327,
+    "filename": "tile_00327.png",
+    "x_off": 6720,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.05237525797561,
+      "right": 103.65948945872185,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 328,
+    "filename": "tile_00328.png",
+    "x_off": 7168,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.05237525797561,
+      "right": 103.66156944322674,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 329,
+    "filename": "tile_00329.png",
+    "x_off": 7616,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.05237525797561,
+      "right": 103.66364942773164,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 330,
+    "filename": "tile_00330.png",
+    "x_off": 8064,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.05237525797561,
+      "right": 103.66572941223653,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 331,
+    "filename": "tile_00331.png",
+    "x_off": 8512,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.05237525797561,
+      "right": 103.66780939674143,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 332,
+    "filename": "tile_00332.png",
+    "x_off": 8960,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.05237525797561,
+      "right": 103.66988938124632,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 333,
+    "filename": "tile_00333.png",
+    "x_off": 9408,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.05237525797561,
+      "right": 103.67196936575121,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 334,
+    "filename": "tile_00334.png",
+    "x_off": 9856,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.05237525797561,
+      "right": 103.67404935025611,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 335,
+    "filename": "tile_00335.png",
+    "x_off": 10304,
+    "y_off": 5824,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.05237525797561,
+      "right": 103.676129334761,
+      "top": 16.054703927634147
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 336,
+    "filename": "tile_00336.png",
+    "x_off": 0,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.05033767202439,
+      "right": 103.62828969114845,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 0.9152,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 337,
+    "filename": "tile_00337.png",
+    "x_off": 448,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.05033767202439,
+      "right": 103.63036967565334,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 338,
+    "filename": "tile_00338.png",
+    "x_off": 896,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.05033767202439,
+      "right": 103.63244966015823,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 339,
+    "filename": "tile_00339.png",
+    "x_off": 1344,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.05033767202439,
+      "right": 103.63452964466313,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 340,
+    "filename": "tile_00340.png",
+    "x_off": 1792,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.05033767202439,
+      "right": 103.63660962916802,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 341,
+    "filename": "tile_00341.png",
+    "x_off": 2240,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.05033767202439,
+      "right": 103.63868961367291,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 342,
+    "filename": "tile_00342.png",
+    "x_off": 2688,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.05033767202439,
+      "right": 103.64076959817781,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 343,
+    "filename": "tile_00343.png",
+    "x_off": 3136,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.05033767202439,
+      "right": 103.6428495826827,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 344,
+    "filename": "tile_00344.png",
+    "x_off": 3584,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.05033767202439,
+      "right": 103.6449295671876,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 345,
+    "filename": "tile_00345.png",
+    "x_off": 4032,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.05033767202439,
+      "right": 103.64700955169249,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 346,
+    "filename": "tile_00346.png",
+    "x_off": 4480,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.05033767202439,
+      "right": 103.64908953619738,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 347,
+    "filename": "tile_00347.png",
+    "x_off": 4928,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.05033767202439,
+      "right": 103.65116952070228,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 348,
+    "filename": "tile_00348.png",
+    "x_off": 5376,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.05033767202439,
+      "right": 103.65324950520717,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 349,
+    "filename": "tile_00349.png",
+    "x_off": 5824,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.05033767202439,
+      "right": 103.65532948971206,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 350,
+    "filename": "tile_00350.png",
+    "x_off": 6272,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.05033767202439,
+      "right": 103.65740947421696,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 351,
+    "filename": "tile_00351.png",
+    "x_off": 6720,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.05033767202439,
+      "right": 103.65948945872185,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 352,
+    "filename": "tile_00352.png",
+    "x_off": 7168,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.05033767202439,
+      "right": 103.66156944322674,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 353,
+    "filename": "tile_00353.png",
+    "x_off": 7616,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.05033767202439,
+      "right": 103.66364942773164,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 354,
+    "filename": "tile_00354.png",
+    "x_off": 8064,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.05033767202439,
+      "right": 103.66572941223653,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 355,
+    "filename": "tile_00355.png",
+    "x_off": 8512,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.05033767202439,
+      "right": 103.66780939674143,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 356,
+    "filename": "tile_00356.png",
+    "x_off": 8960,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.05033767202439,
+      "right": 103.66988938124632,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 357,
+    "filename": "tile_00357.png",
+    "x_off": 9408,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.05033767202439,
+      "right": 103.67196936575121,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 358,
+    "filename": "tile_00358.png",
+    "x_off": 9856,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.05033767202439,
+      "right": 103.67404935025611,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 359,
+    "filename": "tile_00359.png",
+    "x_off": 10304,
+    "y_off": 6272,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.05033767202439,
+      "right": 103.676129334761,
+      "top": 16.052666341682926
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 360,
+    "filename": "tile_00360.png",
+    "x_off": 0,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.04830008607317,
+      "right": 103.62828969114845,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 0.9093,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 361,
+    "filename": "tile_00361.png",
+    "x_off": 448,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.04830008607317,
+      "right": 103.63036967565334,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 362,
+    "filename": "tile_00362.png",
+    "x_off": 896,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.04830008607317,
+      "right": 103.63244966015823,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 363,
+    "filename": "tile_00363.png",
+    "x_off": 1344,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.04830008607317,
+      "right": 103.63452964466313,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 364,
+    "filename": "tile_00364.png",
+    "x_off": 1792,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.04830008607317,
+      "right": 103.63660962916802,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 365,
+    "filename": "tile_00365.png",
+    "x_off": 2240,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.04830008607317,
+      "right": 103.63868961367291,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 366,
+    "filename": "tile_00366.png",
+    "x_off": 2688,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.04830008607317,
+      "right": 103.64076959817781,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 367,
+    "filename": "tile_00367.png",
+    "x_off": 3136,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.04830008607317,
+      "right": 103.6428495826827,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 368,
+    "filename": "tile_00368.png",
+    "x_off": 3584,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.04830008607317,
+      "right": 103.6449295671876,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 369,
+    "filename": "tile_00369.png",
+    "x_off": 4032,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.04830008607317,
+      "right": 103.64700955169249,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 370,
+    "filename": "tile_00370.png",
+    "x_off": 4480,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.04830008607317,
+      "right": 103.64908953619738,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 371,
+    "filename": "tile_00371.png",
+    "x_off": 4928,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.04830008607317,
+      "right": 103.65116952070228,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 372,
+    "filename": "tile_00372.png",
+    "x_off": 5376,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.04830008607317,
+      "right": 103.65324950520717,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 373,
+    "filename": "tile_00373.png",
+    "x_off": 5824,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.04830008607317,
+      "right": 103.65532948971206,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 374,
+    "filename": "tile_00374.png",
+    "x_off": 6272,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.04830008607317,
+      "right": 103.65740947421696,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 375,
+    "filename": "tile_00375.png",
+    "x_off": 6720,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.04830008607317,
+      "right": 103.65948945872185,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 376,
+    "filename": "tile_00376.png",
+    "x_off": 7168,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.04830008607317,
+      "right": 103.66156944322674,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 377,
+    "filename": "tile_00377.png",
+    "x_off": 7616,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.04830008607317,
+      "right": 103.66364942773164,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 378,
+    "filename": "tile_00378.png",
+    "x_off": 8064,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.04830008607317,
+      "right": 103.66572941223653,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 379,
+    "filename": "tile_00379.png",
+    "x_off": 8512,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.04830008607317,
+      "right": 103.66780939674143,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 380,
+    "filename": "tile_00380.png",
+    "x_off": 8960,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.04830008607317,
+      "right": 103.66988938124632,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 381,
+    "filename": "tile_00381.png",
+    "x_off": 9408,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.04830008607317,
+      "right": 103.67196936575121,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 382,
+    "filename": "tile_00382.png",
+    "x_off": 9856,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.04830008607317,
+      "right": 103.67404935025611,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 383,
+    "filename": "tile_00383.png",
+    "x_off": 10304,
+    "y_off": 6720,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.04830008607317,
+      "right": 103.676129334761,
+      "top": 16.050628755731708
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 384,
+    "filename": "tile_00384.png",
+    "x_off": 0,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.04626250012195,
+      "right": 103.62828969114845,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 0.9034,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 385,
+    "filename": "tile_00385.png",
+    "x_off": 448,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.04626250012195,
+      "right": 103.63036967565334,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 386,
+    "filename": "tile_00386.png",
+    "x_off": 896,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.04626250012195,
+      "right": 103.63244966015823,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 387,
+    "filename": "tile_00387.png",
+    "x_off": 1344,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.04626250012195,
+      "right": 103.63452964466313,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 388,
+    "filename": "tile_00388.png",
+    "x_off": 1792,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.04626250012195,
+      "right": 103.63660962916802,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 389,
+    "filename": "tile_00389.png",
+    "x_off": 2240,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.04626250012195,
+      "right": 103.63868961367291,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 390,
+    "filename": "tile_00390.png",
+    "x_off": 2688,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.04626250012195,
+      "right": 103.64076959817781,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 391,
+    "filename": "tile_00391.png",
+    "x_off": 3136,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.04626250012195,
+      "right": 103.6428495826827,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 392,
+    "filename": "tile_00392.png",
+    "x_off": 3584,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.04626250012195,
+      "right": 103.6449295671876,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 393,
+    "filename": "tile_00393.png",
+    "x_off": 4032,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.04626250012195,
+      "right": 103.64700955169249,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 394,
+    "filename": "tile_00394.png",
+    "x_off": 4480,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.04626250012195,
+      "right": 103.64908953619738,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 395,
+    "filename": "tile_00395.png",
+    "x_off": 4928,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.04626250012195,
+      "right": 103.65116952070228,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 396,
+    "filename": "tile_00396.png",
+    "x_off": 5376,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.04626250012195,
+      "right": 103.65324950520717,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 397,
+    "filename": "tile_00397.png",
+    "x_off": 5824,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.04626250012195,
+      "right": 103.65532948971206,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 398,
+    "filename": "tile_00398.png",
+    "x_off": 6272,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.04626250012195,
+      "right": 103.65740947421696,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 399,
+    "filename": "tile_00399.png",
+    "x_off": 6720,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.04626250012195,
+      "right": 103.65948945872185,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 400,
+    "filename": "tile_00400.png",
+    "x_off": 7168,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.04626250012195,
+      "right": 103.66156944322674,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 401,
+    "filename": "tile_00401.png",
+    "x_off": 7616,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.04626250012195,
+      "right": 103.66364942773164,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 402,
+    "filename": "tile_00402.png",
+    "x_off": 8064,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.04626250012195,
+      "right": 103.66572941223653,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 403,
+    "filename": "tile_00403.png",
+    "x_off": 8512,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.04626250012195,
+      "right": 103.66780939674143,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 404,
+    "filename": "tile_00404.png",
+    "x_off": 8960,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.04626250012195,
+      "right": 103.66988938124632,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 405,
+    "filename": "tile_00405.png",
+    "x_off": 9408,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.04626250012195,
+      "right": 103.67196936575121,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 406,
+    "filename": "tile_00406.png",
+    "x_off": 9856,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.04626250012195,
+      "right": 103.67404935025611,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 407,
+    "filename": "tile_00407.png",
+    "x_off": 10304,
+    "y_off": 7168,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.04626250012195,
+      "right": 103.676129334761,
+      "top": 16.048591169780487
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 408,
+    "filename": "tile_00408.png",
+    "x_off": 0,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.04422491417073,
+      "right": 103.62828969114845,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 0.8975,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 409,
+    "filename": "tile_00409.png",
+    "x_off": 448,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.04422491417073,
+      "right": 103.63036967565334,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 410,
+    "filename": "tile_00410.png",
+    "x_off": 896,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.04422491417073,
+      "right": 103.63244966015823,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 411,
+    "filename": "tile_00411.png",
+    "x_off": 1344,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.04422491417073,
+      "right": 103.63452964466313,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 412,
+    "filename": "tile_00412.png",
+    "x_off": 1792,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.04422491417073,
+      "right": 103.63660962916802,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 413,
+    "filename": "tile_00413.png",
+    "x_off": 2240,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.04422491417073,
+      "right": 103.63868961367291,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 414,
+    "filename": "tile_00414.png",
+    "x_off": 2688,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.04422491417073,
+      "right": 103.64076959817781,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 415,
+    "filename": "tile_00415.png",
+    "x_off": 3136,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.04422491417073,
+      "right": 103.6428495826827,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 416,
+    "filename": "tile_00416.png",
+    "x_off": 3584,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.04422491417073,
+      "right": 103.6449295671876,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 417,
+    "filename": "tile_00417.png",
+    "x_off": 4032,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.04422491417073,
+      "right": 103.64700955169249,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 418,
+    "filename": "tile_00418.png",
+    "x_off": 4480,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.04422491417073,
+      "right": 103.64908953619738,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 419,
+    "filename": "tile_00419.png",
+    "x_off": 4928,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.04422491417073,
+      "right": 103.65116952070228,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 420,
+    "filename": "tile_00420.png",
+    "x_off": 5376,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.04422491417073,
+      "right": 103.65324950520717,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 421,
+    "filename": "tile_00421.png",
+    "x_off": 5824,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.04422491417073,
+      "right": 103.65532948971206,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 422,
+    "filename": "tile_00422.png",
+    "x_off": 6272,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.04422491417073,
+      "right": 103.65740947421696,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 423,
+    "filename": "tile_00423.png",
+    "x_off": 6720,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.04422491417073,
+      "right": 103.65948945872185,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 424,
+    "filename": "tile_00424.png",
+    "x_off": 7168,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.04422491417073,
+      "right": 103.66156944322674,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 425,
+    "filename": "tile_00425.png",
+    "x_off": 7616,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.04422491417073,
+      "right": 103.66364942773164,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 426,
+    "filename": "tile_00426.png",
+    "x_off": 8064,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.04422491417073,
+      "right": 103.66572941223653,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 427,
+    "filename": "tile_00427.png",
+    "x_off": 8512,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.04422491417073,
+      "right": 103.66780939674143,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 428,
+    "filename": "tile_00428.png",
+    "x_off": 8960,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.04422491417073,
+      "right": 103.66988938124632,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 429,
+    "filename": "tile_00429.png",
+    "x_off": 9408,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.04422491417073,
+      "right": 103.67196936575121,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 430,
+    "filename": "tile_00430.png",
+    "x_off": 9856,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.04422491417073,
+      "right": 103.67404935025611,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 431,
+    "filename": "tile_00431.png",
+    "x_off": 10304,
+    "y_off": 7616,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.04422491417073,
+      "right": 103.676129334761,
+      "top": 16.04655358382927
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 432,
+    "filename": "tile_00432.png",
+    "x_off": 0,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.042187328219512,
+      "right": 103.62828969114845,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 0.8917,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 433,
+    "filename": "tile_00433.png",
+    "x_off": 448,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.042187328219512,
+      "right": 103.63036967565334,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 434,
+    "filename": "tile_00434.png",
+    "x_off": 896,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.042187328219512,
+      "right": 103.63244966015823,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 435,
+    "filename": "tile_00435.png",
+    "x_off": 1344,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.042187328219512,
+      "right": 103.63452964466313,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 436,
+    "filename": "tile_00436.png",
+    "x_off": 1792,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.042187328219512,
+      "right": 103.63660962916802,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 437,
+    "filename": "tile_00437.png",
+    "x_off": 2240,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.042187328219512,
+      "right": 103.63868961367291,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 438,
+    "filename": "tile_00438.png",
+    "x_off": 2688,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.042187328219512,
+      "right": 103.64076959817781,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 439,
+    "filename": "tile_00439.png",
+    "x_off": 3136,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.042187328219512,
+      "right": 103.6428495826827,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 440,
+    "filename": "tile_00440.png",
+    "x_off": 3584,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.042187328219512,
+      "right": 103.6449295671876,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 441,
+    "filename": "tile_00441.png",
+    "x_off": 4032,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.042187328219512,
+      "right": 103.64700955169249,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 442,
+    "filename": "tile_00442.png",
+    "x_off": 4480,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.042187328219512,
+      "right": 103.64908953619738,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 443,
+    "filename": "tile_00443.png",
+    "x_off": 4928,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.042187328219512,
+      "right": 103.65116952070228,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 444,
+    "filename": "tile_00444.png",
+    "x_off": 5376,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.042187328219512,
+      "right": 103.65324950520717,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 445,
+    "filename": "tile_00445.png",
+    "x_off": 5824,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.042187328219512,
+      "right": 103.65532948971206,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 446,
+    "filename": "tile_00446.png",
+    "x_off": 6272,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.042187328219512,
+      "right": 103.65740947421696,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 447,
+    "filename": "tile_00447.png",
+    "x_off": 6720,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.042187328219512,
+      "right": 103.65948945872185,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 448,
+    "filename": "tile_00448.png",
+    "x_off": 7168,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.042187328219512,
+      "right": 103.66156944322674,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 449,
+    "filename": "tile_00449.png",
+    "x_off": 7616,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.042187328219512,
+      "right": 103.66364942773164,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 450,
+    "filename": "tile_00450.png",
+    "x_off": 8064,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.042187328219512,
+      "right": 103.66572941223653,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 451,
+    "filename": "tile_00451.png",
+    "x_off": 8512,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.042187328219512,
+      "right": 103.66780939674143,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 452,
+    "filename": "tile_00452.png",
+    "x_off": 8960,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.042187328219512,
+      "right": 103.66988938124632,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 453,
+    "filename": "tile_00453.png",
+    "x_off": 9408,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.042187328219512,
+      "right": 103.67196936575121,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 454,
+    "filename": "tile_00454.png",
+    "x_off": 9856,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.042187328219512,
+      "right": 103.67404935025611,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 455,
+    "filename": "tile_00455.png",
+    "x_off": 10304,
+    "y_off": 8064,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.042187328219512,
+      "right": 103.676129334761,
+      "top": 16.044515997878047
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 456,
+    "filename": "tile_00456.png",
+    "x_off": 0,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.04014974226829,
+      "right": 103.62828969114845,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 0.8858,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 457,
+    "filename": "tile_00457.png",
+    "x_off": 448,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.04014974226829,
+      "right": 103.63036967565334,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 458,
+    "filename": "tile_00458.png",
+    "x_off": 896,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.04014974226829,
+      "right": 103.63244966015823,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 459,
+    "filename": "tile_00459.png",
+    "x_off": 1344,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.04014974226829,
+      "right": 103.63452964466313,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 460,
+    "filename": "tile_00460.png",
+    "x_off": 1792,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.04014974226829,
+      "right": 103.63660962916802,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 461,
+    "filename": "tile_00461.png",
+    "x_off": 2240,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.04014974226829,
+      "right": 103.63868961367291,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 462,
+    "filename": "tile_00462.png",
+    "x_off": 2688,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.04014974226829,
+      "right": 103.64076959817781,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 463,
+    "filename": "tile_00463.png",
+    "x_off": 3136,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.04014974226829,
+      "right": 103.6428495826827,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 464,
+    "filename": "tile_00464.png",
+    "x_off": 3584,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.04014974226829,
+      "right": 103.6449295671876,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 465,
+    "filename": "tile_00465.png",
+    "x_off": 4032,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.04014974226829,
+      "right": 103.64700955169249,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 466,
+    "filename": "tile_00466.png",
+    "x_off": 4480,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.04014974226829,
+      "right": 103.64908953619738,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 467,
+    "filename": "tile_00467.png",
+    "x_off": 4928,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.04014974226829,
+      "right": 103.65116952070228,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 468,
+    "filename": "tile_00468.png",
+    "x_off": 5376,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.04014974226829,
+      "right": 103.65324950520717,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 469,
+    "filename": "tile_00469.png",
+    "x_off": 5824,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.04014974226829,
+      "right": 103.65532948971206,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 470,
+    "filename": "tile_00470.png",
+    "x_off": 6272,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.04014974226829,
+      "right": 103.65740947421696,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 471,
+    "filename": "tile_00471.png",
+    "x_off": 6720,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.04014974226829,
+      "right": 103.65948945872185,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 472,
+    "filename": "tile_00472.png",
+    "x_off": 7168,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.04014974226829,
+      "right": 103.66156944322674,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 473,
+    "filename": "tile_00473.png",
+    "x_off": 7616,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.04014974226829,
+      "right": 103.66364942773164,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 474,
+    "filename": "tile_00474.png",
+    "x_off": 8064,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.04014974226829,
+      "right": 103.66572941223653,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 475,
+    "filename": "tile_00475.png",
+    "x_off": 8512,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.04014974226829,
+      "right": 103.66780939674143,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 476,
+    "filename": "tile_00476.png",
+    "x_off": 8960,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.04014974226829,
+      "right": 103.66988938124632,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 477,
+    "filename": "tile_00477.png",
+    "x_off": 9408,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.04014974226829,
+      "right": 103.67196936575121,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 478,
+    "filename": "tile_00478.png",
+    "x_off": 9856,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.04014974226829,
+      "right": 103.67404935025611,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 479,
+    "filename": "tile_00479.png",
+    "x_off": 10304,
+    "y_off": 8512,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.04014974226829,
+      "right": 103.676129334761,
+      "top": 16.04247841192683
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 480,
+    "filename": "tile_00480.png",
+    "x_off": 0,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.038112156317073,
+      "right": 103.62828969114845,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 0.8799,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 481,
+    "filename": "tile_00481.png",
+    "x_off": 448,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.038112156317073,
+      "right": 103.63036967565334,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 482,
+    "filename": "tile_00482.png",
+    "x_off": 896,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.038112156317073,
+      "right": 103.63244966015823,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 483,
+    "filename": "tile_00483.png",
+    "x_off": 1344,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.038112156317073,
+      "right": 103.63452964466313,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 484,
+    "filename": "tile_00484.png",
+    "x_off": 1792,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.038112156317073,
+      "right": 103.63660962916802,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 485,
+    "filename": "tile_00485.png",
+    "x_off": 2240,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.038112156317073,
+      "right": 103.63868961367291,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 486,
+    "filename": "tile_00486.png",
+    "x_off": 2688,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.038112156317073,
+      "right": 103.64076959817781,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 487,
+    "filename": "tile_00487.png",
+    "x_off": 3136,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.038112156317073,
+      "right": 103.6428495826827,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 488,
+    "filename": "tile_00488.png",
+    "x_off": 3584,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.038112156317073,
+      "right": 103.6449295671876,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 489,
+    "filename": "tile_00489.png",
+    "x_off": 4032,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.038112156317073,
+      "right": 103.64700955169249,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 490,
+    "filename": "tile_00490.png",
+    "x_off": 4480,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.038112156317073,
+      "right": 103.64908953619738,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 491,
+    "filename": "tile_00491.png",
+    "x_off": 4928,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.038112156317073,
+      "right": 103.65116952070228,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 492,
+    "filename": "tile_00492.png",
+    "x_off": 5376,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.038112156317073,
+      "right": 103.65324950520717,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 493,
+    "filename": "tile_00493.png",
+    "x_off": 5824,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.038112156317073,
+      "right": 103.65532948971206,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 494,
+    "filename": "tile_00494.png",
+    "x_off": 6272,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.038112156317073,
+      "right": 103.65740947421696,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 495,
+    "filename": "tile_00495.png",
+    "x_off": 6720,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.038112156317073,
+      "right": 103.65948945872185,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 496,
+    "filename": "tile_00496.png",
+    "x_off": 7168,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.038112156317073,
+      "right": 103.66156944322674,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 497,
+    "filename": "tile_00497.png",
+    "x_off": 7616,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.038112156317073,
+      "right": 103.66364942773164,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 498,
+    "filename": "tile_00498.png",
+    "x_off": 8064,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.038112156317073,
+      "right": 103.66572941223653,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 499,
+    "filename": "tile_00499.png",
+    "x_off": 8512,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.038112156317073,
+      "right": 103.66780939674143,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 500,
+    "filename": "tile_00500.png",
+    "x_off": 8960,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.038112156317073,
+      "right": 103.66988938124632,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 501,
+    "filename": "tile_00501.png",
+    "x_off": 9408,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.038112156317073,
+      "right": 103.67196936575121,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 502,
+    "filename": "tile_00502.png",
+    "x_off": 9856,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.038112156317073,
+      "right": 103.67404935025611,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 503,
+    "filename": "tile_00503.png",
+    "x_off": 10304,
+    "y_off": 8960,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.038112156317073,
+      "right": 103.676129334761,
+      "top": 16.040440825975608
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 504,
+    "filename": "tile_00504.png",
+    "x_off": 0,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.625912566,
+      "bottom": 16.03607457036585,
+      "right": 103.62828969114845,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 0.874,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 505,
+    "filename": "tile_00505.png",
+    "x_off": 448,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.62799255050489,
+      "bottom": 16.03607457036585,
+      "right": 103.63036967565334,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 506,
+    "filename": "tile_00506.png",
+    "x_off": 896,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.63007253500979,
+      "bottom": 16.03607457036585,
+      "right": 103.63244966015823,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 507,
+    "filename": "tile_00507.png",
+    "x_off": 1344,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.63215251951468,
+      "bottom": 16.03607457036585,
+      "right": 103.63452964466313,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 508,
+    "filename": "tile_00508.png",
+    "x_off": 1792,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.63423250401956,
+      "bottom": 16.03607457036585,
+      "right": 103.63660962916802,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 509,
+    "filename": "tile_00509.png",
+    "x_off": 2240,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.63631248852447,
+      "bottom": 16.03607457036585,
+      "right": 103.63868961367291,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 510,
+    "filename": "tile_00510.png",
+    "x_off": 2688,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.63839247302936,
+      "bottom": 16.03607457036585,
+      "right": 103.64076959817781,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 511,
+    "filename": "tile_00511.png",
+    "x_off": 3136,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.64047245753426,
+      "bottom": 16.03607457036585,
+      "right": 103.6428495826827,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 512,
+    "filename": "tile_00512.png",
+    "x_off": 3584,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.64255244203915,
+      "bottom": 16.03607457036585,
+      "right": 103.6449295671876,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 513,
+    "filename": "tile_00513.png",
+    "x_off": 4032,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.64463242654404,
+      "bottom": 16.03607457036585,
+      "right": 103.64700955169249,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 514,
+    "filename": "tile_00514.png",
+    "x_off": 4480,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.64671241104894,
+      "bottom": 16.03607457036585,
+      "right": 103.64908953619738,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 515,
+    "filename": "tile_00515.png",
+    "x_off": 4928,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.64879239555383,
+      "bottom": 16.03607457036585,
+      "right": 103.65116952070228,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 516,
+    "filename": "tile_00516.png",
+    "x_off": 5376,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.65087238005871,
+      "bottom": 16.03607457036585,
+      "right": 103.65324950520717,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 517,
+    "filename": "tile_00517.png",
+    "x_off": 5824,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.65295236456362,
+      "bottom": 16.03607457036585,
+      "right": 103.65532948971206,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 518,
+    "filename": "tile_00518.png",
+    "x_off": 6272,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.6550323490685,
+      "bottom": 16.03607457036585,
+      "right": 103.65740947421696,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 519,
+    "filename": "tile_00519.png",
+    "x_off": 6720,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.65711233357341,
+      "bottom": 16.03607457036585,
+      "right": 103.65948945872185,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 520,
+    "filename": "tile_00520.png",
+    "x_off": 7168,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.6591923180783,
+      "bottom": 16.03607457036585,
+      "right": 103.66156944322674,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 521,
+    "filename": "tile_00521.png",
+    "x_off": 7616,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.66127230258319,
+      "bottom": 16.03607457036585,
+      "right": 103.66364942773164,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 522,
+    "filename": "tile_00522.png",
+    "x_off": 8064,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.66335228708809,
+      "bottom": 16.03607457036585,
+      "right": 103.66572941223653,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 523,
+    "filename": "tile_00523.png",
+    "x_off": 8512,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.66543227159298,
+      "bottom": 16.03607457036585,
+      "right": 103.66780939674143,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 524,
+    "filename": "tile_00524.png",
+    "x_off": 8960,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.66751225609787,
+      "bottom": 16.03607457036585,
+      "right": 103.66988938124632,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 525,
+    "filename": "tile_00525.png",
+    "x_off": 9408,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.66959224060277,
+      "bottom": 16.03607457036585,
+      "right": 103.67196936575121,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 526,
+    "filename": "tile_00526.png",
+    "x_off": 9856,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.67167222510766,
+      "bottom": 16.03607457036585,
+      "right": 103.67404935025611,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  },
+  {
+    "tile_id": 527,
+    "filename": "tile_00527.png",
+    "x_off": 10304,
+    "y_off": 9408,
+    "bounds": {
+      "left": 103.67375220961254,
+      "bottom": 16.03607457036585,
+      "right": 103.676129334761,
+      "top": 16.03840324002439
+    },
+    "valid_ratio": 1.0,
+    "composite": "false_color_NIR_R_G"
+  }
+]

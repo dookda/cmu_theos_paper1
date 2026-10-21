@@ -1,0 +1,136 @@
+{
+  "tag": "ens_baseline3",
+  "split": "test",
+  "members": [
+    {
+      "model": "hrnet",
+      "encoder": "tu-hrnet_w48",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/hrnet_w48/models/hrnet_best.pth"
+    },
+    {
+      "model": "unetpp",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/unetpp_efficientnet/models/unetpp_best.pth"
+    },
+    {
+      "model": "unet",
+      "encoder": "efficientnet-b3",
+      "checkpoint": "/project/gisnorth/cmu_theos_ai_data/train_output/unet_efficientnet/models/unet_best.pth"
+    }
+  ],
+  "n_tiles": 397,
+  "class_names": [
+    "background",
+    "vegetation",
+    "water",
+    "urban",
+    "agriculture",
+    "bare_soil",
+    "road",
+    "grass"
+  ],
+  "overall_accuracy": 0.7726825839025848,
+  "mean_iou": 0.5647969539240865,
+  "per_class_iou": {
+    "background": 0.42893852603006044,
+    "vegetation": 0.7214502275821977,
+    "water": 0.7495232309186756,
+    "urban": 0.6743260100151411,
+    "agriculture": 0.8019153499467644,
+    "bare_soil": 0.30537393771240295,
+    "road": 0.4667741202354369,
+    "grass": 0.37007422895201225
+  },
+  "per_class_f1": {
+    "background": 0.6003596630874755,
+    "vegetation": 0.8381888898356186,
+    "water": 0.8568314128931006,
+    "urban": 0.8054894996333994,
+    "agriculture": 0.8900699469267035,
+    "bare_soil": 0.4678719696940698,
+    "road": 0.6364635342223155,
+    "grass": 0.5402250785128435
+  },
+  "confusion_matrix": [
+    [
+      15347716,
+      4624091,
+      239787,
+      2175091,
+      1993397,
+      190729,
+      715769,
+      444042
+    ],
+    [
+      4824192,
+      29969155,
+      106370,
+      285135,
+      201387,
+      917,
+      43392,
+      403062
+    ],
+    [
+      237958,
+      127309,
+      2307040,
+      1314,
+      16407,
+      0,
+      1313,
+      1686
+    ],
+    [
+      1724775,
+      219493,
+      1252,
+      9742880,
+      37447,
+      799,
+      76622,
+      8228
+    ],
+    [
+      1708870,
+      340368,
+      29371,
+      12051,
+      19761948,
+      12408,
+      30317,
+      278827
+    ],
+    [
+      317846,
+      30214,
+      11,
+      11993,
+      79005,
+      367061,
+      3311,
+      104854
+    ],
+    [
+      608807,
+      85457,
+      2283,
+      142695,
+      10937,
+      2595,
+      1517780,
+      5058
+    ],
+    [
+      627619,
+      279614,
+      5909,
+      8548,
+      130694,
+      80262,
+      5301,
+      1400399
+    ]
+  ]
+}

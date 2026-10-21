@@ -1,0 +1,78 @@
+{
+  "res_m": 4.0,
+  "extent": [
+    497301.8622000003,
+    2048204.6681999993,
+    503863.5,
+    2055275.6848000009
+  ],
+  "valid_px": 1058719,
+  "total_rai": 10587.2,
+  "classes": {
+    "1": "Urban",
+    "2": "Agriculture",
+    "3": "Forest/Vegetation",
+    "4": "Water",
+    "5": "Other"
+  },
+  "area2563_rai": {
+    "Urban": 3420.2,
+    "Agriculture": 6132.7,
+    "Forest/Vegetation": 0.0,
+    "Water": 255.8,
+    "Other": 778.5
+  },
+  "area2569_rai": {
+    "Urban": 959.5,
+    "Agriculture": 3230.2,
+    "Forest/Vegetation": 2254.4,
+    "Water": 372.3,
+    "Other": 3770.8
+  },
+  "net_change_rai": {
+    "Urban": -2460.7,
+    "Agriculture": -2902.5,
+    "Forest/Vegetation": 2254.4,
+    "Water": 116.5,
+    "Other": 2992.3
+  },
+  "transition_rai": {
+    "Urban": {
+      "Urban": 813.9,
+      "Agriculture": 45.8,
+      "Forest/Vegetation": 804.1,
+      "Water": 84.7,
+      "Other": 1671.7
+    },
+    "Agriculture": {
+      "Urban": 127.4,
+      "Agriculture": 3117.7,
+      "Forest/Vegetation": 1111.5,
+      "Water": 60.9,
+      "Other": 1715.2
+    },
+    "Forest/Vegetation": {
+      "Urban": 0.0,
+      "Agriculture": 0.0,
+      "Forest/Vegetation": 0.0,
+      "Water": 0.0,
+      "Other": 0.0
+    },
+    "Water": {
+      "Urban": 1.6,
+      "Agriculture": 3.2,
+      "Forest/Vegetation": 58.4,
+      "Water": 123.8,
+      "Other": 68.8
+    },
+    "Other": {
+      "Urban": 16.6,
+      "Agriculture": 63.5,
+      "Forest/Vegetation": 280.4,
+      "Water": 102.9,
+      "Other": 315.2
+    }
+  },
+  "unchanged_rai": 4370.5,
+  "changed_rai": 6216.7
+}

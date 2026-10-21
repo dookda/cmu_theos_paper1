@@ -1,0 +1,324 @@
+{
+ "set_id": "pilot",
+ "reviewer": "r1",
+ "answers": {
+  "0": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "1": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  },
+  "2": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "3": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "4": {
+   "q1": "Water",
+   "q2": "changed"
+  },
+  "5": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "6": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "7": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "8": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "9": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "10": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "11": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "12": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  },
+  "13": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "14": {
+   "q2": "changed"
+  },
+  "15": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "16": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "17": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "18": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "19": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "20": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "21": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "22": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "23": {
+   "q1": "unsure",
+   "q2": "changed"
+  },
+  "24": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "25": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "26": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "27": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  },
+  "28": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "29": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "30": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "31": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "32": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "33": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "34": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "35": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "36": {
+   "q1": "unsure",
+   "q2": "unchanged"
+  },
+  "37": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "38": {
+   "q1": "unsure",
+   "q2": "unchanged"
+  },
+  "39": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "40": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "41": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "42": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "43": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "44": {
+   "q1": "Agriculture",
+   "q2": "changed"
+  },
+  "45": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "46": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "47": {
+   "q1": "Forest",
+   "q2": "changed"
+  },
+  "48": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "49": {
+   "q1": "Water",
+   "q2": "changed"
+  },
+  "50": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "51": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "52": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "53": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "54": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "55": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "56": {
+   "q2": "unchanged"
+  },
+  "57": {
+   "q1": "unsure",
+   "q2": "unchanged"
+  },
+  "58": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "59": {
+   "q1": "unsure",
+   "q2": "unchanged"
+  },
+  "60": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "61": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "62": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "63": {
+   "q1": "Water",
+   "q2": "unchanged"
+  },
+  "64": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "65": {
+   "q1": "Forest",
+   "q2": "unchanged"
+  },
+  "66": {
+   "q1": "Forest",
+   "q2": "unchanged"
+  },
+  "67": {
+   "q1": "Forest",
+   "q2": "unchanged"
+  },
+  "68": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "69": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "70": {
+   "q1": "Agriculture",
+   "q2": "unchanged"
+  },
+  "71": {
+   "q1": "Bare_Open",
+   "q2": "unchanged"
+  },
+  "72": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "73": {
+   "q1": "Built-up",
+   "q2": "changed"
+  },
+  "74": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "75": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "76": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  },
+  "77": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  },
+  "78": {
+   "q1": "Built-up",
+   "q2": "unchanged"
+  },
+  "79": {
+   "q1": "Bare_Open",
+   "q2": "changed"
+  }
+ }
+}

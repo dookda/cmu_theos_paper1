@@ -1,0 +1,108 @@
+{
+  "source": "rerun_eval_{split}.json",
+  "metric": "mean_iou (percentage points)",
+  "val": {
+    "ss_total": 351.7961775345842,
+    "share_pct": {
+      "architecture": 36.507713556298555,
+      "bands (NIR)": 2.8381365624064516,
+      "augment": 41.10545175372863,
+      "weights": 0.31385641714826423,
+      "factor x factor": 1.3407759961148809,
+      "architecture x factors": 7.129358182387885,
+      "seed (residual)": 10.76470753191533
+    },
+    "terms_share_pct": {
+      "architecture": 36.507713556298555,
+      "bands": 2.8381365624064516,
+      "augment": 41.10545175372863,
+      "weights": 0.31385641714826423,
+      "architecture x bands": 1.13308286835878,
+      "architecture x augment": 3.8645405887072117,
+      "architecture x weights": 0.822566979509364,
+      "bands x augment": 0.018111870104144834,
+      "bands x weights": 0.17954493740855224,
+      "augment x weights": 1.0899910722144972,
+      "architecture x bands x augment": 0.40872744421949836,
+      "architecture x bands x weights": 0.34285781004830596,
+      "architecture x augment x weights": 0.40108518283817784,
+      "bands x augment x weights": 0.05312811638768684,
+      "architecture x bands x augment x weights": 0.1564973087065482
+    },
+    "seed_sd_pp": 0.3626188963064755,
+    "range_of_cell_means_pp": 3.663341673924492
+  },
+  "architectures": [
+    "deeplabv3_r101",
+    "hrnet_w48",
+    "segformer_b2",
+    "unet_densenet121",
+    "unet_effb3",
+    "unet_mobilenet",
+    "unet_resnet50",
+    "unetpp_effb3",
+    "upernet_convnextt"
+  ],
+  "test": {
+    "ss_total": 380.90541086780297,
+    "share_pct": {
+      "architecture": 11.667925246278578,
+      "bands (NIR)": 38.10659749504649,
+      "augment": 21.285270623121384,
+      "weights": 1.5770632859101688,
+      "factor x factor": 0.19795675534188406,
+      "architecture x factors": 7.450739844469547,
+      "seed (residual)": 19.714446749831954
+    },
+    "terms_share_pct": {
+      "architecture": 11.667925246278578,
+      "bands": 38.10659749504649,
+      "augment": 21.285270623121384,
+      "weights": 1.5770632859101688,
+      "architecture x bands": 1.1158119785476062,
+      "architecture x augment": 3.36355407787533,
+      "architecture x weights": 0.840780613564428,
+      "bands x augment": 0.017110851081775725,
+      "bands x weights": 0.1639040344754905,
+      "augment x weights": 0.0005992265853080507,
+      "architecture x bands x augment": 0.682873772404883,
+      "architecture x bands x weights": 0.2521169693842845,
+      "architecture x augment x weights": 0.38716114316142336,
+      "bands x augment x weights": 0.016342643199309767,
+      "architecture x bands x augment x weights": 0.8084412895315917
+    },
+    "seed_sd_pp": 0.510627998402599,
+    "range_of_cell_means_pp": 3.951631024918605
+  },
+  "external": {
+    "ss_total": 472.89837341492296,
+    "share_pct": {
+      "architecture": 21.551597362628637,
+      "bands (NIR)": 1.0341722518763892,
+      "augment": 27.684451751202925,
+      "weights": 1.077240705222596,
+      "factor x factor": 0.25690500485673523,
+      "architecture x factors": 17.134664290623572,
+      "seed (residual)": 31.26096863358914
+    },
+    "terms_share_pct": {
+      "architecture": 21.551597362628637,
+      "bands": 1.0341722518763892,
+      "augment": 27.684451751202925,
+      "weights": 1.077240705222596,
+      "architecture x bands": 1.7003107477542172,
+      "architecture x augment": 9.480133144538922,
+      "architecture x weights": 1.502540990231874,
+      "bands x augment": 0.013240239825451,
+      "bands x weights": 0.1362216405838856,
+      "augment x weights": 0.07952953516582935,
+      "architecture x bands x augment": 0.6057266069629754,
+      "architecture x bands x weights": 0.5964627849420705,
+      "architecture x augment x weights": 1.6398133248056546,
+      "bands x augment x weights": 0.027913589281569284,
+      "architecture x bands x augment x weights": 1.60967669138786
+    },
+    "seed_sd_pp": 0.7164549400956582,
+    "range_of_cell_means_pp": 3.9364904144396107
+  }
+}

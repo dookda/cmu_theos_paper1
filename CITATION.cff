@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the article (and this software release)."
+title: "Reproducibility package: THEOS-2 land-cover segmentation (Paper 1)"
+authors:
+  - family-names: Srimanee
+    given-names: Chawis
+    orcid: "https://orcid.org/0000-0002-1034-0389"
+    affiliation: "Department of Geography, Faculty of Social Sciences, Chiang Mai University"
+  - family-names: Homhuan
+    given-names: Sakda
+    orcid: "https://orcid.org/0000-0003-0829-929X"
+    affiliation: "Department of Geography, Faculty of Social Sciences, Chiang Mai University"
+repository-code: "https://github.com/dookda/cmu_theos_paper1"
+keywords: [semantic segmentation, spatial cross-validation, reference data quality, accuracy assessment, THEOS-2]
+preferred-citation:
+  type: article
+  title: "Split, scene and reference definition outweigh training choices in deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery"
+  authors:
+    - family-names: Srimanee
+      given-names: Chawis
+    - family-names: Homhuan
+      given-names: Sakda
+  journal: "International Journal of Remote Sensing"
+  status: submitted

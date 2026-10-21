@@ -1,0 +1,122 @@
+data:
+  source_tif: theos/theos_4326.tif
+  ndvi_tif: theos/theos_ndvi_4326.tif
+  norm_tif: theos/theos_norm_4326.tif
+  norm_ndvi_tif: theos/theos_norm_ndvi_4326.tif
+  tiles_dir: data/tiles
+  labels_dir: data/labels
+  yolo_labels_dir: data/yolo_labels
+  falsecolor_tiles_dir: data_falsecolor/tiles
+  falsecolor_labels_dir: data_falsecolor/labels
+  band_order:
+  - red
+  - green
+  - blue
+  - nir
+  use_nir: true
+  tile_size: 512
+  overlap: 64
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+classes:
+- name: background
+  color:
+  - 0
+  - 0
+  - 0
+- name: vegetation
+  color:
+  - 0
+  - 255
+  - 0
+- name: water
+  color:
+  - 0
+  - 0
+  - 255
+- name: urban
+  color:
+  - 255
+  - 0
+  - 0
+- name: agriculture
+  color:
+  - 255
+  - 255
+  - 0
+- name: bare_soil
+  color:
+  - 139
+  - 69
+  - 19
+- name: road
+  color:
+  - 128
+  - 128
+  - 128
+- name: grass
+  color:
+  - 34
+  - 197
+  - 94
+num_classes: 8
+segmentation:
+  deeplabv3:
+    encoder: resnet101
+    pretrained: true
+  unet:
+    encoder: resnet50
+    pretrained: true
+  hrnet:
+    encoder: tu-hrnet_w48
+    pretrained: true
+  batch_size: 8
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 100
+  patience: 15
+  scheduler: cosine
+  loss: combo
+  optimizer: adamw
+yolo:
+  model: yolov8m-seg
+  image_size: 640
+  batch_size: 16
+  epochs: 100
+  patience: 20
+  learning_rate: 0.01
+  classes:
+  - building
+  - vehicle
+  - tree
+  - water_body
+  - road
+  - agricultural_field
+augmentation:
+  horizontal_flip: true
+  vertical_flip: true
+  rotate_90: true
+  random_brightness: 0.2
+  random_contrast: 0.2
+  gaussian_noise: 0.01
+  elastic_transform: false
+device:
+  accelerator: auto
+  gpu:
+    num_gpus: 1
+    mixed_precision: true
+    torch_compile: false
+    cudnn_benchmark: true
+  tpu:
+    num_cores: 8
+    mixed_precision: true
+  memory:
+    num_workers: 2
+    pin_memory: true
+    gradient_accumulation_steps: 4
+    gradient_checkpointing: false
+output:
+  models_dir: models
+  results_dir: results
+  log_dir: results/logs

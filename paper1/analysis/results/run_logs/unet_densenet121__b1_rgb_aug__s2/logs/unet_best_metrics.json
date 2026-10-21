@@ -1,0 +1,43 @@
+{
+  "overall_accuracy": 0.7574618992052579,
+  "mean_iou": 0.5538933368155331,
+  "kappa": 0.6762612076289851,
+  "per_class_iou": {
+    "background": 0.41010885872759034,
+    "vegetation": 0.6905601338644974,
+    "water": 0.6867111790738551,
+    "urban": 0.6508825158932698,
+    "agriculture": 0.7778093985060921,
+    "bare_soil": 0.20710040849907874,
+    "road": 0.4540808631443483
+  },
+  "per_class_f1": {
+    "background": 0.5816697805715522,
+    "vegetation": 0.8169601492648488,
+    "water": 0.8142605365799241,
+    "urban": 0.7885267491786698,
+    "agriculture": 0.8750200046362414,
+    "bare_soil": 0.343136998424903,
+    "road": 0.6245606706212055
+  },
+  "run": {
+    "model": "unet",
+    "encoder": "densenet121",
+    "seed": 2,
+    "augment": true,
+    "class_weights_mode": "none",
+    "use_nir": false,
+    "splits": "/project/gisnorth/paper1/analysis/results/spatial_splits.json",
+    "num_classes": 7,
+    "n_train_tiles": 1286,
+    "n_val_tiles": 304
+  },
+  "compute": {
+    "train_minutes": 54.84,
+    "epochs_run": 38,
+    "params_millions": 14.25,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "peak_gpu_mem_gb": 5.39,
+    "slurm_job_id": "78087"
+  }
+}

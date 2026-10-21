@@ -1,0 +1,86 @@
+[
+ {
+  "group": "Training recipe",
+  "label": "Augmentation",
+  "value": 1.2061983256843425,
+  "ci95": [
+   1.0599628953576468,
+   1.3561909006781765
+  ]
+ },
+ {
+  "group": "Training recipe",
+  "label": "Near-infrared band",
+  "value": -0.2330601321824217,
+  "ci95": [
+   -0.37969703175208525,
+   -0.08290919335771786
+  ]
+ },
+ {
+  "group": "Training recipe",
+  "label": "Class weighting",
+  "value": 0.23804562081536396,
+  "ci95": [
+   0.10149259538448628,
+   0.371852128542539
+  ]
+ },
+ {
+  "group": "Training recipe",
+  "label": "Architecture (range of 9 means)",
+  "value": 1.6003990505692016,
+  "ci95": null
+ },
+ {
+  "group": "Training recipe",
+  "label": "DINOv3-SAT vs best ImageNet",
+  "value": 1.22521403314596,
+  "ci95": [
+   0.45590919177778155,
+   1.9866666270643853
+  ]
+ },
+ {
+  "group": "Training recipe",
+  "label": "SatlasPretrain vs best ImageNet",
+  "value": 2.324203991081994,
+  "ci95": [
+   1.6263441267479288,
+   3.0104108460818573
+  ]
+ },
+ {
+  "group": "Evaluation regime",
+  "label": "Random vs buffered split (test-to-held-out gap)",
+  "value": 2.831359093001532,
+  "ci95": [
+   2.584462897043601,
+   3.0924824815717398
+  ]
+ },
+ {
+  "group": "Evaluation regime",
+  "label": "Lamphun \u2192 Roi Et, moment matched",
+  "value": -19.833989654589885,
+  "ci95": null
+ },
+ {
+  "group": "Evaluation regime",
+  "label": "Lamphun \u2192 Roi Et, raw digital numbers",
+  "value": -47.82729852288323,
+  "ci95": null
+ },
+ {
+  "group": "Reference definition",
+  "label": "Six classes, background prediction counted wrong",
+  "value": 13.444782517469456,
+  "ci95": null
+ },
+ {
+  "group": "Reference definition",
+  "label": "Six classes, background not predicted",
+  "value": 21.347916349709443,
+  "ci95": null
+ }
+]

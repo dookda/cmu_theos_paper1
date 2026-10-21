@@ -1,0 +1,138 @@
+{
+ "sacct": {
+  "n_jobs": 421,
+  "n_completed": 364,
+  "gpu_hours_completed": 394.3661111111115,
+  "gpu_hours_including_failed": 395.9708333333345,
+  "job_name": "p1-rerun",
+  "since": "2026-08-12"
+ },
+ "runs": {
+  "n_runs_instrumented": 360,
+  "train_minutes": {
+   "mean": 64.95080555555556,
+   "median": 59.019999999999996,
+   "min": 28.63,
+   "max": 232.36,
+   "total_hours": 389.70483333333334
+  },
+  "epochs": {
+   "mean": 42.5,
+   "median": 39.0
+  },
+  "gpus": [
+   "NVIDIA A100-SXM4-80GB"
+  ],
+  "peak_gpu_mem_gb": {
+   "min": 3.56,
+   "max": 7.16
+  },
+  "params_millions": {
+   "deeplabv3_r101": 45.67,
+   "hrnet_w48": 69.24,
+   "segformer_b2": 24.73,
+   "unet_densenet121": 14.25,
+   "unet_effb3": 13.22,
+   "unet_mobilenet": 6.9,
+   "unet_resnet50": 33.82,
+   "unetpp_effb3": 13.63,
+   "upernet_convnextt": 37.05
+  },
+  "train_minutes_by_arm": {
+   "NIR_aug": {
+    "n": 90,
+    "mean_minutes": 83.13311111111112,
+    "median_minutes": 79.31
+   },
+   "NIR_noaug": {
+    "n": 90,
+    "mean_minutes": 61.71044444444444,
+    "median_minutes": 55.32
+   },
+   "RGB_aug": {
+    "n": 90,
+    "mean_minutes": 64.488,
+    "median_minutes": 59.22
+   },
+   "RGB_noaug": {
+    "n": 90,
+    "mean_minutes": 50.47166666666666,
+    "median_minutes": 46.89
+   }
+  },
+  "by_architecture": {
+   "deeplabv3_r101": {
+    "n_runs": 40,
+    "params_millions": 45.67,
+    "peak_gpu_mem_gb": 4.57,
+    "mean_minutes": 52.55925,
+    "median_minutes": 49.955,
+    "mean_epochs": 37.175
+   },
+   "hrnet_w48": {
+    "n_runs": 40,
+    "params_millions": 69.24,
+    "peak_gpu_mem_gb": 7.16,
+    "mean_minutes": 77.87474999999999,
+    "median_minutes": 68.28999999999999,
+    "mean_epochs": 42.9
+   },
+   "segformer_b2": {
+    "n_runs": 40,
+    "params_millions": 24.73,
+    "peak_gpu_mem_gb": 6.39,
+    "mean_minutes": 64.987,
+    "median_minutes": 57.459999999999994,
+    "mean_epochs": 44.125
+   },
+   "unet_densenet121": {
+    "n_runs": 40,
+    "params_millions": 14.25,
+    "peak_gpu_mem_gb": 5.41,
+    "mean_minutes": 64.16175,
+    "median_minutes": 58.11,
+    "mean_epochs": 41.95
+   },
+   "unet_effb3": {
+    "n_runs": 40,
+    "params_millions": 13.22,
+    "peak_gpu_mem_gb": 5.7,
+    "mean_minutes": 69.27925,
+    "median_minutes": 65.365,
+    "mean_epochs": 45.25
+   },
+   "unet_mobilenet": {
+    "n_runs": 40,
+    "params_millions": 6.9,
+    "peak_gpu_mem_gb": 3.57,
+    "mean_minutes": 63.349000000000004,
+    "median_minutes": 58.81,
+    "mean_epochs": 45.3
+   },
+   "unet_resnet50": {
+    "n_runs": 40,
+    "params_millions": 33.82,
+    "peak_gpu_mem_gb": 4.83,
+    "mean_minutes": 56.4905,
+    "median_minutes": 54.855000000000004,
+    "mean_epochs": 39.1
+   },
+   "unetpp_effb3": {
+    "n_runs": 40,
+    "params_millions": 13.63,
+    "peak_gpu_mem_gb": 6.34,
+    "mean_minutes": 82.4485,
+    "median_minutes": 79.94,
+    "mean_epochs": 50.85
+   },
+   "upernet_convnextt": {
+    "n_runs": 40,
+    "params_millions": 37.05,
+    "peak_gpu_mem_gb": 5.44,
+    "mean_minutes": 53.40725,
+    "median_minutes": 46.625,
+    "mean_epochs": 35.85
+   }
+  }
+ }
+}

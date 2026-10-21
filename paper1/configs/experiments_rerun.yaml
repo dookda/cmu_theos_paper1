@@ -1,0 +1,83 @@
+# paper1 re-run — full 2x2x2 factorial, seed-controlled, spatially valid splits
+#
+# Replaces the original design, in which:
+#   - the split was random at tile level, putting 100% of val/test tiles in pixel
+#     contact with training tiles;
+#   - "augmentation" and "class weighting" moved together, so neither could be
+#     isolated, and the "no augmentation" arm was in fact online-augmented because
+#     create_dataloaders applied the train transform unconditionally;
+#   - each configuration ran once with no seed control.
+#
+# Factors (fully crossed -> 8 conditions)
+#   bands    rgb | rgbnir      --use-nir
+#   augment  off | on          --no-augment / --augment   (online transform)
+#   weights  off | on          --class-weights none|auto  (inverse-sqrt, train only)
+#
+# Offline 4x dataset expansion is dropped: it was confounded with the online
+# transform, and "augmentation on/off" is only a clean factor if one mechanism
+# controls it.
+#
+# 8 conditions x 9 architectures x 5 seeds = 360 runs.
+#
+# Erawan gpu QOS allows 2 running / 3 submitted jobs, so the grid is split into
+# phases. Phase 1 carries every claim in the paper on its own; phase 2 completes
+# the grid. Submit phase 1 first and analyse it before committing to phase 2.
+
+splits: /project/gisnorth/paper1/spatial_splits.json
+classes: 7          # grass folded into background; see build_paper1_spatial_splits.py
+
+seeds: [0, 1, 2, 3, 4]
+
+conditions:
+  - {name: b0_rgb_plain,       bands: rgb,    augment: false, weights: false}
+  - {name: b1_rgb_aug,         bands: rgb,    augment: true,  weights: false}
+  - {name: b2_rgb_wt,          bands: rgb,    augment: false, weights: true}
+  - {name: b3_rgb_aug_wt,      bands: rgb,    augment: true,  weights: true}
+  - {name: b4_rgbnir_plain,    bands: rgbnir, augment: false, weights: false}
+  - {name: b5_rgbnir_aug,      bands: rgbnir, augment: true,  weights: false}
+  - {name: b6_rgbnir_wt,       bands: rgbnir, augment: false, weights: true}
+  - {name: b7_rgbnir_aug_wt,   bands: rgbnir, augment: true,  weights: true}
+
+# `core: true` marks the architectures that carry the full factorial in phase 1:
+# the three that ranked highest on baseline validation in the first round, plus
+# two modern designs added because the original set was entirely CNN
+# encoder-decoder from 2015-2020. SegFormer supplies the transformer arm;
+# UPerNet+ConvNeXt is the control that separates "transformer" from "recent
+# architecture" — without it a SegFormer win could not be attributed.
+architectures:
+  - {name: unetpp_effb3,      model: unetpp,     encoder: efficientnet-b3, core: true}
+  - {name: hrnet_w48,         model: hrnet,      encoder: tu-hrnet_w48,    core: true}
+  - {name: unet_effb3,        model: unet,       encoder: efficientnet-b3, core: true}
+  - {name: segformer_b2,      model: segformer,  encoder: mit_b2,          core: true}
+  - {name: upernet_convnextt, model: upernet,    encoder: tu-convnext_tiny, core: true}
+  - {name: unet_mobilenet,    model: unet,       encoder: mobilenet_v2,    core: false}
+  - {name: unet_resnet50,     model: unet,       encoder: resnet50,        core: false}
+  - {name: unet_densenet121,  model: unet,       encoder: densenet121,     core: false}
+  - {name: deeplabv3_r101,    model: deeplabv3,  encoder: resnet101,       core: false}
+
+phases:
+  # 3 core arch x 8 conditions x 5 seeds = 120, plus 4 other arch x baseline x 5 = 20
+  1:
+    core_architectures: all_conditions
+    other_architectures: [b0_rgb_plain]
+  # remaining cells of the grid
+  2:
+    other_architectures: all_other_conditions
+
+training:
+  epochs: 200          # early stopping settled at 46-103 epochs in the first round
+  patience: 20
+  batch_size: 8
+  lr: 0.0001
+  weight_decay: 0.0001
+  optimizer: adamw
+  loss: combo
+  scheduler: cosine
+  pretrained: true
+
+# The external test (Scene 2, 287 tiles, zero pixel contact with training) is not
+# part of this registry on purpose. It is evaluated once, after every architecture
+# and ensemble decision has been made on val alone.
+external_test:
+  split: external
+  policy: locked_until_all_selection_complete

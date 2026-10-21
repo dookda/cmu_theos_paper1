@@ -1,0 +1,15 @@
+{
+ "source": "Erawan slurm job 77626 (p1-map), 2026-08-21",
+ "scene_px": [
+  24935,
+  24681
+ ],
+ "megapixels": 615.4,
+ "area_km2": 153.9,
+ "gsd_m": 0.5,
+ "ensemble_members": 7,
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "n_gpu": 1,
+ "wall_seconds": 378,
+ "wall_note": "job elapsed 00:06:18, includes checkpoint loading and GeoTIFF write"
+}

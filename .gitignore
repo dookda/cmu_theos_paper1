@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+# imagery, tiles, checkpoints and predictions are never part of this package
+*.tif
+*.tiff
+*.pt
+*.pth
+*.npz
+rerun_output/
+# ...except the Roi Et reference raster (labels, no imagery)
+!paper2/data/roi_et/roiet_labels_utm48n_0p5m.tif
+# ...and the per-tile confusion matrices of the unified evaluation pass (no image pixels)
+!paper1/analysis/results/unified/**/*.npz
+!paper1/analysis/results/unified_rgblabels/**/*.npz

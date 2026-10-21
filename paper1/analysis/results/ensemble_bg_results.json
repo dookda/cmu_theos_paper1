@@ -1,0 +1,121 @@
+{
+  "prereg": "addendum J",
+  "metric": "mIoU6 (%), section D definition",
+  "val": {
+    "status": "done",
+    "n_blocks": 8,
+    "std": {
+      "miou6": 73.44781192960208,
+      "per_class_iou6": {
+        "vegetation": 84.7164710999443,
+        "water": 81.67887965894816,
+        "urban": 81.37638151072335,
+        "agriculture": 86.98791433885285,
+        "bare_soil": 45.917994684806004,
+        "road": 60.009230284337775
+      },
+      "predicted_background_share_pct": 24.488509328741774,
+      "overall_accuracy6_pct": 85.6651131569609
+    },
+    "sup": {
+      "miou6": 78.97499861897447,
+      "per_class_iou6": {
+        "vegetation": 90.73573431082586,
+        "water": 83.02867676203749,
+        "urban": 85.92537029711109,
+        "agriculture": 92.2668620450329,
+        "bare_soil": 54.29741592875382,
+        "road": 67.59593237008566
+      },
+      "predicted_background_share_pct": 0.0,
+      "overall_accuracy6_pct": 94.09370087197495
+    },
+    "sup_minus_std": {
+      "mean": 5.527186689372385,
+      "ci95": [
+        3.465985558331326,
+        7.24853793256534
+      ],
+      "excludes_zero": true
+    }
+  },
+  "test": {
+    "status": "done",
+    "n_blocks": 10,
+    "std_matrix_equals_existing": true,
+    "std": {
+      "miou6": 71.85243512471536,
+      "per_class_iou6": {
+        "vegetation": 86.2668489365387,
+        "water": 77.88348007497173,
+        "urban": 81.72366455473788,
+        "agriculture": 88.76633309331123,
+        "bare_soil": 43.57462134829174,
+        "road": 52.8996627404408
+      },
+      "predicted_background_share_pct": 22.97610328311012,
+      "overall_accuracy6_pct": 86.47283166085612
+    },
+    "sup": {
+      "miou6": 78.35579369550604,
+      "per_class_iou6": {
+        "vegetation": 91.31126751479385,
+        "water": 79.38175321988338,
+        "urban": 87.19333522620953,
+        "agriculture": 93.0417357078663,
+        "bare_soil": 56.87541794038976,
+        "road": 62.33125256389346
+      },
+      "predicted_background_share_pct": 0.0,
+      "overall_accuracy6_pct": 94.22958003274236
+    },
+    "sup_minus_std": {
+      "mean": 6.503358570790681,
+      "ci95": [
+        4.863739187484811,
+        8.960290350823115
+      ],
+      "excludes_zero": true
+    }
+  },
+  "external": {
+    "status": "done",
+    "n_blocks": 17,
+    "std_matrix_equals_existing": true,
+    "std": {
+      "miou6": 72.38430094969247,
+      "per_class_iou6": {
+        "vegetation": 89.07178836983316,
+        "water": 69.7507037268023,
+        "urban": 82.23733847558552,
+        "agriculture": 88.80425977694327,
+        "bare_soil": 47.701613091268605,
+        "road": 56.740102257722
+      },
+      "predicted_background_share_pct": 23.906253189990746,
+      "overall_accuracy6_pct": 88.53066729282911
+    },
+    "sup": {
+      "miou6": 80.28743478193246,
+      "per_class_iou6": {
+        "vegetation": 93.55508574420988,
+        "water": 73.87042846368995,
+        "urban": 87.22969269208014,
+        "agriculture": 92.95760621144366,
+        "bare_soil": 67.53994861691956,
+        "road": 66.57184696325157
+      },
+      "predicted_background_share_pct": 0.0,
+      "overall_accuracy6_pct": 95.40272479580307
+    },
+    "sup_minus_std": {
+      "mean": 7.9031338322399876,
+      "ci95": [
+        2.5071311076418348,
+        12.82928439344515
+      ],
+      "excludes_zero": true
+    }
+  },
+  "J-H1_sup_gt_std_external": true
+}

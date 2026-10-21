@@ -1,0 +1,503 @@
+{
+ "set_id": "s1p25m",
+ "classes": [
+  "background",
+  "vegetation",
+  "water",
+  "urban",
+  "agriculture",
+  "bare_soil",
+  "road"
+ ],
+ "excluded_nodata_items": [
+  22,
+  26,
+  28,
+  39,
+  42,
+  45,
+  50,
+  68,
+  72,
+  92,
+  94,
+  104,
+  109,
+  127,
+  139,
+  140,
+  144,
+  156,
+  166,
+  171
+ ],
+ "max_nodata_fraction": 0.1,
+ "reviewers": [
+  "r1",
+  "r2"
+ ],
+ "primary_reviewer": "r1",
+ "reviewer_roles": {
+  "r1": null,
+  "r2": null
+ },
+ "per_class": [
+  {
+   "class": "background",
+   "n_judged": 21,
+   "n_agree": 0,
+   "error_rate": 1.0,
+   "ci95": [
+    0.8453561767357979,
+    0.9999999999999998
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "vegetation",
+   "n_judged": 20,
+   "n_agree": 14,
+   "error_rate": 0.30000000000000004,
+   "ci95": [
+    0.14547527396899385,
+    0.5189767762289793
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "water",
+   "n_judged": 17,
+   "n_agree": 15,
+   "error_rate": 0.11764705882352944,
+   "ci95": [
+    0.03287908001292091,
+    0.3433684249770991
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "urban",
+   "n_judged": 22,
+   "n_agree": 20,
+   "error_rate": 0.09090909090909094,
+   "ci95": [
+    0.025294896282837778,
+    0.2781538065838578
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "agriculture",
+   "n_judged": 25,
+   "n_agree": 14,
+   "error_rate": 0.43999999999999995,
+   "ci95": [
+    0.2666537494700257,
+    0.6293298298043556
+   ],
+   "n_unsure": 0
+  },
+  {
+   "class": "bare_soil",
+   "n_judged": 24,
+   "n_agree": 17,
+   "error_rate": 0.29166666666666663,
+   "ci95": [
+    0.14914460334164278,
+    0.49168063658709704
+   ],
+   "n_unsure": 1
+  },
+  {
+   "class": "road",
+   "n_judged": 25,
+   "n_agree": 21,
+   "error_rate": 0.16000000000000003,
+   "ci95": [
+    0.06403347608577989,
+    0.34654013980238163
+   ],
+   "n_unsure": 0
+  }
+ ],
+ "per_class_by_reviewer": {
+  "r1": [
+   {
+    "class": "background",
+    "n_judged": 21,
+    "n_agree": 0
+   },
+   {
+    "class": "vegetation",
+    "n_judged": 20,
+    "n_agree": 14
+   },
+   {
+    "class": "water",
+    "n_judged": 17,
+    "n_agree": 15
+   },
+   {
+    "class": "urban",
+    "n_judged": 22,
+    "n_agree": 20
+   },
+   {
+    "class": "agriculture",
+    "n_judged": 25,
+    "n_agree": 14
+   },
+   {
+    "class": "bare_soil",
+    "n_judged": 24,
+    "n_agree": 17
+   },
+   {
+    "class": "road",
+    "n_judged": 25,
+    "n_agree": 21
+   }
+  ],
+  "r2": [
+   {
+    "class": "background",
+    "n_judged": 21,
+    "n_agree": 0
+   },
+   {
+    "class": "vegetation",
+    "n_judged": 20,
+    "n_agree": 16
+   },
+   {
+    "class": "water",
+    "n_judged": 17,
+    "n_agree": 16
+   },
+   {
+    "class": "urban",
+    "n_judged": 22,
+    "n_agree": 18
+   },
+   {
+    "class": "agriculture",
+    "n_judged": 25,
+    "n_agree": 18
+   },
+   {
+    "class": "bare_soil",
+    "n_judged": 23,
+    "n_agree": 19
+   },
+   {
+    "class": "road",
+    "n_judged": 25,
+    "n_agree": 20
+   }
+  ]
+ },
+ "weighted_error_rate_excl_background": 0.290791517825312,
+ "confusion_label_vs_reviewer": [
+  [
+   0,
+   8,
+   1,
+   1,
+   3,
+   3,
+   5
+  ],
+  [
+   0,
+   14,
+   1,
+   0,
+   2,
+   2,
+   1
+  ],
+  [
+   0,
+   1,
+   15,
+   0,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   0,
+   20,
+   0,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   1,
+   1,
+   14,
+   9,
+   0
+  ],
+  [
+   0,
+   5,
+   0,
+   1,
+   0,
+   17,
+   1
+  ],
+  [
+   0,
+   2,
+   0,
+   2,
+   0,
+   0,
+   21
+  ]
+ ],
+ "inter_reviewer": {
+  "r1 vs r2": {
+   "n": 153,
+   "percent_agreement": 0.7973856209150327,
+   "cohens_kappa": 0.75569176882662
+  }
+ },
+ "disputes": [
+  {
+   "id": 3,
+   "tile": "tile_01432",
+   "current_label": "road",
+   "r1": "vegetation",
+   "r2": "road"
+  },
+  {
+   "id": 11,
+   "tile": "tile_01891",
+   "current_label": "vegetation",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 13,
+   "tile": "tile_02260",
+   "current_label": "background",
+   "r1": "vegetation",
+   "r2": "urban"
+  },
+  {
+   "id": 15,
+   "tile": "tile_00496",
+   "current_label": "background",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 17,
+   "tile": "tile_01661",
+   "current_label": "background",
+   "r1": "road",
+   "r2": "agriculture"
+  },
+  {
+   "id": 18,
+   "tile": "tile_01661",
+   "current_label": "agriculture",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 19,
+   "tile": "tile_00035",
+   "current_label": "vegetation",
+   "r1": "agriculture",
+   "r2": "vegetation"
+  },
+  {
+   "id": 20,
+   "tile": "tile_00681",
+   "current_label": "agriculture",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 25,
+   "tile": "tile_00409",
+   "current_label": "background",
+   "r1": "road",
+   "r2": "vegetation"
+  },
+  {
+   "id": 35,
+   "tile": "tile_00688",
+   "current_label": "vegetation",
+   "r1": "agriculture",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 37,
+   "tile": "tile_01305",
+   "current_label": "background",
+   "r1": "vegetation",
+   "r2": "agriculture"
+  },
+  {
+   "id": 41,
+   "tile": "tile_01503",
+   "current_label": "background",
+   "r1": "agriculture",
+   "r2": "vegetation"
+  },
+  {
+   "id": 48,
+   "tile": "tile_02189",
+   "current_label": "road",
+   "r1": "road",
+   "r2": "urban"
+  },
+  {
+   "id": 60,
+   "tile": "tile_01139",
+   "current_label": "background",
+   "r1": "vegetation",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 75,
+   "tile": "tile_00655",
+   "current_label": "bare_soil",
+   "r1": "vegetation",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 76,
+   "tile": "tile_00028",
+   "current_label": "road",
+   "r1": "road",
+   "r2": "vegetation"
+  },
+  {
+   "id": 83,
+   "tile": "tile_01096",
+   "current_label": "agriculture",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 84,
+   "tile": "tile_01839",
+   "current_label": "background",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 85,
+   "tile": "tile_01139",
+   "current_label": "vegetation",
+   "r1": "bare_soil",
+   "r2": "road"
+  },
+  {
+   "id": 91,
+   "tile": "tile_01891",
+   "current_label": "agriculture",
+   "r1": "bare_soil",
+   "r2": "urban"
+  },
+  {
+   "id": 96,
+   "tile": "tile_02018",
+   "current_label": "water",
+   "r1": "vegetation",
+   "r2": "water"
+  },
+  {
+   "id": 97,
+   "tile": "tile_01537",
+   "current_label": "agriculture",
+   "r1": "agriculture",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 99,
+   "tile": "tile_01302",
+   "current_label": "urban",
+   "r1": "urban",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 118,
+   "tile": "tile_02477",
+   "current_label": "urban",
+   "r1": "urban",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 124,
+   "tile": "tile_00208",
+   "current_label": "bare_soil",
+   "r1": "vegetation",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 134,
+   "tile": "tile_01305",
+   "current_label": "vegetation",
+   "r1": "water",
+   "r2": "vegetation"
+  },
+  {
+   "id": 138,
+   "tile": "tile_01139",
+   "current_label": "agriculture",
+   "r1": "water",
+   "r2": "agriculture"
+  },
+  {
+   "id": 143,
+   "tile": "tile_00523",
+   "current_label": "urban",
+   "r1": "vegetation",
+   "r2": "road"
+  },
+  {
+   "id": 145,
+   "tile": "tile_00998",
+   "current_label": "bare_soil",
+   "r1": "urban",
+   "r2": "bare_soil"
+  },
+  {
+   "id": 146,
+   "tile": "tile_01941",
+   "current_label": "agriculture",
+   "r1": "bare_soil",
+   "r2": "agriculture"
+  },
+  {
+   "id": 160,
+   "tile": "tile_04294",
+   "current_label": "background",
+   "r1": "vegetation",
+   "r2": "urban"
+  }
+ ],
+ "round": 2,
+ "reviewer_identities": [
+  "Chawis Srimanee",
+  "Sakda Homhuan"
+ ],
+ "reviewer_mapping_recorded": false,
+ "previous_round": {
+  "file": "label_review_result.json",
+  "reviewers": [
+   "Chawis Srimanee"
+  ]
+ }
+}

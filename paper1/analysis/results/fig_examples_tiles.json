@@ -1,0 +1,48 @@
+{
+  "rule": "per held-out set and class, the tile with the largest reference share of that class (valid_ratio >= 0.99, inside the ensemble map); water and bare soil are drawn from the internal test split because the held-out scene has very little of either",
+  "prediction": "six-class ensemble map (background excluded from the argmax); agreement over reference pixels that are not background",
+  "tiles": [
+    {
+      "tile": "tile_01826",
+      "split": "test",
+      "class": "urban",
+      "class_share": 0.882,
+      "pixel_agreement": 0.8307
+    },
+    {
+      "tile": "tile_01481",
+      "split": "test",
+      "class": "water",
+      "class_share": 0.5943,
+      "pixel_agreement": 0.7475
+    },
+    {
+      "tile": "tile_01925",
+      "split": "test",
+      "class": "bare_soil",
+      "class_share": 0.2773,
+      "pixel_agreement": 0.9429
+    },
+    {
+      "tile": "tile_02508",
+      "split": "external",
+      "class": "urban",
+      "class_share": 0.5938,
+      "pixel_agreement": 0.8978
+    },
+    {
+      "tile": "tile_04289",
+      "split": "external",
+      "class": "agriculture",
+      "class_share": 0.9752,
+      "pixel_agreement": 1.0
+    },
+    {
+      "tile": "tile_03422",
+      "split": "external",
+      "class": "vegetation",
+      "class_share": 1.0,
+      "pixel_agreement": 1.0
+    }
+  ]
+}
