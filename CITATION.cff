@@ -15,7 +15,7 @@ repository-code: "https://github.com/dookda/cmu_theos_paper1"
 keywords: [semantic segmentation, spatial cross-validation, reference data quality, accuracy assessment, THEOS-2]
 preferred-citation:
   type: article
-  title: "Split, scene and reference definition outweigh training choices in deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery"
+  title: "Scene and reference definition outweigh training choices in deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery"
   authors:
     - family-names: Srimanee
       given-names: Chawis

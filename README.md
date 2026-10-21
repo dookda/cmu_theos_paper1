@@ -2,7 +2,7 @@
 
 Code, configuration, split definitions and result files behind the article
 
-> C. Srimanee and S. Homhuan, *Split, scene and reference definition outweigh training choices in
+> C. Srimanee and S. Homhuan, *Scene and reference definition outweigh training choices in
 > deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery*
 > (submitted to the International Journal of Remote Sensing).
 >
