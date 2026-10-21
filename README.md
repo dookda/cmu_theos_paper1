@@ -5,6 +5,8 @@ Code, configuration, split definitions and result files behind the article
 > C. Srimanee and S. Homhuan, *Split, scene and reference definition outweigh training choices in
 > deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery*
 > (submitted to the International Journal of Remote Sensing).
+>
+> Repository: https://github.com/dookda/cmu_theos_paper1
 
 The package lets a reader do three things, in increasing order of effort:
 
@@ -19,12 +21,35 @@ The package lets a reader do three things, in increasing order of effort:
 
 | Included | Not included, and why |
 |---|---|
-| Model code (`paper1/models`), data loading, losses and metrics (`paper1/utils`) | THEOS-2 imagery and image tiles — property of GISTDA, not redistributable; request from GISTDA |
+| Model code (`paper1/models`), data loading, losses and metrics (`paper1/utils`) | THEOS-2 imagery and image tiles — property of GISTDA, not redistributable; request from GISTDA (the reference masks are included) |
 | Pipeline scripts (`paper1/scripts`) and the Slurm jobs actually used (`hpc/`) | Trained checkpoints (360 runs, ~100 MB each) — too large for git |
 | Configs and the pre-registration of the additional experiments (`paper1/configs`) | Figures that show image pixels (article Figs. 1 and 6, S1, S2) and the 47 MB scene grid (Fig. S3) |
 | Split definition, leakage audit and split geometry (`spatial_splits.json`, `paper1/analysis/shapes`) | The 2020 national land-use layer (LDD) and administrative boundaries — third-party data |
 | All evaluation and analysis results (`paper1/analysis/results`) | Manuscript sources, translations and submission files |
 | Result figures without imagery (`paper1/analysis/figure`); the 360 per-run training logs (`analysis/results/run_logs`: best validation metrics and per-epoch history) | Legacy experiments not reported in the article (YOLO, Mask R-CNN, Colab notebooks) |
+
+## Reference data
+
+- `paper2/data/labels_fixed/tile_*.png` — the 2,642 Lamphun reference masks (512 × 512, one byte per
+  pixel). Class ids: 0 background, 1 vegetation, 2 water, 3 urban, 4 agriculture, 5 bare soil, 6 road,
+  7 grass. Grass was annotated over part of the scene only and is merged into background by the code
+  (Sec. 2.4). Tile positions are in `paper2/analysis/results/tiles_metadata.json` and
+  `paper1/analysis/shapes/tiles.geojson`; the split of every tile is in
+  `paper1/analysis/results/spatial_splits.json`.
+- `paper2/data/roi_et/roiet_labels_utm48n_0p5m.tif` — the Roi Et reference raster, with tile bounds in
+  `paper2/data/roi_et/tiles_metadata.json`.
+- `paper1/reports/label_review_round2/*.json`, `paper1/analysis/results/label_review_*.json`,
+  `paper1/analysis/results/from_paper3/g1_pilot_*.json` — blinded reviewer answers and keys of the
+  reference audit.
+- `paper1/analysis/results/unified/` — per-tile confusion matrices of every checkpoint from the single
+  unified evaluation pass (seven-class, background-suppressed, tile edge strip and interior, NIR
+  perturbations), so that every tile-level analysis can be recomputed without the models.
+
+**Note on the near-infrared arm.** On the cluster, runs with the near-infrared band read their tiles
+and masks from a separate data root whose masks predate a label correction (in 463 of 2,642 tiles,
+bare soil was background). The RGB masks above are the corrected reference used for the article.
+All near-infrared runs were therefore re-scored against these masks (`*_nir_rgblabels.json`,
+`unified_rgblabels/`); see `hpc/p1_reeval_nir_*.slurm`.
 
 ## Where each result in the article comes from
 
@@ -45,7 +70,7 @@ Paths are relative to `paper1/`. "Script" is the program that wrote the file.
 | §3.2 | share of variance by factor and regime | `variance_decomposition.json` | `variance_decomposition.py` |
 | §3.2, Fig. 6 | Roi Et transfer, raw and moment matched (11.11% → 39.11%), calibration | `roiet_splits.json`, `ensemble_eval_roiet_raw.json`, `ensemble_eval_roiet_zscene.json`, `calibration.json` | `build_roiet_tiles.py`, `eval_ensemble.py`, `eval_calibration.py` |
 | §3.3, Fig. 7 (left) | blinded point audit, two reviewers, kappa | `label_review_result.json`, `label_review_result_round2.json`, `label_review_key.json` | `build_label_review.py`, `analyze_label_review.py`, `fig_results.py` |
-| §3.3, Fig. 7 (right) | parcel adjudication against the 2020 layer (80 parcels; 13.3% change, 33.3% reference error) | `from_paper3/g1_adjudication_pilot.json` (reviewer sheets `g1_pilot_r1/r2.json`, key `g1_pilot_key.json`) | see *Known gaps* |
+| §3.3, Fig. 7 (right) | parcel adjudication against the 2020 layer (80 parcels; 13.3% change, 33.3% reference error) | `from_paper3/g1_adjudication_pilot.json` (reviewer sheets `g1_pilot_r1/r2.json`, key `g1_pilot_key.json`) | `summarize_adjudication.py` (recomputes and compares; see *Known gaps*) |
 | §3.3, Table 3 | background removed at inference or in training (+5.33 / +6.39 points) | `background_eval_*.json`, `addendum_results.json` | `eval_background.py`, `analyze_addendum.py` |
 | §3.3 | ensemble, seven vs six classes (58.94% → 72.38% / 80.29%) | `ensemble_bg_results.json`, `ensemble_bg_eval_*.json` | `analyze_ensemble_bg.py` |
 | §3.3, Fig. 8 | land-cover maps of both scenes; class composition | `map_composition.json` (maps not included) | `predict_ensemble_scene.py`, `qgis_make_maps.py` |
@@ -69,19 +94,30 @@ install with `pip install -r requirements.txt`
 (training also needs a CUDA build of PyTorch; the QGIS map script runs inside QGIS's Python).
 
 **Level 2 — recompute statistics from the stored results** (no imagery, no GPU), from the
-repository root:
+repository root. Each command rewrites a committed file; `git status` afterwards shows whether
+anything changed (on the authors' machine every file below is reproduced byte for byte).
 
 ```bash
 # factorial effects and cell means (Fig. 4) from the 360 per-run training logs
 python paper1/scripts/analyze_rerun.py --results paper1/analysis/results/run_logs
-python paper1/scripts/block_bootstrap_paper1.py --eval paper1/analysis/results/rerun_eval_test.json \
-    --a "*__b4_rgbnir_plain__*" --b "*__b0_rgb_plain__*"
-python paper1/scripts/variance_decomposition.py
-python paper1/scripts/analyze_addendum.py
-python paper1/scripts/analyze_ensemble_bg.py
-python paper1/scripts/six_class_summary.py
-python paper1/scripts/fig_effect_sizes.py
-python paper1/scripts/fig_results.py
+python paper1/scripts/fig_results.py --dpi 600            # Figs. 4 and 7 (also writes extra diagnostics)
+# spatial-block bootstrap (Appendix C); the script appends, so start from an empty file
+for SPLIT in test external; do
+  rm -f paper1/analysis/results/block_bootstrap_${SPLIT}_mean_iou.json
+  for PAIR in "b1_rgb_aug b0_rgb_plain" "b4_rgbnir_plain b0_rgb_plain" "b2_rgb_wt b0_rgb_plain"; do
+    set -- $PAIR
+    python paper1/scripts/block_bootstrap_paper1.py --eval paper1/analysis/results/rerun_eval_${SPLIT}.json \
+        --a "*__$1__*" --b "*__$2__*"
+  done
+done
+python paper1/scripts/variance_decomposition.py           # variance shares (Sec. 3.2)
+python paper1/scripts/analyze_addendum.py                 # pre-registered additions A-I (Table S1)
+python paper1/scripts/analyze_unified.py                  # unified pass: edge strips, NIR tests (App. E)
+python paper1/scripts/analyze_ensemble_bg.py              # ensemble, seven vs six classes (Sec. 3.3)
+python paper1/scripts/six_class_summary.py                # Fig. 5
+python paper1/scripts/fig_effect_sizes.py                 # Fig. 9
+python paper1/scripts/summarize_adjudication.py           # parcel adjudication (Sec. 3.3), prints a comparison
+git status --short
 ```
 
 **Level 3 — full pipeline** (needs the imagery and a Slurm cluster; job scripts in `hpc/` were
@@ -98,11 +134,14 @@ written for the CMU ERAWAN system and use `/project/gisnorth/...` paths that mus
 
 ## Known gaps (being closed before publication)
 
-- **Reference masks** are not yet in the package; they will be deposited with the release.
 - `inference_cost.json` and `map_composition.json` were produced by commands run on the cluster
   that are not yet saved as scripts.
 - The parcel adjudication summary (`from_paper3/g1_adjudication_pilot.json`) was computed in a
-  companion project; the reviewer sheets and key are included, the summarising script is not yet.
+  companion project. `summarize_adjudication.py` recomputes it from the reviewer sheets: both kappas,
+  the candidate and control counts, the confirmed-change rate and its interval match exactly; the
+  four-way decomposition of the disagreement (Fig. 7, right) does not — the plain reading of the two
+  questions gives 22 / 7 / 12 / 19 parcels (reference error / change / 2020 layer or definition /
+  undecided) against the stored 20 / 8 / 13 / 19. The rule used for the stored numbers is being traced.
 
 ## Licence and citation
 

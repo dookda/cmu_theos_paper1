@@ -1,0 +1,11 @@
+{
+  "title": "Reproducibility package: THEOS-2 land-cover segmentation under controlled evaluation (Paper 1)",
+  "upload_type": "software",
+  "description": "Code, configuration, pre-registration, spatial split definition, reference masks, per-run training logs, per-tile evaluation results and analysis scripts behind the article 'Split, scene and reference definition outweigh training choices in deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery'. THEOS-2 imagery is not included (GISTDA licence).",
+  "creators": [
+    {"name": "Srimanee, Chawis", "affiliation": "Chiang Mai University", "orcid": "0000-0002-1034-0389"},
+    {"name": "Homhuan, Sakda", "affiliation": "Chiang Mai University", "orcid": "0000-0003-0829-929X"}
+  ],
+  "keywords": ["semantic segmentation", "spatial cross-validation", "reference data quality", "accuracy assessment", "THEOS-2"],
+  "access_right": "open"
+}

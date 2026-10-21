@@ -1,0 +1,56 @@
+%%{init: {'theme': 'base', 'flowchart': {'curve': 'linear', 'nodeSpacing': 28, 'rankSpacing': 34, 'htmlLabels': true, 'padding': 10, 'wrappingWidth': 900}, 'themeCSS': '.nodeLabel, .cluster-label, .label, span, p, b {font-family: Arial, Helvetica, sans-serif !important; color: #000000 !important; fill: #000000 !important;}', 'themeVariables': {'fontFamily': 'Arial, Helvetica, sans-serif', 'fontSize': '15px', 'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#000000', 'lineColor': '#000000', 'clusterBkg': '#ffffff', 'clusterBorder': '#9a9a9a', 'titleColor': '#000000', 'edgeLabelBackground': '#ffffff'}}}%%
+flowchart TB
+    subgraph S1["<b>1 &nbsp;Data</b>"]
+        direction LR
+        IMG["<b>THEOS-2 imagery</b><br/>two scenes, 0.5 m, R G B NIR<br/>8 January 2026"]
+        REF["<b>Reference masks</b><br/>drawn on the same imagery"]
+        TILE["<b>Tiling</b><br/>512 px tiles, 448 px stride<br/>64 px overlap per side"]
+    end
+    subgraph S2["<b>2 &nbsp;Spatial partition</b>"]
+        direction LR
+        SPLIT["<b>Spatial split</b><br/>1500 m blocks, one-tile buffer (365 tiles dropped)<br/>Scene 2 held out as the external set"]
+        COUNT["<b>Split sizes</b><br/>train 1,286 · validation 304 · test 399 · external 287<br/>evaluation tiles touching training: 0"]
+    end
+    subgraph S3["<b>3 &nbsp;Factorial experiment</b>"]
+        direction LR
+        FACT["<b>8 conditions × 9 architectures × 5 seeds = 360 runs</b><br/>input bands (RGB, RGB + NIR) × augmentation (off, on) × class weighting (off, on)<br/>each effect estimated once per seed in every architecture"]
+    end
+    subgraph S4["<b>4 &nbsp;Selection and held-out reads</b>"]
+        direction LR
+        SEL["<b>Ensemble selection</b><br/>on the validation split only<br/>greedy forward selection"]
+        LOCK["<b>Held-out sets locked</b><br/>test read once, external read once<br/>after every choice is frozen"]
+    end
+    subgraph S5["<b>5 &nbsp;Analysis</b>"]
+        direction LR
+        EFF["<b>Factor effects</b><br/>95% intervals over matched seeds"]
+        UNC["<b>Spatial uncertainty</b><br/>paired bootstrap over spatial blocks<br/>per-class IoU, confusion, full-scene map"]
+    end
+    subgraph S6["<b>6 &nbsp;Reference audit</b>"]
+        direction LR
+        AUDIT["<b>Audit of the reference labels</b><br/>blinded point sample read by two reviewers (kappa 0.76)<br/>parcel adjudication against the 2020 national land-use layer"]
+    end
+    subgraph S7["<b>7 &nbsp;Pre-registered additions</b>"]
+        direction LR
+        A1["<b>Random-split<br/>control</b>"]
+        A2["<b>Transfer to a<br/>second province</b>"]
+        A3["<b>Training without<br/>background</b>"]
+        A4["<b>Encoders pretrained<br/>on overhead imagery</b>"]
+        A5["<b>Near-infrared<br/>input tests</b>"]
+    end
+    IMG --> REF --> TILE
+    SPLIT --> COUNT
+    SEL --> LOCK
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+    A1 ~~~ A2 ~~~ A3 ~~~ A4 ~~~ A5
+    EFF ~~~ UNC
+    classDef box fill:#ffffff,stroke:#000000,stroke-width:1px,color:#000000;
+    classDef key fill:#dedede,stroke:#000000,stroke-width:2.2px,color:#000000;
+    class IMG,REF,TILE,COUNT,FACT,SEL,EFF,UNC,A1,A2,A3,A4,A5 box;
+    class SPLIT,LOCK,AUDIT key;
+    style S1 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S2 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S3 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S4 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S5 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S6 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S7 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
