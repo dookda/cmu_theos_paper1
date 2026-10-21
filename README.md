@@ -145,4 +145,5 @@ written for the CMU ERAWAN system and use `/project/gisnorth/...` paths that mus
 
 ## Licence and citation
 
-Licence: to be chosen by the authors before release. Citation: see `CITATION.cff`.
+Licence: MIT (`LICENSE`), covering the code and the files in this repository. THEOS-2 imagery is
+not part of the repository and remains under GISTDA's terms. Citation: see `CITATION.cff`.

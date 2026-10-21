@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+license: MIT
 message: "If you use this code or these results, please cite the article (and this software release)."
 title: "Reproducibility package: THEOS-2 land-cover segmentation (Paper 1)"
 authors:
