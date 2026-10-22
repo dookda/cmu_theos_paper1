@@ -457,10 +457,11 @@ def fig_audit(dpi):
     dec = g1["disagreement_decomposition"]; tot = sum(dec.values())
     # สีสื่อความหมาย: เขียว = การเปลี่ยนแปลงจริง (สิ่งที่อยากวัด)
     # ส้ม/เทา = ปัญหาของแหล่งอื่นหรือตัดสินไม่ได้ แดง = ความผิดของเฉลยชุดนี้เอง
-    order = [("Land actually changed", "real_change", "#2c7a4b"),
+    # Okabe-Ito blue / orange / grey / vermilion: distinct under deutan, protan and tritan simulation
+    order = [("Land actually changed", "real_change", "#0072b2"),
              ("2020 layer wrong / definitions", "t0_or_definition", "#e69f00"),
-             ("Reviewers did not agree", "undecided", "#9e9e9e"),
-             ("Reference here is wrong", "t1_label_error", "#c0392b")]
+             ("Reviewers did not agree", "undecided", "#bbbbbb"),
+             ("Reference here is wrong", "t1_label_error", "#d55e00")]
     left = 0
     for lab, key, col in order:
         w = 100 * dec[key] / tot
