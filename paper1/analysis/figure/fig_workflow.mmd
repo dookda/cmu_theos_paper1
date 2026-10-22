@@ -29,13 +29,13 @@ flowchart TB
         direction LR
         AUDIT["<b>Audit of the reference labels</b><br/>blinded point sample read by two reviewers (kappa 0.76)<br/>parcel adjudication against the 2020 national land-use layer"]
     end
-    subgraph S7["<b>7 &nbsp;Pre-registered additions</b>"]
+    subgraph S7["<b>7 &nbsp;Sensitivity of reported accuracy (pre-registered)</b>"]
         direction LR
         A1["<b>Random-split<br/>control</b>"]
         A2["<b>Transfer to a<br/>second province</b>"]
         A3["<b>Training without<br/>background</b>"]
-        A4["<b>Encoders pretrained<br/>on overhead imagery</b>"]
-        A5["<b>Near-infrared<br/>input tests</b>"]
+        A4["<b>Tile-border<br/>analysis</b>"]
+        A5["<b>Variance by<br/>seed and factor</b>"]
     end
     IMG --> REF --> TILE
     SPLIT --> COUNT

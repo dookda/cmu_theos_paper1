@@ -1,6 +1,6 @@
 [
  {
-  "group": "Training recipe",
+  "group": "Training decisions",
   "label": "Augmentation",
   "value": 1.200948511602019,
   "ci95": [
@@ -9,7 +9,7 @@
   ]
  },
  {
-  "group": "Training recipe",
+  "group": "Training decisions",
   "label": "Near-infrared band",
   "value": -0.16068124606316714,
   "ci95": [
@@ -18,7 +18,7 @@
   ]
  },
  {
-  "group": "Training recipe",
+  "group": "Training decisions",
   "label": "Class weighting",
   "value": 0.24355739647699817,
   "ci95": [
@@ -27,28 +27,10 @@
   ]
  },
  {
-  "group": "Training recipe",
+  "group": "Training decisions",
   "label": "Architecture (range of 9 means)",
   "value": 1.585227464021962,
   "ci95": null
- },
- {
-  "group": "Training recipe",
-  "label": "DINOv3-SAT vs best ImageNet",
-  "value": 1.22521403314596,
-  "ci95": [
-   0.45590919177778155,
-   1.9866666270643853
-  ]
- },
- {
-  "group": "Training recipe",
-  "label": "SatlasPretrain vs best ImageNet",
-  "value": 2.324203991081994,
-  "ci95": [
-   1.6263441267479288,
-   3.0104108460818573
-  ]
  },
  {
   "group": "Evaluation regime",
@@ -58,6 +40,12 @@
    1.9978073198586221,
    2.524437164825584
   ]
+ },
+ {
+  "group": "Evaluation regime",
+  "label": "Internal test \u2192 held-out scene (median run)",
+  "value": -2.0664749756869605,
+  "ci95": null
  },
  {
   "group": "Evaluation regime",

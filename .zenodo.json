@@ -1,7 +1,7 @@
 {
   "title": "Reproducibility package: THEOS-2 land-cover segmentation under controlled evaluation (Paper 1)",
   "upload_type": "software",
-  "description": "Code, configuration, pre-registration, spatial split definition, reference masks, per-run training logs, per-tile evaluation results and analysis scripts behind the article 'Scene and reference definition outweigh training choices in deep land-cover segmentation: evidence from 360 controlled runs on THEOS-2 imagery'. THEOS-2 imagery is not included (GISTDA licence).",
+  "description": "Code, configuration, pre-registration, spatial split definition, reference masks, per-run training logs, per-tile evaluation results and analysis scripts behind the article 'A reproducible THEOS-2 benchmark for deep land-cover segmentation and the sensitivity of reported accuracy to evaluation choices'. THEOS-2 imagery is not included (GISTDA licence).",
   "creators": [
     {
       "name": "Srimanee, Chawis",

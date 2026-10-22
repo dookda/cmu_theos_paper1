@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Core-story figure: how much each kind of decision moves the reported mIoU.
+"""Sensitivity figure: how far the reported mIoU moves under each kind of change.
 
 Three groups on one axis (points of mIoU, held-out Lamphun scene unless stated):
-  training recipe      factorial main effects (7-class, 360 runs), spread of the nine
-                       architecture means, overhead-pretrained encoders vs the best
-                       ImageNet architecture
-  evaluation regime    random vs buffered split (test-to-held-out gap, matched runs);
-                       held-out Lamphun -> Roi Et for the locked ensemble
+  training decisions   factorial main effects (7-class, 360 runs) and the spread of the nine
+                       architecture means
+  evaluation regime    random vs buffered split (test-to-held-out gap, matched runs); internal
+                       test -> held-out scene (median run); held-out Lamphun -> Roi Et for the
+                       locked ensemble
   reference definition locked ensemble scored on six real classes instead of seven
+(The overhead-pretrained encoders are outside the article since the 2026-10-22 reframe.)
 
 Every value is read from committed result files; nothing is typed in by hand.
 Output: analysis/figure/fig_effect_sizes.png
@@ -36,26 +37,28 @@ def miou7(cm):
     return 100 * float(np.nanmean(np.diag(cm) / (cm.sum(0) + cm.sum(1) - np.diag(cm))))
 
 
+def median_drop():
+    t = {r["run"]: r["mean_iou"] for r in load("rerun_eval_test.json")["results"]}
+    x = {r["run"]: r["mean_iou"] for r in load("rerun_eval_external.json")["results"]}
+    return 100 * float(np.median([t[k] - x[k] for k in t if k in x]))
+
+
 def rows():
     u, a, s = load("unified_results.json"), load("addendum_results.json"), load("six_class_summary.json")
     f4 = u["F4"]["external"]["P7"]
     am = s["arch_mean"]["external"]["P7"].values()
-    eh = u["E_H"]
     ens_x = load("ensemble_eval_external.json")
     r = {v: miou7(load(f"ensemble_eval_roiet_{v}.json")["confusion_matrix"]) for v in ("raw", "zscene")}
     lam = 100 * ens_x["mean_iou"]
     e6 = s["ensemble"]["external"]
     A = a["A"]["A-H1_gap_random_minus_spatial"]
     out = [
-        ("Training recipe", "Augmentation", f4["augment"]["mean"], f4["augment"]["ci95"]),
-        ("Training recipe", "Near-infrared band", f4["bands"]["mean"], f4["bands"]["ci95"]),
-        ("Training recipe", "Class weighting", f4["weights"]["mean"], f4["weights"]["ci95"]),
-        ("Training recipe", "Architecture (range of 9 means)", max(am) - min(am), None),
-        ("Training recipe", "DINOv3-SAT vs best ImageNet", eh["dinov3_vitl_sat_external"]["vs_comparator"]["mean"],
-         eh["dinov3_vitl_sat_external"]["vs_comparator"]["ci95"]),
-        ("Training recipe", "SatlasPretrain vs best ImageNet", eh["satlas_swinb_external"]["vs_comparator"]["mean"],
-         eh["satlas_swinb_external"]["vs_comparator"]["ci95"]),
+        ("Training decisions", "Augmentation", f4["augment"]["mean"], f4["augment"]["ci95"]),
+        ("Training decisions", "Near-infrared band", f4["bands"]["mean"], f4["bands"]["ci95"]),
+        ("Training decisions", "Class weighting", f4["weights"]["mean"], f4["weights"]["ci95"]),
+        ("Training decisions", "Architecture (range of 9 means)", max(am) - min(am), None),
         ("Evaluation regime", "Random vs buffered split\n(test-to-held-out gap)", A["mean"], A["ci95"]),
+        ("Evaluation regime", "Internal test → held-out\nscene (median run)", -median_drop(), None),
         ("Evaluation regime", "Lamphun → Roi Et,\nmoment matched", r["zscene"] - lam, None),
         ("Evaluation regime", "Lamphun → Roi Et,\nraw digital numbers", r["raw"] - lam, None),
         ("Reference definition", "Six classes, background\nprediction counted wrong", e6["P6-eval"] - e6["P7"], None),
@@ -66,7 +69,7 @@ def rows():
 
 def main():
     rs = rows()
-    col = {"Training recipe": "#4d4d4d", "Evaluation regime": "#0072b2", "Reference definition": "#d55e00"}
+    col = {"Training decisions": "#4d4d4d", "Evaluation regime": "#0072b2", "Reference definition": "#d55e00"}
     fig, ax = plt.subplots(figsize=(7.0, 5.2))
     y = np.arange(len(rs))[::-1]
     for yi, (g, lab, v, ci) in zip(y, rs):
