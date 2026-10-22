@@ -36,8 +36,8 @@ from qgis.core import (QgsApplication, QgsCoordinateReferenceSystem, QgsFillSymb
                        QgsSingleSymbolRenderer, QgsTextBufferSettings, QgsTextFormat,
                        QgsUnitTypes, QgsVectorLayer, QgsVectorLayerSimpleLabeling,
                        QgsLayerTree, QgsContrastEnhancement, QgsMultiBandColorRenderer,
-                       QgsMapLayerLegendUtils)
-from qgis.PyQt.QtCore import QRectF
+                       QgsMapLayerLegendUtils, QgsSimpleFillSymbolLayer)
+from qgis.PyQt.QtCore import QRectF, Qt
 from qgis.PyQt.QtGui import QColor, QFont
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,6 +70,21 @@ def vec(path, name, encoding=None):
 def fill(color, outline, width, style="solid"):
     return QgsFillSymbol.createSimple({"color": color, "outline_color": outline,
                                        "outline_width": str(width), "style": style})
+
+
+def cased(inner, outer, w_in, w_out, dash=False):
+    """Outline-only symbol drawn twice: a wide outer casing under a narrower inner line, so the line
+    stays visible over both bright and dark imagery. dash=True gives the inner line a dash pattern, so
+    line types differ by shape as well as colour (colour-vision deficiency)."""
+    parts = []
+    for col, w, dashed in ((outer, w_out, False), (inner, w_in, dash)):
+        sl = QgsSimpleFillSymbolLayer()
+        sl.setBrushStyle(Qt.BrushStyle.NoBrush)
+        sl.setStrokeColor(QColor(col)); sl.setStrokeWidth(w)
+        if dashed:
+            sl.setStrokeStyle(Qt.PenStyle.DashLine)
+        parts.append(sl)
+    return QgsFillSymbol(parts)
 
 
 def text_format(size, bold=False, buffer=True, color="#000000"):
@@ -156,6 +171,37 @@ def layers():
                                                    0, 0, f"\"scene\" = '{k}'", nm))
     sc.setRenderer(QgsRuleBasedRenderer(root))
     L["scenes"] = sc
+
+    # merged study-area figure: boundaries with casing, scenes dashed, spatial split tiles
+    amp3 = vec(ADM / "amp_ลำพูน.shp", "District boundary")
+    amp3.setRenderer(QgsSingleSymbolRenderer(cased("#ffffff", "#000000", 0.55, 1.15)))
+    L["amp_cased"] = amp3
+    tam2 = vec(ADM / "tambon_ลำพูน.shp", "Subdistrict boundary", "TIS-620")
+    tam2.setRenderer(QgsSingleSymbolRenderer(cased("#ffd23f", "#000000", 0.35, 0.75)))
+    L["tam_cased"] = tam2
+    wy2 = vec(SHAPES / "wiang_yong.geojson", "Wiang Yong Subdistrict")
+    wy2.setRenderer(QgsSingleSymbolRenderer(cased("#cc79a7", "#ffffff", 0.8, 1.4)))
+    L["wy_cased"] = wy2
+    sc2 = vec(SHAPES / "scenes_utm47n.geojson", "THEOS-2 scene extents")
+    root = QgsRuleBasedRenderer.Rule(None)
+    for k, nm in (("scene1", "Scene 1 extent"), ("scene2", "Scene 2 extent")):
+        root.appendChild(QgsRuleBasedRenderer.Rule(cased(SCENE_COL[k], "#ffffff", 0.55, 0.95, dash=True),
+                                                   0, 0, f"\"scene\" = '{k}'", nm))
+    sc2.setRenderer(QgsRuleBasedRenderer(root))
+    L["scenes_dashed"] = sc2
+    tiles = vec(SHAPES / "spatial_splits.gpkg|layername=tiles", "Spatial split (tiles after buffering)")
+    counts = {}
+    for f in tiles.getFeatures():
+        counts[f["split"]] = counts.get(f["split"], 0) + 1
+    root = QgsRuleBasedRenderer.Rule(None)
+    # colour-blind-safe split colours (README in analysis/figure/manual), white tile edges
+    for key, nm, col in (("train", "Train", "#9ecae1"), ("val", "Validation", "#e69f00"),
+                         ("test", "Test", "#009e73"), ("external", "External, Scene 2", "#aa4499"),
+                         ("", "Buffer, dropped", "#d9d9d9")):
+        root.appendChild(QgsRuleBasedRenderer.Rule(fill(col, "#ffffff", 0.04), 0, 0,
+                                                   f"\"split\" = '{key}'", f"{nm} (n = {counts.get(key, 0)})"))
+    tiles.setRenderer(QgsRuleBasedRenderer(root))
+    L["tiles"] = tiles
     return L
 
 
@@ -286,6 +332,37 @@ def layout_study_area(project, L):
     return lay
 
 
+def layout_study_split(project, L):
+    """Figure 1: (a) Thailand, (b) Lamphun districts, (c) THEOS-2 with administrative boundaries and
+    (d) the spatial split, with (c) and (d) on the same extent and UTM grid. Line types differ by colour
+    and by casing/dash pattern, and the split colours are colour-blind safe."""
+    lay = new_layout(project, "study_area_split", 182, 210)
+    a = add_map(lay, [L["tha"]], 9, 9, 38, 62, QgsRectangle(97.2, 5.4, 105.9, 20.7),
+                QgsCoordinateReferenceSystem("EPSG:4326"))
+    add_grid(a, 4, unit_km=False, size=5.5)
+    add_label(lay, "(a) Thailand", 9, 3.5, 38, 5, 8, True)
+    pe = L["amp_fill"].extent(); pe.grow(3000)
+    b = add_map(lay, [L["scenes_dashed"], L["amp_fill"]], 55, 9, 36, 62, pe)
+    add_grid(b, 40000, size=5.5)
+    add_label(lay, "(b) Lamphun Province", 55, 3.5, 40, 5, 8, True)
+    add_scalebar(lay, b, 56.5, 55, 20)
+    ext = L["scenes_dashed"].extent(); ext.grow(400)
+    c = add_map(lay, [L["scenes_dashed"], L["lab"], L["wy_cased"], L["amp_cased"], L["tam_cased"], L["img"]],
+                9, 86, 82, 110, ext)
+    add_grid(c, 4000, size=6)
+    add_label(lay, "(c) THEOS-2 true colour, 8 January 2026", 9, 80.5, 84, 5, 8, True)
+    add_scalebar(lay, c, 11, 181, 4)
+    add_north(lay, 11, 89, 9)
+    d = add_map(lay, [L["scenes_dashed"], L["tiles"]], 97, 86, 82, 110, ext)
+    add_grid(d, 4000, size=6)
+    add_label(lay, "(d) Spatial split after buffering", 97, 80.5, 84, 5, 8, True)
+    add_scalebar(lay, d, 99, 181, 4)
+    add_legend(lay, c, [L["tha"], L["amp_cased"], L["tam_cased"], L["wy_cased"], L["scenes_dashed"]], 99, 5)
+    add_legend(lay, d, [L["tiles"]], 140, 5)
+    add_label(lay, "Map grids: UTM zone 47N, labels in km", 9, 203, 120, 5, 6.5)
+    return lay
+
+
 def layout_landcover(project, L, name, k1, k2, title, legend_name):
     """แผนที่สิ่งปกคลุมดินของทั้งสองฉาก; ในเขตทับซ้อนชั้นของฉากที่ 1 อยู่บน"""
     lay = new_layout(project, name, 150, 227)
@@ -303,6 +380,7 @@ def layout_landcover(project, L, name, k1, k2, title, legend_name):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dpi", type=int, default=600)
+    ap.add_argument("--only", help="export only this file name (e.g. fig_study_area_split_qgis.png)")
     a = ap.parse_args()
     QgsApplication.setPrefixPath("/Applications/QGIS-final-4_2_2.app/Contents/MacOS", True)
     app = QgsApplication([], False); app.initQgis()
@@ -310,10 +388,11 @@ def main():
     project.setTitle("Paper 1 maps: study area and land cover")
     L = layers()
     for key in ("lc2", "lc1", "lc62", "lc61", "img", "tha", "amp_fill", "tam", "amp_line", "wy",
-                "lab", "scenes"):
+                "lab", "scenes", "tiles", "tam_cased", "amp_cased", "wy_cased", "scenes_dashed"):
         if key in L:
             project.addMapLayer(L[key])
-    lays = {"fig_study_area_qgis.png": layout_study_area(project, L)}
+    lays = {"fig_study_area_qgis.png": layout_study_area(project, L),
+            "fig_study_area_split_qgis.png": layout_study_split(project, L)}
     when = "THEOS-2, 8 January 2026 (UTM zone 47N, km)"
     if "lc61" in L and "lc62" in L:
         # รูปหลัก: หกคลาส; แผนที่เจ็ดคลาสเก็บไว้เป็นรูปเสริม
@@ -333,6 +412,8 @@ def main():
     project.write(str(PROJECT))
     OUTDIR.mkdir(parents=True, exist_ok=True)
     for name, lay in lays.items():
+        if a.only and name != a.only:
+            continue
         s = QgsLayoutExporter.ImageExportSettings(); s.dpi = a.dpi
         res = QgsLayoutExporter(lay).exportToImage(str(OUTDIR / name), s)
         print(f"export {name}: {'ok' if res == QgsLayoutExporter.ExportResult.Success else res}")
