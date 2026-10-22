@@ -3,13 +3,13 @@ flowchart TB
     subgraph S1["<b>1 &nbsp;Data</b>"]
         direction LR
         IMG["<b>THEOS-2 imagery</b><br/>two scenes, 0.5 m, R G B NIR<br/>8 January 2026"]
-        REF["<b>Reference masks</b><br/>drawn on the same imagery"]
+        REF["<b>Reference masks</b><br/>drawn on the same imagery<br/>7 classes (grass merged into background)"]
         TILE["<b>Tiling</b><br/>512 px tiles, 448 px stride<br/>64 px overlap per side"]
     end
     subgraph S2["<b>2 &nbsp;Spatial partition</b>"]
         direction LR
         SPLIT["<b>Spatial split</b><br/>1500 m blocks, one-tile buffer (365 tiles dropped)<br/>Scene 2 held out as the external set"]
-        COUNT["<b>Split sizes</b><br/>train 1,286 · validation 304 · test 399 · external 287<br/>evaluation tiles touching training: 0"]
+        COUNT["<b>Split sizes</b><br/>train 1286 · validation 304 · test 399 · external 287<br/>evaluation tiles touching training: 0"]
     end
     subgraph S3["<b>3 &nbsp;Factorial experiment</b>"]
         direction LR
@@ -24,6 +24,7 @@ flowchart TB
         direction LR
         EFF["<b>Factor effects</b><br/>95% intervals over matched seeds"]
         UNC["<b>Spatial uncertainty</b><br/>paired bootstrap over spatial blocks<br/>per-class IoU, confusion, full-scene map"]
+        SCORE["<b>Two scoring definitions</b><br/>seven-class mIoU, background scored (primary)<br/>six-class mIoU: original predictions; background not predicted"]
     end
     subgraph S6["<b>6 &nbsp;Reference audit</b>"]
         direction LR
@@ -32,20 +33,26 @@ flowchart TB
     subgraph S7["<b>7 &nbsp;Sensitivity of reported accuracy (pre-registered)</b>"]
         direction LR
         A1["<b>Random-split<br/>control</b>"]
-        A2["<b>Transfer to a<br/>second province</b>"]
-        A3["<b>Training without<br/>background</b>"]
+        A2["<b>Transfer to a<br/>second province</b><br/>raw and moment matched;<br/>calibration"]
+        A3["<b>Background as<br/>a target</b><br/>removed at inference<br/>or in training;<br/>six-class ensemble score"]
         A4["<b>Tile-border<br/>analysis</b>"]
         A5["<b>Variance by<br/>seed and factor</b>"]
+    end
+    subgraph S8["<b>8 &nbsp;Reporting</b>"]
+        direction LR
+        R1["<b>Effect sizes on one axis</b><br/>training, evaluation regime, reference definition (figure 8)"]
+        R2["<b>Reporting checklist</b><br/>what to state with an accuracy figure (table 4)"]
     end
     IMG --> REF --> TILE
     SPLIT --> COUNT
     SEL --> LOCK
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
     A1 ~~~ A2 ~~~ A3 ~~~ A4 ~~~ A5
-    EFF ~~~ UNC
+    EFF ~~~ UNC ~~~ SCORE
+    R1 ~~~ R2
     classDef box fill:#ffffff,stroke:#000000,stroke-width:1px,color:#000000;
     classDef key fill:#dedede,stroke:#000000,stroke-width:2.2px,color:#000000;
-    class IMG,REF,TILE,COUNT,FACT,SEL,EFF,UNC,A1,A2,A3,A4,A5 box;
+    class IMG,REF,TILE,COUNT,FACT,SEL,EFF,UNC,SCORE,A1,A2,A3,A4,A5,R1,R2 box;
     class SPLIT,LOCK,AUDIT key;
     style S1 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
     style S2 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
@@ -54,3 +61,4 @@ flowchart TB
     style S5 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
     style S6 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
     style S7 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
+    style S8 fill:#ffffff,stroke:#9a9a9a,stroke-width:1px,color:#000000
