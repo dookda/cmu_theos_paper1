@@ -7,6 +7,7 @@ Code, configuration, split definitions and result files behind the article
 > (submitted to the International Journal of Remote Sensing).
 >
 > Repository: https://github.com/dookda/cmu_theos_paper1
+> Archived release (v1.0.0): https://doi.org/10.5281/zenodo.23550531
 
 The package lets a reader do three things, in increasing order of effort:
 

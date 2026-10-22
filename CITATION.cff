@@ -11,6 +11,8 @@ authors:
     given-names: Sakda
     orcid: "https://orcid.org/0000-0003-0829-929X"
     affiliation: "Department of Geography, Faculty of Social Sciences, Chiang Mai University"
+version: "1.0.0"
+doi: "10.5281/zenodo.23550531"
 repository-code: "https://github.com/dookda/cmu_theos_paper1"
 keywords: [semantic segmentation, spatial cross-validation, reference data quality, accuracy assessment, THEOS-2]
 preferred-citation:
