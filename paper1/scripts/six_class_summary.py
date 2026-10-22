@@ -100,35 +100,38 @@ def figure(runs, ens):
             by[p][a].append((A.metric(d, "test", k, fn), A.metric(d, "external", k, fn)))
     order = sorted(by["P7"], key=lambda a: -np.mean([t for t, _ in by["P7"][a]]))
 
-    fig, axes = plt.subplots(1, 2, figsize=(12.4, 6.2))
-    titles = {"P7": "Seven classes, background scored (headline metric)",
+    # drawn at print size (16 cm wide): every text element prints at 7-9 pt
+    fig, axes = plt.subplots(1, 2, figsize=(6.3, 4.0))
+    titles = {"P7": "Seven classes, background scored",
               "P6-sup": "Six real classes, background not predicted"}
     for ax, p in zip(axes, ("P7", "P6-sup")):
         pts = [c for v in by[p].values() for pair in v for c in pair] + \
               [ens["test"][p], ens["external"][p]]
         lo, hi = min(pts) - 1.0, max(pts) + 1.4
-        ax.plot([lo, hi], [lo, hi], ls=(0, (5, 4)), color="0.5", lw=1.1, zorder=0)
+        ax.plot([lo, hi], [lo, hi], ls=(0, (5, 4)), color="0.5", lw=0.8, zorder=0)
         for i, a in enumerate(order):
             v = np.array(by[p][a])
-            ax.scatter(v[:, 0], v[:, 1], s=26, marker=_mk(i), facecolor=_sr(i),
-                       edgecolor="black", lw=0.6, alpha=0.9,
+            ax.scatter(v[:, 0], v[:, 1], s=11, marker=_mk(i), facecolor=_sr(i),
+                       edgecolor="black", lw=0.4, alpha=0.9,
                        label=f"{NICE.get(a, a)} (n={len(v)})", zorder=3)
-        ax.scatter([ens["test"][p]], [ens["external"][p]], s=150, marker="*",
+        ax.scatter([ens["test"][p]], [ens["external"][p]], s=70, marker="*",
                    facecolor="black", edgecolor="black", zorder=4)
         ax.annotate(f"ensemble\n{ens['test'][p]:.2f} / {ens['external'][p]:.2f}",
-                    xy=(ens["test"][p], ens["external"][p]), xytext=(-14, -32),
-                    textcoords="offset points", fontsize=8, ha="right",
-                    arrowprops=dict(arrowstyle="-", lw=0.8, color="black"))
+                    xy=(ens["test"][p], ens["external"][p]), xytext=(-12, -3), va="center",
+                    textcoords="offset points", fontsize=7.5, ha="right",
+                    arrowprops=dict(arrowstyle="-", lw=0.6, color="black"))
         ax.set_xlim(lo, hi); ax.set_ylim(lo, hi); ax.set_aspect("equal")
-        ax.set_xlabel("mIoU on the internal test split (%)", fontsize=9.5)
-        ax.set_ylabel("mIoU on the held-out second scene (%)", fontsize=9.5)
-        ax.grid(color="0.9", lw=0.6); ax.set_axisbelow(True)
-        ax.set_title(titles[p], fontsize=10.5)
-    axes[1].legend(fontsize=7.0, frameon=True, edgecolor="black", loc="lower right",
-                   handletextpad=0.4, borderpad=0.4, labelspacing=0.35)
-    fig.suptitle("Every trained run (360) on both held-out splits, scored two ways",
-                 fontsize=11, y=0.995)
-    fig.tight_layout(rect=(0, 0, 1, 0.96))
+        ax.set_xlabel("mIoU, internal test split (%)", fontsize=8)
+        ax.set_ylabel("mIoU, held-out second scene (%)", fontsize=8)
+        ax.tick_params(labelsize=7.5, width=0.6, length=2.5)
+        for sp in ax.spines.values():
+            sp.set_linewidth(0.6)
+        ax.grid(color="0.9", lw=0.5); ax.set_axisbelow(True)
+        ax.set_title(titles[p], fontsize=8.5)
+    h, l = axes[0].get_legend_handles_labels()
+    fig.legend(h, l, fontsize=7.5, frameon=False, loc="lower center", ncol=3,
+               handletextpad=0.3, columnspacing=1.0, labelspacing=0.3, bbox_to_anchor=(0.5, 0.0))
+    fig.tight_layout(rect=(0, 0.17, 1, 1), w_pad=1.5)
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "fig_models_7v6.png", dpi=600)
     plt.close(fig)

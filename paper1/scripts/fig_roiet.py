@@ -87,8 +87,9 @@ def main():
     names = [str(n) for n in ex["names"]]
     L = lut()
 
-    fig = plt.figure(figsize=(7.16, 9.4))
-    gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 2.05], hspace=0.10)
+    # 7.16 in wide, printed at 16 cm (x0.88): every font >= 8 pt here prints at >= 7 pt
+    fig = plt.figure(figsize=(7.16, 9.9))
+    gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 2.05], hspace=0.17)
     top = gs[0].subgridspec(1, 2, width_ratios=[0.62, 1.38], wspace=0.10)
     ax_a, ax_b = fig.add_subplot(top[0]), fig.add_subplot(top[1])
 
@@ -100,14 +101,14 @@ def main():
         g = tha[tha.shapeName.str.contains(key)]
         g.plot(ax=ax_a, facecolor=col, edgecolor="black", lw=0.4)
         c = g.geometry.iloc[0].centroid
-        ax_a.annotate(lab, xy=(c.x, c.y), xytext=(c.x + dx, c.y + 1.4), fontsize=6.5,
+        ax_a.annotate(lab, xy=(c.x, c.y), xytext=(c.x + dx, c.y + 1.4), fontsize=8,
                       ha="left", path_effects=HALO, arrowprops=dict(arrowstyle="-", lw=0.6))
-    ax_a.set_xlim(97.2, 105.8); ax_a.set_ylim(5.5, 20.6); ax_a.set_aspect("equal")
-    ax_a.set_xticks([98, 100, 102, 104]); ax_a.set_yticks([8, 12, 16, 20])
-    ax_a.set_xticklabels([f"{v}°E" for v in [98, 100, 102, 104]], fontsize=6)
-    ax_a.set_yticklabels([f"{v}°N" for v in [8, 12, 16, 20]], fontsize=6)
+    ax_a.set_xlim(97.2, 105.8); ax_a.set_ylim(5.5, 21.9); ax_a.set_aspect("equal")
+    ax_a.set_xticks([98, 101, 104]); ax_a.set_yticks([8, 12, 16, 20])
+    ax_a.set_xticklabels([f"{v}°E" for v in [98, 101, 104]], fontsize=8)
+    ax_a.set_yticklabels([f"{v}°N" for v in [8, 12, 16, 20]], fontsize=8)
     ax_a.tick_params(length=2, pad=1.5)
-    ax_a.set_title("(a) Thailand", fontsize=8, loc="left")
+    ax_a.set_title("(a) Thailand", fontsize=9, loc="left")
 
     # (b) Roi Et scene with labelled tiles, blocks and examples
     rgba, ext, tr = scene_thumb(sp)
@@ -125,23 +126,23 @@ def main():
         x0, y0 = tile_xy(n, tr)
         ax_b.add_patch(Rectangle((x0, y0), TILE * 0.5, TILE * 0.5, fill=False,
                                  ec="#d55e00", lw=1.4))
-        ax_b.text(x0 + 300, y0 + 300, "abcd"[i], fontsize=8, fontweight="bold",
+        ax_b.text(x0 + 300, y0 + 300, "abcd"[i], fontsize=9, fontweight="bold",
                   color="#d55e00", path_effects=HALO)
     ax_b.set_xlim(ext[0], ext[1]); ax_b.set_ylim(ext[2], ext[3]); ax_b.set_aspect("equal")
     xt = np.arange(np.ceil(ext[0] / 2000) * 2000, ext[1], 2000)
     yt = np.arange(np.ceil(ext[2] / 2000) * 2000, ext[3], 2000)
     ax_b.set_xticks(xt); ax_b.set_yticks(yt)
-    ax_b.set_xticklabels([f"{v / 1000:.0f}" for v in xt], fontsize=6)
-    ax_b.set_yticklabels([f"{v / 1000:.0f}" for v in yt], fontsize=6)
-    ax_b.set_xlabel("Easting, UTM 48N (km)", fontsize=6.5, labelpad=1)
-    ax_b.set_ylabel("Northing (km)", fontsize=6.5, labelpad=1)
+    ax_b.set_xticklabels([f"{v / 1000:.0f}" for v in xt], fontsize=8)
+    ax_b.set_yticklabels([f"{v / 1000:.0f}" for v in yt], fontsize=8)
+    ax_b.set_xlabel("Easting, UTM 48N (km)", fontsize=8, labelpad=1)
+    ax_b.set_ylabel("Northing (km)", fontsize=8, labelpad=1)
     ax_b.tick_params(length=2, pad=1.5)
     ax_b.set_title("(b) Roi Et, 13 Jan 2025, moment matched: labelled tiles (yellow),\n"
-                   "1.5 km evaluation blocks (dashed), example tiles a–d", fontsize=7, loc="left")
+                   "1.5 km evaluation blocks (dashed), example tiles a–d", fontsize=8, loc="left")
 
     # (c) example tiles
-    cols = ["Input as delivered", "After moment matching", "Reference",
-            "Prediction, as delivered", "Prediction, moment matched"]
+    cols = ["Input\nas delivered", "After moment\nmatching", "Reference\n",
+            "Prediction,\nas delivered", "Prediction,\nmoment matched"]
     sub = gs[1].subgridspec(len(names), 5, wspace=0.04, hspace=0.06)
     lab = ex["labels"]
     for i in range(len(names)):
@@ -159,18 +160,18 @@ def main():
             if j >= 3:
                 p = ex["pred_raw" if j == 3 else "pred_zscene"][i]
                 agr = 100 * (p[ok] == lab[i][ok]).mean() if ok.any() else float("nan")
-                ax.text(8, 40, f"{agr:.0f}%", fontsize=7, path_effects=HALO)
+                ax.text(8, 40, f"{agr:.0f}%", fontsize=8.5, path_effects=HALO)
             if i == 0:
-                ax.set_title(cols[j], fontsize=6.5)
+                ax.set_title(cols[j], fontsize=8)
             if j == 0:
-                ax.set_ylabel(f"({'abcd'[i]}) {str(ex['picked_for'][i])}", fontsize=7)
+                ax.set_ylabel(f"({'abcd'[i]}) {str(ex['picked_for'][i])}", fontsize=8.5)
     handles = [Patch(facecolor=CLASS_COLOR[c], edgecolor="black", lw=0.4,
                      label=c.replace("_", " ")) for c in CLASSES]
     handles.append(Patch(facecolor="white", edgecolor="black", lw=0.4, hatch="////",
                          label="unlabelled"))
-    fig.legend(handles=handles, loc="lower center", ncol=8, fontsize=6.3, frameon=False,
+    fig.legend(handles=handles, loc="lower center", ncol=5, fontsize=8, frameon=False,
                bbox_to_anchor=(0.5, 0.005), handlelength=1.2, columnspacing=0.9)
-    fig.subplots_adjust(left=0.07, right=0.99, top=0.955, bottom=0.04)
+    fig.subplots_adjust(left=0.075, right=0.99, top=0.955, bottom=0.055)
     fig.savefig(OUT, dpi=600)
     print("wrote", OUT, "tiles:", dict(zip(ex["picked_for"], names)))
 

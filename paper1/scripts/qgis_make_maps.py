@@ -147,7 +147,7 @@ def layers():
 
     amp = vec(ADM / "amp_ลำพูน.shp", "District boundary")
     amp.setRenderer(QgsSingleSymbolRenderer(fill("#f4f4f4", "#555555", 0.25)))
-    label(amp, "replace(replace(\"AMPHOE_E\", 'Amphoe ', ''), 'Muang', 'Mueang')", 5.5)
+    label(amp, "replace(replace(\"AMPHOE_E\", 'Amphoe ', ''), 'Muang', 'Mueang')", 8)
     L["amp_fill"] = amp
     amp2 = vec(ADM / "amp_ลำพูน.shp", "District boundary")
     amp2.setRenderer(QgsSingleSymbolRenderer(fill("0,0,0,0", "#111111", 0.5, "no")))
@@ -161,7 +161,7 @@ def layers():
     lab = vec(SHAPES / "tambon_labels_en.geojson", "Subdistrict names")
     lab.setRenderer(QgsSingleSymbolRenderer(QgsMarkerSymbol.createSimple({"size": "0", "color": "0,0,0,0",
                                                                           "outline_style": "no"})))
-    label(lab, "name_en", 6.5, is_expr=False)
+    label(lab, "name_en", 8, is_expr=False)
     L["lab"] = lab
     # ฉบับ UTM 47N ของ scenes.geojson — ไม่ต้องแปลงพิกัดขณะวาด
     sc = vec(SHAPES / "scenes_utm47n.geojson", "THEOS-2 scene extents")
@@ -257,7 +257,7 @@ def add_scalebar(layout, m, x, y, km, segments=2, right_align=False, background=
     sb.setMapUnitsPerScaleBarUnit(1000); sb.setUnitLabel("km")
     sb.setNumberOfSegments(segments); sb.setNumberOfSegmentsLeft(0)
     sb.setUnitsPerSegment(km * 1000 / segments); sb.setHeight(1.5)
-    sb.setTextFormat(text_format(6.5, buffer=False))
+    sb.setTextFormat(text_format(8, buffer=False))
     sb.setBoxContentSpace(0.6)       # padding around bar and labels (mm); default 1 mm left a wide box
     sb.setLabelBarSpace(0.8)
     sb.setBackgroundEnabled(background); sb.setBackgroundColor(QColor(255, 255, 255, 215))
@@ -296,10 +296,10 @@ def add_legend(layout, m, lyrs, x, y, columns=1, title=""):
             QgsMapLayerLegendUtils.setLegendNodeOrder(node, list(range(1, n)))
             lg.model().refreshLayerLegend(node)
     lg.setTitle(title); lg.setColumnCount(columns); lg.setSplitLayer(True)
-    for comp, size, bold in ((QgsLegendStyle.Style.SymbolLabel, 6.8, False),
-                             (QgsLegendStyle.Style.Subgroup, 7, True),
-                             (QgsLegendStyle.Style.Group, 7, True),
-                             (QgsLegendStyle.Style.Title, 7.5, True)):
+    for comp, size, bold in ((QgsLegendStyle.Style.SymbolLabel, 8, False),
+                             (QgsLegendStyle.Style.Subgroup, 8.5, True),
+                             (QgsLegendStyle.Style.Group, 8.5, True),
+                             (QgsLegendStyle.Style.Title, 9, True)):
         st = lg.style(comp); st.setTextFormat(text_format(size, bold, buffer=False)); lg.setStyle(comp, st)
     lg.setSymbolWidth(5); lg.setSymbolHeight(3)
     lg.setFrameEnabled(False); lg.setBackgroundEnabled(False)
@@ -347,41 +347,43 @@ def layout_study_split(project, L):
     lay = new_layout(project, "study_area_split", 182, 218)
     a = add_map(lay, [L["tha"]], 9, 9, 38, 62, QgsRectangle(97.2, 5.4, 105.9, 20.7),
                 QgsCoordinateReferenceSystem("EPSG:4326"))
-    add_grid(a, 4, unit_km=False, size=5.5)
-    add_label(lay, "(a) Thailand", 9, 3.5, 38, 5, 8, True)
+    add_grid(a, 4, unit_km=False, size=8)
+    add_label(lay, "(a) Thailand", 9, 3.5, 38, 5, 9, True)
     pe = L["amp_fill"].extent(); pe.grow(3000)
     b = add_map(lay, [L["scenes_dashed"], L["amp_fill"]], 55, 9, 36, 62, pe)
-    add_grid(b, 40000, size=5.5)
-    add_label(lay, "(b) Lamphun Province", 55, 3.5, 40, 5, 8, True)
+    add_grid(b, 40000, size=8)
+    add_label(lay, "(b) Lamphun Province", 55, 3.5, 40, 5, 9, True)
     add_scalebar(lay, b, 55 + 36, 75.5, 20, right_align=True, background=False)
     ext = L["scenes_dashed"].extent(); ext.grow(400)
     c = add_map(lay, [L["scenes_dashed"], L["lab"], L["wy_cased"], L["amp_cased"], L["tam_cased"], L["img"]],
                 9, 92, 82, 110, ext)
-    add_grid(c, 4000, size=6)
-    add_label(lay, "(c) THEOS-2 true colour, 8 January 2026", 9, 86.5, 84, 5, 8, True)
+    add_grid(c, 4000, size=8)
+    add_label(lay, "(c) THEOS-2 true colour, 8 January 2026", 9, 86.5, 84, 5, 9, True)
     add_scalebar(lay, c, 9 + 82, 206.5, 4, right_align=True, background=False)
     add_north(lay, 11, 95, 9)
     d = add_map(lay, [L["scenes_dashed"], L["tiles"]], 97, 92, 82, 110, ext)
-    add_grid(d, 4000, size=6)
-    add_label(lay, "(d) Spatial split after buffering", 97, 86.5, 84, 5, 8, True)
+    add_grid(d, 4000, size=8)
+    add_label(lay, "(d) Spatial split after buffering", 97, 86.5, 84, 5, 9, True)
     add_scalebar(lay, d, 97 + 82, 206.5, 4, right_align=True, background=False)
-    add_legend(lay, c, [L["tha"], L["amp_cased"], L["tam_cased"], L["wy_cased"], L["scenes_dashed"]], 99, 5)
-    add_legend(lay, d, [L["tiles"]], 140, 5)
-    add_label(lay, "Map grids: UTM zone 47N, labels in km", 9, 207.5, 60, 5, 6.5)
+    # two legends, each in two columns, stacked in the free space right of (b)
+    add_legend(lay, c, [L["tha"], L["amp_cased"], L["tam_cased"], L["wy_cased"], L["scenes_dashed"]], 95, 5,
+               columns=2)
+    add_legend(lay, d, [L["tiles"]], 95, 44, columns=1)
+    add_label(lay, "Map grids: UTM zone 47N, labels in km", 9, 207.5, 70, 5, 8)
     return lay
 
 
 def layout_landcover(project, L, name, k1, k2, title, legend_name):
     """แผนที่สิ่งปกคลุมดินของทั้งสองฉาก; ในเขตทับซ้อนชั้นของฉากที่ 1 อยู่บน"""
-    lay = new_layout(project, name, 150, 234)
+    # no title inside the figure: the caption carries it (T&F style)
+    lay = new_layout(project, name, 150, 232)
     ext = L[k1].extent(); ext.combineExtentWith(L[k2].extent()); ext.grow(300)
-    m = add_map(lay, [L["scenes"], L[k1], L[k2]], 12, 10, 130, 188, ext)
-    add_grid(m, 4000, size=6.5)
-    add_label(lay, title, 12, 3.5, 136, 5, 7.6, True)
-    add_scalebar(lay, m, 12 + 130, 204, 4, right_align=True, background=False)
-    add_north(lay, 130, 13)
+    m = add_map(lay, [L["scenes"], L[k1], L[k2]], 12, 5, 130, 188, ext)
+    add_grid(m, 4000, size=7.5)
+    add_scalebar(lay, m, 12 + 130, 200, 4, right_align=True, background=False)
+    add_north(lay, 130, 8)
     L[k1].setName(legend_name)
-    add_legend(lay, m, [L[k1], L["scenes"]], 12, 211, columns=5)
+    add_legend(lay, m, [L[k1], L["scenes"]], 12, 208, columns=4)
     return lay
 
 

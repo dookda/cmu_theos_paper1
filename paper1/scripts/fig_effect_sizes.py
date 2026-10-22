@@ -70,6 +70,7 @@ def rows():
 def main():
     rs = rows()
     col = {"Training decisions": "#4d4d4d", "Evaluation regime": "#0072b2", "Reference definition": "#d55e00"}
+    # 7.0 in wide, printed at 16 cm (x0.9): fonts >= 8 pt print at >= 7 pt
     fig, ax = plt.subplots(figsize=(7.0, 5.2))
     y = np.arange(len(rs))[::-1]
     for yi, (g, lab, v, ci) in zip(y, rs):
@@ -78,16 +79,17 @@ def main():
             ax.plot(ci, [yi, yi], color="black", lw=1.0)
         end = (max(v, ci[1]) if v >= 0 else min(v, ci[0])) if ci else v
         ax.text(end + (0.6 if v >= 0 else -0.6), yi, f"{v:+.1f}", va="center",
-                ha="left" if v >= 0 else "right", fontsize=8)
+                ha="left" if v >= 0 else "right", fontsize=9)
     ax.set_yticks(y)
-    ax.set_yticklabels([r[1] for r in rs], fontsize=8)
+    ax.set_yticklabels([r[1] for r in rs], fontsize=9)
+    ax.tick_params(axis="x", labelsize=9)
     ax.axvline(0, color="black", lw=0.8)
-    ax.set_xlabel("Change in reported mIoU (percentage points)", fontsize=9)
-    ax.set_xlim(-55, 28)
+    ax.set_xlabel("Change in reported mIoU (percentage points)", fontsize=9.5)
+    ax.set_xlim(-60, 31)
     ax.grid(axis="x", color="0.9", lw=0.6); ax.set_axisbelow(True)
     for g, c in col.items():
         ax.bar(0, 0, color=c, label=g)
-    ax.legend(loc="lower left", fontsize=8, frameon=True, edgecolor="black")
+    ax.legend(loc="lower left", fontsize=9, frameon=True, edgecolor="black")
     fig.tight_layout()
     out = ROOT / "analysis" / "figure" / "fig_effect_sizes.png"
     fig.savefig(out, dpi=600)

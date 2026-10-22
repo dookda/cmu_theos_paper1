@@ -59,7 +59,7 @@ GROUPS = [("test", "Scene 1 test", ["urban", "water", "bare_soil"]),
           ("external", "Scene 2 held out", ["urban", "agriculture", "vegetation"])]
 # stretch ของ render.qml ชุดเดียวกับไทล์ที่ใช้ฝึก
 STRETCH = [(100, 541), (116, 395), (164, 404)]
-MISMATCH = "#d6006e"
+MISMATCH = "#0072b2"   # Okabe-Ito blue: stays visible on the grey image under deutan/protan/tritan simulation
 
 # ภาพ THEOS-2 ในรูปอ่านจากไฟล์ภาพย่อยจริงที่ใช้ฝึกและประเมินแบบจำลอง
 # (cmu_theos_ai_data_fixed/tiles บน Erawan สำเนาไว้ที่ analysis/figure/source_tiles)
@@ -144,6 +144,7 @@ def main():
 
     colors = lut()
     n = len(picks)
+    # 7.2 in wide, printed at 16 cm (x0.875): fonts >= 8 pt print at >= 7 pt
     fig, axes = plt.subplots(n, 4, figsize=(7.2, (1.72 if two else 1.85) * n + 0.6))
     heads = ["THEOS-2 image (R, G, B)", "Reference label",
              "Ensemble prediction" + (" (six classes)" if six else ""), "Disagreement"]
@@ -189,19 +190,19 @@ def main():
                 for sp in ax.spines.values():
                     sp.set_linewidth(0.6)
                 if i == 0:
-                    ax.set_title(heads[j], fontsize=8)
+                    ax.set_title(heads[j], fontsize=8.5)
             axes[i, 0].set_ylabel((f"({chr(97 + i)}) {scene}\n" if two else f"({chr(97 + i)}) ")
                                   + f"{cls.replace('_', ' ')}, {100 * share:.0f}% of tile",
-                                  fontsize=7 if two else 7.5)
+                                  fontsize=8)
             axes[i, 3].text(0.97, 0.04, f"agree {100 * agree:.0f}%" + (" of labelled" if six else ""),
                             transform=axes[i, 3].transAxes, ha="right", va="bottom",
-                            fontsize=7, bbox=dict(fc="white", ec="none", pad=1.2))
+                            fontsize=8, bbox=dict(fc="white", ec="none", pad=1.2))
             # มาตราส่วน 50 ม. = 100 px
             halo = [pe.withStroke(linewidth=2.2, foreground="white")]
             axes[i, 0].plot([12, 112], [hh - 18, hh - 18], color="white", lw=2.2,
                             path_effects=[pe.withStroke(linewidth=3.6, foreground="black")])
             axes[i, 0].text(62, hh - 26, "50 m", color="black", ha="center",
-                            va="bottom", fontsize=6.5, path_effects=halo)
+                            va="bottom", fontsize=8, path_effects=halo)
 
     handles = [Patch(facecolor=CLASS_COLOR[c], edgecolor="black", lw=0.4,
                      label=c.replace("_", " ")) for c in CLASSES if not (six and c == "background")]
@@ -210,9 +211,9 @@ def main():
                                 label="no reference label"))
     handles.append(Patch(facecolor=MISMATCH, edgecolor="black", lw=0.4,
                          label="label ≠ prediction"))
-    fig.legend(handles=handles, loc="lower center", ncol=4, fontsize=7.5,
+    fig.legend(handles=handles, loc="lower center", ncol=4, fontsize=8,
                frameon=False, bbox_to_anchor=(0.5, 0.0))
-    fig.subplots_adjust(left=0.08, right=0.995, top=0.965, bottom=0.075,
+    fig.subplots_adjust(left=0.09, right=0.995, top=0.965, bottom=0.075,
                         wspace=0.03, hspace=0.05)
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)

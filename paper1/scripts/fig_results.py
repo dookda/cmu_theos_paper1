@@ -54,7 +54,12 @@ def fig_effects(dpi):
     archs = sorted({r["architecture"] for r in eff if r["effect"] in facs},
                    key=lambda a: -next(x["mean"] for x in eff
                                        if x["architecture"] == a and x["effect"] == "augment"))
-    fig, axes = plt.subplots(1, 3, figsize=(9.2, 3.1), sharey=True)
+    # Drawn at its printed size (16 cm wide) so 8-9 pt text stays 8-9 pt in the journal; the three panels
+    # share one x-scale so the size of each factor's effect can be compared directly. The explanation of
+    # the markers is in the caption, not in a title inside the figure (T&F style).
+    fig, axes = plt.subplots(1, 3, figsize=(6.3, 2.75), sharey=True, sharex=True)
+    lo = min(100 * x["ci_lo"] for x in eff if x["effect"] in facs and x["architecture"] in archs)
+    hi = max(100 * x["ci_hi"] for x in eff if x["effect"] in facs and x["architecture"] in archs)
     for ax, f in zip(axes, facs):
         for i, a in enumerate(archs):
             r = next((x for x in eff if x["architecture"] == a and x["effect"] == f), None)
@@ -62,20 +67,25 @@ def fig_effects(dpi):
                 continue
             sig = not (r["ci_lo"] <= 0 <= r["ci_hi"])
             ax.plot([100 * r["ci_lo"], 100 * r["ci_hi"]], [i, i],
-                    color="black", lw=1.1, solid_capstyle="butt", zorder=2)
-            ax.plot(100 * r["mean"], i, "o", ms=5.5, zorder=3,
-                    mfc="black" if sig else "white", mec="black", mew=1.1)
+                    color="black", lw=1.0, solid_capstyle="butt", zorder=2)
+            ax.plot(100 * r["mean"], i, "o", ms=4.8, zorder=3,
+                    mfc="black" if sig else "white", mec="black", mew=1.0)
         ax.axvline(0, color="0.55", lw=0.8, ls=(0, (4, 3)), zorder=1)
-        ax.set_title(titles[f], fontsize=9.5)
+        ax.set_title(titles[f], fontsize=9)
         ax.set_xlabel("Effect on mIoU (points)", fontsize=8)
         ax.tick_params(labelsize=8)
         ax.grid(axis="x", color="0.9", lw=0.6)
         ax.set_axisbelow(True)
+    axes[0].set_xlim(lo - 0.15, hi + 0.15)
+    axes[0].set_xticks([t for t in (0, 1, 2) if lo - 0.15 <= t <= hi + 0.15])           # labelled ticks
+    axes[0].set_xticks([t for t in (-0.5, 0.5, 1.5) if lo - 0.15 <= t <= hi + 0.15], minor=True)
+    for ax in axes:
+        ax.grid(axis="x", which="minor", color="0.93", lw=0.5)
     axes[0].set_yticks(range(len(archs)))
     axes[0].set_yticklabels([NICE.get(a, a) for a in archs], fontsize=8)
     axes[0].set_ylim(-0.6, len(archs) - 0.4)
-    fig.suptitle("Effect of each training factor on validation mIoU, five seeds\n"
-                 "filled marker = 95% CI excludes zero", fontsize=10.5, y=1.06)
+    axes[0].invert_yaxis()   # largest augmentation effect at the top
+    fig.tight_layout(w_pad=0.8)
     save(fig, "fig_effects.png", dpi)
 
 
@@ -435,23 +445,22 @@ def fig_audit(dpi):
     row = conf.sum(1, keepdims=True)
     frac = np.divide(conf, row, out=np.zeros_like(conf), where=row > 0)
 
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(9.6, 3.9),
-                                 gridspec_kw={"width_ratios": [1.35, 1]})
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(6.3, 3.5),   # printed size, 16 cm wide
+                                 gridspec_kw={"width_ratios": [1.35, 1], "wspace": 0.45})
     im = a1.imshow(frac, cmap=SEQUENTIAL, vmin=0, vmax=1)
     a1.set_xticks(range(len(cls))); a1.set_yticks(range(len(cls)))
     a1.set_xticklabels([c.replace("_", " ") for c in cls], rotation=45,
                        ha="right", fontsize=7.5)
     a1.set_yticklabels([c.replace("_", " ") for c in cls], fontsize=7.5)
-    a1.set_xlabel("independent judgement", fontsize=8.5)
-    a1.set_ylabel("reference label", fontsize=8.5)
+    a1.set_xlabel("independent judgement", fontsize=8)
+    a1.set_ylabel("reference label", fontsize=8)
     for i in range(len(cls)):
         for j in range(len(cls)):
             if conf[i, j]:
                 a1.text(j, i, f"{int(conf[i, j])}", ha="center", va="center",
                         fontsize=7, color="black",
                         path_effects=HALO if frac[i, j] > 0.45 else None)
-    a1.set_title("Where the reference and an independent\njudgement disagree "
-                 "(row-normalised)", fontsize=9.5)
+    a1.set_title("Reference label vs independent\njudgement (row-normalised)", fontsize=8.5)
     fig.colorbar(im, ax=a1, fraction=0.045, pad=0.03).ax.tick_params(labelsize=7)
 
     dec = g1["disagreement_decomposition"]; tot = sum(dec.values())
@@ -466,20 +475,21 @@ def fig_audit(dpi):
     for lab, key, col in order:
         w = 100 * dec[key] / tot
         a2.barh(0, w, left=left, color=col, edgecolor="black", lw=0.7)
-        if w > 8:
-            a2.text(left + w / 2, 0, f"{w:.1f}%", ha="center", va="center",
-                    fontsize=8.5, color="black", path_effects=HALO)
         left += w
     a2.set_xlim(0, 100); a2.set_ylim(-0.6, 0.6)
-    a2.set_yticks([]); a2.set_xlabel("share of adjudicated disagreement (%)", fontsize=8.5)
+    a2.set_box_aspect(0.32)          # a flat bar; the legend sits directly underneath
+    a2.set_yticks([]); a2.set_xlabel(f"share of the {tot} sampled parcels (%)", fontsize=8)
     a2.tick_params(labelsize=8)
+    # shares go in the legend, not on the bar, so the narrow segments stay readable at print size
     a2.legend([plt.Rectangle((0, 0), 1, 1, facecolor=c, edgecolor="black", lw=0.7)
-               for _, _, c in order], [l for l, _, _ in order],
-              fontsize=7.5, loc="upper center", bbox_to_anchor=(0.5, -0.28),
-              ncol=2, frameon=True, edgecolor="black")
+               for _, _, c in order],
+              [f"{l} ({dec[k]}, {100 * dec[k] / tot:.1f}%)" for l, k, _ in order],
+              fontsize=7.5, loc="upper center", bbox_to_anchor=(0.5, -0.62),
+              ncol=1, frameon=True, edgecolor="black")
+    # shares are of the sampled candidates only; the stable controls (and kappa over all parcels)
+    # are described in the text and caption
     a2.set_title(f"What the disagreement is made of\n"
-                 f"{g1['n_items']} parcels, two reviewers, "
-                 f"kappa {g1['min_kappa_q2']:.2f}", fontsize=9.5)
+                 f"{tot} sampled parcels, two reviewers", fontsize=8.5)
     save(fig, "fig_audit.png", dpi)
 
 if __name__ == "__main__":
